@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       branch:
-        description: "Docs 构建，请选择分支"
+        description: "Docs build, choose branch"
         required: true
         default: "master"
 
@@ -39,5 +39,6 @@ jobs:
           yarn
           NODE_OPTIONS=--max-old-space-size=12000 yarn docs:build
           docker build -t ${TAG} . --no-cache
+          echo ${{ secrets.ACR_REGISTRY_PASSWORD }} | docker login registry.cn-beijing.aliyuncs.com -u ${{ secrets.ACR_REGISTRY_USERNAME }} --password-stdin
           docker push ${TAG}
           # ossutil cp -r -f docs/.vuepress/dist oss://authing-cdn-cn-prod/authing-docs-v2/${VERSION}/
