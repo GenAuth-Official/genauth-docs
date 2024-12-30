@@ -33,13 +33,11 @@ jobs:
           cache: yarn
       - name: Build the Docker image and upload to oss
         run: |
-          echo ${{ secrets.ACR_REGISTRY_PASSWORD }} | docker login registry.cn-beijing.aliyuncs.com -u ${{ secrets.ACR_REGISTRY_USERNAME }} --password-stdin
           VERSION=$(cat version.txt)
           TAG=registry.cn-beijing.aliyuncs.com/authing-next/genauth-docs:${VERSION}
           yarn config set registry https://registry.npmmirror.com
           yarn
           NODE_OPTIONS=--max-old-space-size=12000 yarn docs:build
           docker build -t ${TAG} . --no-cache
-          echo ${{ secrets.ACR_REGISTRY_PASSWORD }} | docker login registry.cn-beijing.aliyuncs.com -u ${{ secrets.ACR_REGISTRY_USERNAME }} --password-stdin
           docker push ${TAG}
           # ossutil cp -r -f docs/.vuepress/dist oss://authing-cdn-cn-prod/authing-docs-v2/${VERSION}/
