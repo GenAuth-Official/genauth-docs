@@ -1,0 +1,90 @@
+# Get the role authorization list
+
+<!--
+Warning⚠️:
+Do not modify this document directly,
+https://github.com/Authing/authing-docs-factory
+Use this project to generate
+-->
+
+<LastUpdated />
+
+> This document is automatically generated based on https://github.com/authing/authing-docs-factory based on https://api-explorer.genauth.ai V3 API, and is consistent with API parameters and return results. If the description of this document is incorrect, please refer to V3 API.
+
+Get the role authorization list.
+
+## Method name
+
+`ManagementClient.list_role_assignments`
+
+## Request parameters
+
+| Name          | Type     | <div style="width:80px">Required</div> | <div style="width:60px">Default value</div> | <div style="width:300px">Description</div>                            | <div style="width:200px">Sample value</div> |
+| ------------- | -------- | -------------------------------------- | ------------------------------------------- | --------------------------------------------------------------------- | ------------------------------------------- |
+| roleCode      | string   | yes                                    | -                                           | Role code, can only use letters, numbers and -\_, up to 50 characters | `code_1`                                    |
+| page          | number   | no                                     | 1                                           | Current page number, starting from 1                                  | `1`                                         |
+| limit         | number   | no                                     | 10                                          | Number per page, maximum cannot exceed 50, default is 10              | `10`                                        |
+| query         | string   | no                                     | -                                           | Query by role code or role name                                       | `Sample Application`                        |
+| namespaceCode | string   | No                                     | -                                           | Permission space code                                                 |                                             |
+| targetType    | string[] | No                                     | -                                           | Target type, accepts user, department                                 | `["USER","ORG"]`                            |
+
+## Request Response
+
+Type: `RoleListPageRespDto`
+
+| Name       | Type                                           | Description                                                                                                                                                                                                                                                                                                                                         |
+| ---------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| statusCode | number                                         | Business status code, which can be used to determine whether the operation is successful. 200 means success.                                                                                                                                                                                                                                        |
+| message    | string                                         | Description                                                                                                                                                                                                                                                                                                                                         |
+| apiCode    | number                                         | Segmented error code, which can be used to get the specific error type (successful request does not return). For a detailed list of error codes, please see: [API Code List](https://api-explorer.genauth.ai/?tag=group/%E5%BC%80%E5%8F%91%E5%87%86%E5%A4%87#tag/%E5%BC%80%E5%8F%91%E5%87%86%E5%A4%87/%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86/apiCode) |
+| requestId  | string                                         | Request ID. Returned when the request fails.                                                                                                                                                                                                                                                                                                        |
+| data       | <a href="#RoleListPageDto">RoleListPageDto</a> | Response data                                                                                                                                                                                                                                                                                                                                       |
+
+Example results:
+
+```json
+{
+  "statusCode": 200,
+  "message": "Success",
+  "requestId": "934108e5-9fbf-4d24-8da1-c330328abd6c",
+  "data": {
+    "totalCount": 20,
+    "data": {
+      "roleId": "60b49eb83fd80adb96f26e68",
+      "status": "ENABLE",
+      "enableTime": "1670915666812",
+      "endTime": "1670915666812",
+      "userPoolId": "6076bacxxxxxxxxd80d993b5",
+      "roleName": "testUser",
+      "roleCode": "code_1",
+      "description": "testUser description",
+      "createdAt": "2022-03-17T05:23:01.567Z",
+      "updatedAt": "2022-03-17T05:23:01.567Z"
+    }
+  }
+}
+```
+
+## Data Structure
+
+### <a id="RoleListPageDto"></a> RoleListPageDto
+
+| Name       | Type   | <div style="width:80px">Required</div> | <div style="width:300px">Description</div>                                             | <div style="width:200px">Sample value</div> |
+| ---------- | ------ | -------------------------------------- | -------------------------------------------------------------------------------------- | ------------------------------------------- |
+| totalCount | number | No                                     | Total number of records                                                                | `20`                                        |
+| data       | array  | Yes                                    | Response data Nested type: <a href="#RolePermissionListDto">RolePermissionListDto</a>. |                                             |
+
+### <a id="RolePermissionListDto"></a> RolePermissionListDto
+
+| Name        | Type   | <div style="width:80px">Is it required?</div> | <div style="width:300px">Description</div>                                  | <div style="width:200px">Sample value</div> |
+| ----------- | ------ | --------------------------------------------- | --------------------------------------------------------------------------- | ------------------------------------------- |
+| roleId      | string | Yes                                           | Role ID                                                                     | `60b49eb83fd80adb96f26e68`                  |
+| status      | string | Yes                                           | Subject status, DISABLE - not joined the role, ENABLE - has joined the role | `ENABLE`                                    |
+| enableTime  | number | No                                            | Subject joining time in milliseconds                                        | `1670915666812`                             |
+| endTime     | number | No                                            | Subject expiration time in milliseconds, null means it is not expired       | `1670915666812`                             |
+| userPoolId  | string | yes                                           | User pool ID                                                                | `6076bacxxxxxxxxd80d993b5`                  |
+| roleName    | string | yes                                           | Role name, up to 50 characters                                              | `Test user`                                 |
+| roleCode    | string | yes                                           | Role code, only letters, numbers and -\_, up to 50 characters               | `code_1`                                    |
+| description | string | no                                            | Role description, up to 200 characters                                      | `Description of this role`                  |
+| createdAt   | string | yes                                           | Creation time                                                               | `2022-03-17T05:23:01.567Z`                  |
+| updatedAt   | string | yes                                           | Update time                                                                 | `2022-03-17T05:23:01.567Z`                  |

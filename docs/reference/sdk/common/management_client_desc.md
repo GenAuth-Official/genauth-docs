@@ -1,0 +1,1 @@
+The ManagementClient module makes requests as an administrator to manage user pool resources and perform management tasks. It provides methods for managing users, roles, applications, resources, etc. Generally speaking, all operations that you can do in the [{{$localeConfig.brandName}} console](https://console.genauth.ai/console/userpool) can be completed with this module.
