@@ -1,5 +1,5 @@
 <div align=center>
-  <img width="250" src="https://files.authing.co/authing-console/authing-logo-new-20210924.svg" />
+  <img width="250" src="https://authing-cdn-cn-prod.oss-cn-beijing.aliyuncs.com/genauth/logo-transparent.png" />
 </div>
 
 <div align="center">

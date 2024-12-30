@@ -20,12 +20,12 @@ jobs:
           registry: registry.cn-beijing.aliyuncs.com
           username: ${{ secrets.ACR_REGISTRY_USERNAME }}
           password: ${{ secrets.ACR_REGISTRY_PASSWORD }}
-      - name: Setup ossutil
-        uses: coscene-io/setup-ossutil@v2
-        with:
-          endpoint: oss-cn-beijing.aliyuncs.com
-          access-key-id: ${{ secrets.OSS_KEY_ID }}
-          access-key-secret: ${{ secrets.OSS_KEY_SECRET }}
+      # - name: Setup ossutil
+      #   uses: coscene-io/setup-ossutil@v2
+      #   with:
+      #     endpoint: oss-cn-beijing.aliyuncs.com
+      #     access-key-id: ${{ secrets.OSS_KEY_ID }}
+      #     access-key-secret: ${{ secrets.OSS_KEY_SECRET }}
       - name: Setup Node.js environment
         uses: actions/setup-node@v4.0.3
         with:
@@ -34,11 +34,10 @@ jobs:
       - name: Build the Docker image and upload to oss
         run: |
           VERSION=$(cat version.txt)
-          PUBLIC_URL=//cdn.authing.co/authing-docs-v2/${VERSION}/
-          TAG=registry.cn-beijing.aliyuncs.com/authing-next/authing-docs-v2:${VERSION}
+          TAG=registry.cn-beijing.aliyuncs.com/authing-next/genauth-docs:${VERSION}
           yarn config set registry https://registry.npmmirror.com
           yarn
-          NODE_OPTIONS=--max-old-space-size=12000 PUBLIC_URL=$PUBLIC_URL yarn docs:build
+          NODE_OPTIONS=--max-old-space-size=12000 yarn docs:build
           docker build -t ${TAG} . --no-cache
           docker push ${TAG}
-          ossutil cp -r -f docs/.vuepress/dist oss://authing-cdn-cn-prod/authing-docs-v2/${VERSION}/
+          # ossutil cp -r -f docs/.vuepress/dist oss://authing-cdn-cn-prod/authing-docs-v2/${VERSION}/
