@@ -1157,35 +1157,35 @@ const zhCnNavBar = {
                   children: [
                     {
                       title: "Account password login",
-                      path: "/reference/sdk/java/authentication/Login/signin-by-account-password.md",
+                      path: "/reference/sdk/java/authentication/登录/signin-by-account-password.md",
                     },
                     {
                       title: "Username password login",
-                      path: "/reference/sdk/java/authentication/Login/signin-by-username-password.md",
+                      path: "/reference/sdk/java/authentication/登录/signin-by-username-password.md",
                     },
                     {
                       title: "Mobile phone number password login",
-                      path: "/reference/sdk/java/authentication/Login/signin-by-phone-password.md",
+                      path: "/reference/sdk/java/authentication/登录/signin-by-phone-password.md",
                     },
                     {
                       title: "Email password login",
-                      path: "/reference/sdk/java/authentication/Login/signin-by-email-password.md",
+                      path: "/reference/sdk/java/authentication/登录/signin-by-email-password.md",
                     },
                     {
                       title: "Login by email verification code",
-                      path: "/reference/sdk/java/authentication/Login/signin-by-email-passcode.md",
+                      path: "/reference/sdk/java/authentication/登录/signin-by-email-passcode.md",
                     },
                     {
                       title: "Login by mobile phone verification code",
-                      path: "/reference/sdk/java/authentication/Login/signin-by-phone-passcode.md",
+                      path: "/reference/sdk/java/authentication/登录/signin-by-phone-passcode.md",
                     },
                     {
                       title: "LDAP account login",
-                      path: "/reference/sdk/java/authentication/Login/signin-by-ldap.md",
+                      path: "/reference/sdk/java/authentication/登录/signin-by-ldap.md",
                     },
                     {
                       title: "AD account login",
-                      path: "/reference/sdk/java/authentication/Login/signin-by-ad.md",
+                      path: "/reference/sdk/java/authentication/登录/signin-by-ad.md",
                     },
                     {
                       title: "Generate login address",
@@ -1231,7 +1231,7 @@ const zhCnNavBar = {
                     },
                     {
                       title: "Back-end logout",
-                      path: "/reference/sdk/java/authentication/logout/backend-channel-logout.md",
+                      path: "/reference/sdk/java/authentication/登出/backend-channel-logout.md",
                     },
                   ],
                 },
@@ -1282,69 +1282,69 @@ const zhCnNavBar = {
                   children: [
                     {
                       title: "Get user information",
-                      path: "/reference/sdk/java/authentication/User information/get-profile",
+                      path: "/reference/sdk/java/authentication/用户资料/get-profile",
                     },
                     {
                       title: "Modify user information",
-                      path: "/reference/sdk/java/authentication/user profile/update-profile",
+                      path: "/reference/sdk/java/authentication/用户资料/update-profile",
                     },
                     {
                       title: "Bind email",
-                      path: "/reference/sdk/java/authentication/user profile/bind-email",
+                      path: "/reference/sdk/java/authentication/用户资料/bind-email",
                     },
                     {
                       title: "Unbind email",
-                      path: "/reference/sdk/java/authentication/user profile/unbind-email",
+                      path: "/reference/sdk/java/authentication/用户资料/unbind-email",
                     },
                     {
                       title: "Bind phone number",
-                      path: "/reference/sdk/java/authentication/user profile/bind-phone",
+                      path: "/reference/sdk/java/authentication/用户资料/bind-phone",
                     },
                     {
                       title: "Unbind phone number",
-                      path: "/reference/sdk/java/authentication/user profile/unbind-phone",
+                      path: "/reference/sdk/java/authentication/用户资料/unbind-phone",
                     },
                     {
                       title:
                         "Get password strength and account security rating",
-                      path: "/reference/sdk/java/authentication/user profile/get-security-info",
+                      path: "/reference/sdk/java/authentication/用户资料/get-security-info",
                     },
                     {
                       title: "Change password",
-                      path: "/reference/sdk/java/authentication/user information/update-password",
+                      path: "/reference/sdk/java/authentication/用户资料/update-password",
                     },
                     {
                       title: "Initiate verification request to change email",
-                      path: "/reference/sdk/java/authentication/user information/verify-update-email-request",
+                      path: "/reference/sdk/java/authentication/用户资料/verify-update-email-request",
                     },
                     {
                       title: "Change email",
-                      path: "/reference/sdk/java/authentication/user information/update-email",
+                      path: "/reference/sdk/java/authentication/用户资料/update-email",
                     },
                     {
                       title:
                         "Initiate verification request to change mobile phone number",
-                      path: "/reference/sdk/java/authentication/user information/verify-update-phone-request",
+                      path: "/reference/sdk/java/authentication/用户资料/verify-update-phone-request",
                     },
                     {
                       title: "Change mobile phone number",
-                      path: "/reference/sdk/java/authentication/user information/update-phone",
+                      path: "/reference/sdk/java/authentication/用户资料/update-phone",
                     },
                     {
                       title: "Initiate forgotten password request",
-                      path: "/reference/sdk/java/authentication/user profile/verify-reset-password-request",
+                      path: "/reference/sdk/java/authentication/用户资料/verify-reset-password-request",
                     },
                     {
                       title: "Forgot password",
-                      path: "/reference/sdk/java/authentication/user profile/reset-password",
+                      path: "/reference/sdk/java/authentication/用户资料/reset-password",
                     },
                     {
                       title: "Initiate account cancellation request",
-                      path: "/reference/sdk/java/authentication/user profile/verify-delete-account-request",
+                      path: "/reference/sdk/java/authentication/用户资料/verify-delete-account-request",
                     },
                     {
                       title: "Cancel account",
-                      path: "/reference/sdk/java/authentication/user profile/delete-account",
+                      path: "/reference/sdk/java/authentication/用户资料/delete-account",
                     },
                   ],
                 },
@@ -1354,20 +1354,20 @@ const zhCnNavBar = {
                     {
                       title:
                         "Generate a link to bind an external identity source",
-                      path: "/reference/sdk/java/authentication/Account Binding/generate-link-extidp-url",
+                      path: "/reference/sdk/java/authentication/账号绑定/generate-link-extidp-url",
                     },
                     {
                       title: "Unbind an external identity source",
-                      path: "/reference/sdk/java/authentication/Account Binding/unlink-extidp",
+                      path: "/reference/sdk/java/authentication/账号绑定/unlink-extidp",
                     },
                     {
                       title: "Get the bound external identity source",
-                      path: "/reference/sdk/java/authentication/Account Binding/get-identities",
+                      path: "/reference/sdk/java/authentication/账号绑定/get-identities",
                     },
                     {
                       title:
                         "Get the list of external identity sources enabled by the application",
-                      path: "/reference/sdk/java/authentication/Account Binding/get-application-enabled-extidps",
+                      path: "/reference/sdk/java/authentication/账号绑定/get-application-enabled-extidps",
                     },
                   ],
                 },
@@ -1377,27 +1377,27 @@ const zhCnNavBar = {
                     {
                       title:
                         "Initiate binding MFA Authentication factor request",
-                      path: "/reference/sdk/java/authentication/mfa-element management/send-enroll-factor-request",
+                      path: "/reference/sdk/java/authentication/mfa-要素管理/send-enroll-factor-request",
                     },
                     {
                       title: "Bind MFA authentication factor",
-                      path: "/reference/sdk/java/authentication/mfa-element management/enroll-factor",
+                      path: "/reference/sdk/java/authentication/mfa-要素管理/enroll-factor",
                     },
                     {
                       title: "Unbind MFA authentication factor",
-                      path: "/reference/sdk/java/authentication/mfa-element management/reset-factor",
+                      path: "/reference/sdk/java/authentication/mfa-要素管理/reset-factor",
                     },
                     {
                       title: "Get all bound MFA authentication factors",
-                      path: "/reference/sdk/java/authentication/mfa-element management/list-enrolled-factors",
+                      path: "/reference/sdk/java/authentication/mfa-要素管理/list-enrolled-factors",
                     },
                     {
                       title: "Get a bound MFA authentication factor",
-                      path: "/reference/sdk/java/authentication/mfa-element management/get-factor",
+                      path: "/reference/sdk/java/authentication/mfa-要素管理/get-factor",
                     },
                     {
                       title: "Get bindable MFA authentication factors",
-                      path: "/reference/sdk/java/authentication/mfa-element management/list-factors-to-enroll",
+                      path: "/reference/sdk/java/authentication/mfa-要素管理/list-factors-to-enroll",
                     },
                   ],
                 },
@@ -1406,35 +1406,35 @@ const zhCnNavBar = {
                   children: [
                     {
                       title: "Get login log",
-                      path: "/reference/sdk/java/authentication/User-related resources/get-my-login-history",
+                      path: "/reference/sdk/java/authentication/用户相关资源/get-my-login-history",
                     },
                     {
                       title: "Get login application",
-                      path: "/reference/sdk/java/authentication/User-related resources/get-my-logged-in-apps",
+                      path: "/reference/sdk/java/authentication/用户相关资源/get-my-logged-in-apps",
                     },
                     {
                       title: "Get applications with access permissions",
-                      path: "/reference/sdk/java/authentication/User-related resources/get-my-accessible-apps",
+                      path: "/reference/sdk/java/authentication/用户相关资源/get-my-accessible-apps",
                     },
                     {
                       title: "Get tenant list",
-                      path: "/reference/sdk/java/authentication/user-related resources/get-my-tenant-list",
+                      path: "/reference/sdk/java/authentication/用户相关资源/get-my-tenant-list",
                     },
                     {
                       title: "Get role list",
-                      path: "/reference/sdk/java/authentication/user-related resources/get-my-role-list",
+                      path: "/reference/sdk/java/authentication/用户相关资源/get-my-role-list",
                     },
                     {
                       title: "Get group list",
-                      path: "/reference/sdk/java/authentication/user-related resources/get-my-group-list",
+                      path: "/reference/sdk/java/authentication/用户相关资源/get-my-group-list",
                     },
                     {
                       title: "Get department list",
-                      path: "/reference/sdk/java/authentication/user-related resources/get-my-department-list",
+                      path: "/reference/sdk/java/authentication/用户相关资源/get-my-department-list",
                     },
                     {
                       title: "Get authorized resource list",
-                      path: "/reference/sdk/java/authentication/user-related resources/get-my-authorized-resources",
+                      path: "/reference/sdk/java/authentication/用户相关资源/get-my-authorized-resources",
                     },
                   ],
                 },
@@ -1443,11 +1443,11 @@ const zhCnNavBar = {
                   children: [
                     {
                       title: "Send SMS",
-                      path: "/reference/sdk/java/authentication/message service/send-sms",
+                      path: "/reference/sdk/java/authentication/消息服务/send-sms",
                     },
                     {
                       title: "Send Email",
-                      path: "/reference/sdk/java/authentication/message service/send-email",
+                      path: "/reference/sdk/java/authentication/消息服务/send-email",
                     },
                   ],
                 },
@@ -1456,41 +1456,28 @@ const zhCnNavBar = {
                   children: [
                     {
                       title: "String type resource authentication",
-                      path: "/reference/sdk/java/authentication/authentication/check-permission-string-resource",
+                      path: "/reference/sdk/java/authentication/鉴权/check-permission-string-resource",
                     },
                     {
                       title: "Array type resource authentication",
-                      path: "/reference/sdk/java/authentication/authentication/check-permission-array-resource",
+                      path: "/reference/sdk/java/鉴权/authentication/check-permission-array-resource",
                     },
                     {
                       title: "Tree type resource authentication",
-                      path: "/reference/sdk/java/authentication/authentication/check-permission-tree-resource",
+                      path: "/reference/sdk/java/鉴权/authentication/check-permission-tree-resource",
                     },
                     {
                       title: `Get the user's authorized resource list under the login application`,
-                      path: `/reference/sdk/java/authentication/authentication/get-user-auth-resource-list`,
+                      path: `/reference/sdk/java/鉴权/authentication/get-user-auth-resource-list`,
                     },
                     {
                       title: `Get the user's specified resource permission list under the login application`,
-                      path: "/reference/sdk/java/authentication/authentication/get-user-auth-resource-permission-list",
+                      path: "/reference/sdk/java/鉴权/authentication/get-user-auth-resource-permission-list",
                     },
                     {
                       title:
                         "Get the structure list of authorized resources under the user login application",
-                      path: "/reference/sdk/java/authentication/authentication/get-user-auth-resource-struct",
-                    },
-                  ],
-                },
-                {
-                  title: "WeChat related interface",
-                  children: [
-                    {
-                      title: "Decrypt WeChat applet data",
-                      path: "/reference/sdk/java/authentication/WeChat related interface/decrypt-wechat-miniprogram-data",
-                    },
-                    {
-                      title: "Get WeChat applet, public account Access Token",
-                      path: "/reference/sdk/java/authentication/WeChat related interface/get-wechat-access-token",
+                      path: "/reference/sdk/java/鉴权/authentication/get-user-auth-resource-struct",
                     },
                   ],
                 },
@@ -1499,11 +1486,11 @@ const zhCnNavBar = {
                   children: [
                     {
                       title: "Get server public information",
-                      path: "/reference/sdk/java/authentication/other/system",
+                      path: "/reference/sdk/java/authentication/其他/system",
                     },
                     {
                       title: "Get country list",
-                      path: "/reference/sdk/java/authentication/other/get-country-list",
+                      path: "/reference/sdk/java/authentication/其他/get-country-list",
                     },
                   ],
                 },
@@ -1537,220 +1524,134 @@ const zhCnNavBar = {
                   children: [
                     {
                       title: "Get user list",
-                      path: "/reference/sdk/java/management/Manage users/list-users",
+                      path: "/reference/sdk/java/management/管理用户/list-users",
                     },
                     {
                       title: "Get user information",
-                      path: "/reference/sdk/java/management/Manage users/get-user",
+                      path: "/reference/sdk/java/management/管理用户/get-user",
                     },
                     {
                       title: "Get user information in batches",
-                      path: "/reference/sdk/java/management/Manage users/get-user-batch",
+                      path: "/reference/sdk/java/management/管理用户/get-user-batch",
                     },
                     {
                       title: "Create users",
-                      path: "/reference/sdk/java/management/Manage users/create-user",
+                      path: "/reference/sdk/java/management/管理用户/create-user",
                     },
                     {
                       title: "Create users in batches",
-                      path: "/reference/sdk/java/management/Manage users/create-users-batch",
+                      path: "/reference/sdk/java/management/管理用户/create-users-batch",
                     },
                     {
                       title: "Modify user information",
-                      path: "/reference/sdk/java/management/Management User/update-user",
+                      path: "/reference/sdk/java/management/管理用户/update-user",
                     },
                     {
                       title: "Batch modify user information",
-                      path: "/reference/sdk/java/management/Management User/update-user-batch",
+                      path: "/reference/sdk/java/management/管理用户/update-user-batch",
                     },
                     {
                       title: "Delete user",
-                      path: "/reference/sdk/java/management/Management User/delete-users-batch",
+                      path: "/reference/sdk/java/management/管理用户/delete-users-batch",
                     },
                     {
                       title: `Get the user's external identity source`,
-                      path: "/reference/sdk/java/management/Management User/get-user-identities",
+                      path: "/reference/sdk/java/management/管理用户/get-user-identities",
                     },
                     {
                       title: "Get user role list",
-                      path: "/reference/sdk/java/management/Management User/get-user-roles",
+                      path: "/reference/sdk/java/management/管理用户/get-user-roles",
                     },
                     {
                       title: "Get user real-name authentication information",
-                      path: "/reference/sdk/java/management/Management User/get-user-principal-authentication-info",
+                      path: "/reference/sdk/java/management/管理用户/get-user-principal-authentication-info",
                     },
                     {
                       title: "Delete user real-name authentication information",
-                      path: "/reference/sdk/java/management/Management User/reset-user-principal-authentication-info",
+                      path: "/reference/sdk/java/management/管理用户/reset-user-principal-authentication-info",
                     },
                     {
                       title: "Get user department list",
-                      path: "/reference/sdk/java/management/Management User/get-user-departments",
+                      path: "/reference/sdk/java/management/管理用户/get-user-departments",
                     },
                     {
                       title: "Set user department",
-                      path: "/reference/sdk/java/management/Management User/set-user-departments",
+                      path: "/reference/sdk/java/management/管理用户/set-user-departments",
                     },
                     {
                       title: "Get user group list",
-                      path: "/reference/sdk/java/management/Management User/get-user-groups",
+                      path: "/reference/sdk/java/management/管理用户/get-user-groups",
                     },
                     {
                       title: "Get user MFA binding information",
-                      path: "/reference/sdk/java/management/management user/get-user-mfa-info",
+                      path: "/reference/sdk/java/management/管理用户/get-user-mfa-info",
                     },
                     {
                       title: "Get the archived user list",
-                      path: "/reference/sdk/java/management/management user/list-archived-users",
+                      path: "/reference/sdk/java/management/管理用户/list-archived-users",
                     },
                     {
                       title: "Force offline users",
-                      path: "/reference/sdk/java/management/management user/kick-users",
+                      path: "/reference/sdk/java/management/管理用户/kick-users",
                     },
                     {
                       title: "Judge whether the user exists",
-                      path: "/reference/sdk/java/management/management user/is-user-exists",
+                      path: "/reference/sdk/java/management/管理用户/is-user-exists",
                     },
                     {
                       title: "Get user-accessible applications",
-                      path: "/reference/sdk/java/management/management user/get-user-accessible-apps",
+                      path: "/reference/sdk/java/management/管理用户/get-user-accessible-apps",
                     },
                     {
                       title: "Get user-authorized applications",
-                      path: "/reference/sdk/java/management/management user/get-user-authorized-apps",
+                      path: "/reference/sdk/java/management/管理用户/get-user-authorized-apps",
                     },
                     {
                       title: "Determine whether the user has a certain role",
-                      path: "/reference/sdk/java/management/management user/has-any-role",
+                      path: "/reference/sdk/java/management/管理用户/has-any-role",
                     },
                     {
                       title: `Get the user's login history`,
-                      path: "/reference/sdk/java/management/management user/get-user-login-history",
+                      path: "/reference/sdk/java/management/管理用户/get-user-login-history",
                     },
                     {
                       title:
                         "Get the application that the user has logged in to",
-                      path: "/reference/sdk/java/management/management user/get-user-loggedin-apps",
+                      path: "/reference/sdk/java/management/管理用户/get-user-loggedin-apps",
                     },
                     {
                       title:
                         "Get the identity source that the user has logged in to",
-                      path: "/reference/sdk/java/management/management user/get-user-logged-in-identities",
+                      path: "/reference/sdk/java/management/管理用户/get-user-logged-in-identities",
                     },
                     {
                       title: "User resignation",
-                      path: "/reference/sdk/java/management/management user/resign-user",
+                      path: "/reference/sdk/java/management/管理用户/resign-user",
                     },
                     {
                       title: "Batch user resignation",
-                      path: "/reference/sdk/java/management/management user/resign-user-batch",
+                      path: "/reference/sdk/java/management/管理用户/resign-user-batch",
                     },
                     {
                       title: "Get all resources authorized by the user",
-                      path: "/reference/sdk/java/management/management user/get-user-authorized-resources",
+                      path: "/reference/sdk/java/management/管理用户/get-user-authorized-resources",
                     },
                     {
                       title:
                         "Check whether a user has a session login status in the application",
-                      path: "/reference/sdk/java/management/management user/check-session-status",
+                      path: "/reference/sdk/java/management/管理用户/check-session-status",
                     },
                     {
                       title: "Import user OTP",
-                      path: "/reference/sdk/java/management/management user/import-otp",
+                      path: "/reference/sdk/java/management/管理用户/import-otp",
                     },
                     {
                       title: "Set user MFA status",
-                      path: "/reference/sdk/java/management/management user/set-user-mfa-status",
+                      path: "/reference/sdk/java/management/管理用户/set-user-mfa-status",
                     },
                     {
                       title: "Get user MFA status",
-                      path: "/reference/sdk/java/management/Management User/get-user-mfa-status",
-                    },
-                  ],
-                },
-                {
-                  title: "Manage Organization",
-                  children: [
-                    {
-                      title: "Get Organization Details",
-                      path: "/reference/sdk/java/management/Management Organization/get-organization",
-                    },
-                    {
-                      title: "Get Organization Details in Batch",
-                      path: "/reference/sdk/java/management/Management Organization/get-organization-batch",
-                    },
-                    {
-                      title: "Get Organization List",
-                      path: "/reference/sdk/java/management/Management Organization/list-organizations",
-                    },
-                    {
-                      title: "Create Organization",
-                      path: "/reference/sdk/java/management/Management Organization/create-organization",
-                    },
-                    {
-                      title: "Modify organization",
-                      path: "/reference/sdk/java/management/Management Organization/update-organization",
-                    },
-                    {
-                      title: "Delete organization",
-                      path: "/reference/sdk/java/management/Management Organization/delete-organization",
-                    },
-                    {
-                      title: "Search for organization list",
-                      path: "/reference/sdk/java/management/Management Organization/search-organizations",
-                    },
-                    {
-                      title: "Get department information",
-                      path: "/reference/sdk/java/management/Management Organization/get-department",
-                    },
-                    {
-                      title: "Create a department",
-                      path: "/reference/sdk/java/management/Management Organization/create-department",
-                    },
-                    {
-                      title: "Modify department",
-                      path: "/reference/sdk/java/management/Management Organization/update-department",
-                    },
-                    {
-                      title: "Delete department",
-                      path: "/reference/sdk/java/management/Management Organization/delete-department",
-                    },
-                    {
-                      title: "Search department",
-                      path: "/reference/sdk/java/management/Management Organization/search-departments",
-                    },
-                    {
-                      title: "Get a list of child departments",
-                      path: "/reference/sdk/java/management/Management Organization/list-children-departments",
-                    },
-                    {
-                      title: "Get a list of department members",
-                      path: "/reference/sdk/java/management/Management Organization/list-department-members",
-                    },
-                    {
-                      title: "Get the list of department-direct member IDs",
-                      path: "/reference/sdk/java/management/Management Organization/list-department-member-ids",
-                    },
-                    {
-                      title: "Search for members under the department",
-                      path: "/reference/sdk/java/management/Management Organization/search-department-members",
-                    },
-                    {
-                      title: "Add members under the department",
-                      path: "/reference/sdk/java/management/Management Organization/add-department-members",
-                    },
-                    {
-                      title: "Delete members under the department",
-                      path: "/reference/sdk/java/management/Management Organization/remove-department-members",
-                    },
-                    {
-                      title: "Get parent department information",
-                      path: "/reference/sdk/java/management/management organization/get-parent-department",
-                    },
-                    {
-                      title:
-                        "Determine whether the user is in a certain department",
-                      path: "/reference/sdk/java/management/management organization/is-user-in-department",
+                      path: "/reference/sdk/java/management/管理用户/get-user-mfa-status",
                     },
                   ],
                 },
@@ -1759,60 +1660,60 @@ const zhCnNavBar = {
                   children: [
                     {
                       title: "Get Role Details",
-                      path: "/reference/sdk/java/management/Management Roles/get-role",
+                      path: "/reference/sdk/java/management/角色管理/get-role",
                     },
                     {
                       title: "Assign Roles",
-                      path: "/reference/sdk/java/management/Management Roles/assign-role",
+                      path: "/reference/sdk/java/management/角色管理/assign-role",
                     },
                     {
                       title: "Remove Assigned Roles",
-                      path: "/reference/sdk/java/management/Management Roles/revoke-role",
+                      path: "/reference/sdk/java/management/角色管理/revoke-role",
                     },
                     {
                       title: "Get a List of Resources Authorized by a Role",
-                      path: "/reference/sdk/java/management/Management Roles/get-role-authorized-resources",
+                      path: "/reference/sdk/java/management/角色管理/get-role-authorized-resources",
                     },
                     {
                       title: "Get a List of Role Members",
-                      path: "/reference/sdk/java/management/Management Roles/list-role-members",
+                      path: "/reference/sdk/java/management/角色管理/list-role-members",
                     },
                     {
                       title: "Get the department list of the role",
-                      path: "/reference/sdk/java/management/management role/list-role-departments",
+                      path: "/reference/sdk/java/management/角色管理/list-role-departments",
                     },
                     {
                       title: "Create a role",
-                      path: "/reference/sdk/java/management/management role/create-role",
+                      path: "/reference/sdk/java/management/角色管理/create-role",
                     },
                     {
                       title: "Get a list of roles",
-                      path: "/reference/sdk/java/management/management role/list-roles",
+                      path: "/reference/sdk/java/management/角色管理/list-roles",
                     },
                     {
                       title:
                         "Delete roles within a single permission group (permission space)",
-                      path: "/reference/sdk/java/management/management role/delete-roles-batch",
+                      path: "/reference/sdk/java/management/角色管理/delete-roles-batch",
                     },
                     {
                       title: "Batch create roles",
-                      path: "/reference/sdk/java/management/management role/create-roles-batch",
+                      path: "/reference/sdk/java/management/角色管理/create-roles-batch",
                     },
                     {
                       title: "Modify roles",
-                      path: "/reference/sdk/java/management/management role/update-role",
+                      path: "/reference/sdk/java/management/角色管理/update-role",
                     },
                     {
                       title: "Cross-permission group (space) deletion of roles",
-                      path: "/reference/sdk/java/management/management role/multiple-namespace-delete-roles-batch",
+                      path: "/reference/sdk/java/management/角色管理/multiple-namespace-delete-roles-batch",
                     },
                     {
                       title: "Check whether the role Code or name is available",
-                      path: "/reference/sdk/java/management/management role/check-role-params",
+                      path: "/reference/sdk/java/management/角色管理/check-role-params",
                     },
                     {
                       title: "Role list paging query",
-                      path: "/reference/sdk/java/management/management role/list-role-assignments",
+                      path: "/reference/sdk/java/management/角色管理/list-role-assignments",
                     },
                   ],
                 },
@@ -1821,43 +1722,43 @@ const zhCnNavBar = {
                   children: [
                     {
                       title: "Get group details",
-                      path: "/reference/sdk/java/management/Manage user groups/get-group",
+                      path: "/reference/sdk/java/management/分组管理/get-group",
                     },
                     {
                       title: "Get group list",
-                      path: "/reference/sdk/java/management/Manage user groups/list-groups",
+                      path: "/reference/sdk/java/management/分组管理/list-groups",
                     },
                     {
                       title: "Create groups",
-                      path: "/reference/sdk/java/management/Manage user groups/create-group",
+                      path: "/reference/sdk/java/management/分组管理/create-group",
                     },
                     {
                       title: "Batch create groups",
-                      path: "/reference/sdk/java/management/Manage user groups/create-groups-batch",
+                      path: "/reference/sdk/java/management/分组管理/create-groups-batch",
                     },
                     {
                       title: "Modify groups",
-                      path: "/reference/sdk/java/management/Manage user groups/update-group",
+                      path: "/reference/sdk/java/management/分组管理/update-group",
                     },
                     {
                       title: "Batch delete groups",
-                      path: "/reference/sdk/java/management/Management User Group/delete-groups-batch",
+                      path: "/reference/sdk/java/management/分组管理/delete-groups-batch",
                     },
                     {
                       title: "Add group members",
-                      path: "/reference/sdk/java/management/Management User Group/add-group-members",
+                      path: "/reference/sdk/java/management/分组管理/add-group-members",
                     },
                     {
                       title: "Batch remove group members",
-                      path: "/reference/sdk/java/management/Management User Group/remove-group-members",
+                      path: "/reference/sdk/java/management/分组管理/remove-group-members",
                     },
                     {
                       title: "Get group member list",
-                      path: "/reference/sdk/java/management/Management User Group/list-group-members",
+                      path: "/reference/sdk/java/management/分组管理/list-group-members",
                     },
                     {
                       title: "Get group authorized resource list",
-                      path: "/reference/sdk/java/management/Management User Group/get-group-authorized-resources",
+                      path: "/reference/sdk/java/management/分组管理/get-group-authorized-resources",
                     },
                   ],
                 },
@@ -1866,28 +1767,28 @@ const zhCnNavBar = {
                   children: [
                     {
                       title: "Get a list of user built-in fields",
-                      path: "/reference/sdk/java/management/Manage custom fields/get-user-base-fields",
+                      path: "/reference/sdk/java/management/管理自定义字段/get-user-base-fields",
                     },
                     {
                       title: "Modify user built-in field configuration",
-                      path: "/reference/sdk/java/management/Manage custom fields/set-user-base-fields",
+                      path: "/reference/sdk/java/management/管理自定义字段/set-user-base-fields",
                     },
                     {
                       title: "Get a list of custom fields",
-                      path: "/reference/sdk/java/management/Manage custom fields/get-custom-fields",
+                      path: "/reference/sdk/java/management/管理自定义字段/get-custom-fields",
                     },
                     {
                       title: "Create/modify custom field definitions",
-                      path: "/reference/sdk/java/management/Manage custom fields/set-custom-fields",
+                      path: "/reference/sdk/java/management/管理自定义字段/set-custom-fields",
                     },
                     {
                       title: "Set the value of a custom field",
-                      path: "/reference/sdk/java/management/Manage custom fields/set-custom-data",
+                      path: "/reference/sdk/java/management/管理自定义字段/set-custom-data",
                     },
                     {
                       title:
                         "Get custom field values ​​for users, groups, roles, and organizations",
-                      path: "/reference/sdk/java/management/Manage custom fields/get-custom-data",
+                      path: "/reference/sdk/java/management/管理自定义字段/get-custom-data",
                     },
                   ],
                 },
@@ -1896,86 +1797,86 @@ const zhCnNavBar = {
                   children: [
                     {
                       title: "Create Resources",
-                      path: "/reference/sdk/java/management/Manage Resources and Permissions/create-resource",
+                      path: "/reference/sdk/java/management/访问控制管理/create-resource",
                     },
                     {
                       title: "Batch Create Resources",
-                      path: "/reference/sdk/java/management/Manage Resources and Permissions/create-resources-batch",
+                      path: "/reference/sdk/java/management/访问控制管理/create-resources-batch",
                     },
                     {
                       title: "Get Resource Details",
-                      path: "/reference/sdk/java/management/Manage Resources and Permissions/get-resource",
+                      path: "/reference/sdk/java/management/访问控制管理/get-resource",
                     },
                     {
                       title: "Batch Get Resource Details",
-                      path: "/reference/sdk/java/management/Manage Resources and Permissions/get-resources-batch",
+                      path: "/reference/sdk/java/management/访问控制管理/get-resources-batch",
                     },
                     {
                       title: "Get Resource List by Page",
-                      path: "/reference/sdk/java/management/Manage Resources and Permissions/list-resources",
+                      path: "/reference/sdk/java/management/访问控制管理/list-resources",
                     },
                     {
                       title: "Modify resources",
-                      path: "/reference/sdk/java/management/Management resources and permissions/update-resource",
+                      path: "/reference/sdk/java/management/访问控制管理/update-resource",
                     },
                     {
                       title: "Delete resources",
-                      path: "/reference/sdk/java/management/Management resources and permissions/delete-resource",
+                      path: "/reference/sdk/java/management/访问控制管理/delete-resource",
                     },
                     {
                       title: "Batch delete resources",
-                      path: "/reference/sdk/java/management/Management resources and permissions/delete-resources-batch",
+                      path: "/reference/sdk/java/management/访问控制管理/delete-resources-batch",
                     },
                     {
                       title:
                         "Associate/unassociate application resources to tenants",
-                      path: "/reference/sdk/java/management/Management resources and permissions/associate-tenant-resource",
+                      path: "/reference/sdk/java/management/访问控制管理/associate-tenant-resource",
                     },
                     {
                       title: "Create permission groups",
-                      path: "/reference/sdk/java/management/Management resources and permissions/create-namespace",
+                      path: "/reference/sdk/java/management/访问控制管理/create-namespace",
                     },
                     {
                       title: "Batch create permission groups",
-                      path: "/reference/sdk/java/management/Management Resources and Permissions/create-namespaces-batch",
+                      path: "/reference/sdk/java/management/访问控制管理/create-namespaces-batch",
                     },
                     {
                       title: "Get permission group details",
-                      path: "/reference/sdk/java/management/Management Resources and Permissions/get-namespace",
+                      path: "/reference/sdk/java/management/访问控制管理/get-namespace",
                     },
                     {
                       title: "Batch get permission group details",
-                      path: "/reference/sdk/java/management/Management Resources and Permissions/get-namespaces-batch",
+                      path: "/reference/sdk/java/management/访问控制管理/get-namespaces-batch",
                     },
                     {
                       title: "Modify permission group information",
-                      path: "/reference/sdk/java/management/Management Resources and Permissions/update-namespace",
+                      path: "/reference/sdk/java/management/访问控制管理/update-namespace",
                     },
                     {
                       title: "Delete permission group information",
-                      path: "/reference/sdk/java/management/Management Resources and Permissions/delete-namespace",
+                      path: "/reference/sdk/java/management/访问控制管理/delete-namespace",
                     },
                     {
                       title: "Batch delete permission groups",
-                      path: "/reference/sdk/java/management/management resources and permissions/delete-namespaces-batch",
+                      path: "/reference/sdk/java/management/访问控制管理/delete-namespaces-batch",
                     },
                     {
                       title: "Authorized resources",
-                      path: "/reference/sdk/java/management/management resources and permissions/authorize-resources",
+                      path: "/reference/sdk/java/management/访问控制管理/authorize-resources",
                     },
                     {
                       title:
                         "Get a list of resources authorized by a certain subject",
-                      path: "/reference/sdk/java/management/management resources and permissions/get-authorized-resources",
+                      path: "/reference/sdk/java/management/访问控制管理/get-authorized-resources",
                     },
                     {
                       title:
                         "Determine whether the user has permission to perform a certain operation on a certain resource",
-                      path: "/reference/sdk/java/management/management resources and permissions/is-action-allowed",
+                      path: "/reference/sdk/java/management/访问控制管理/is-action-allowed",
                     },
                     {
                       title: "Get the subject authorized by the resource",
-                      path: "/reference/sdk/java/management/management resources and permissions/get-resource-authorized-targets",
+                      path: "/reference/sdk/java/management/访问控制管理/get-resource-authorized-targets",
                     },
                   ],
                 },
@@ -1984,175 +1885,175 @@ const zhCnNavBar = {
                   children: [
                     {
                       title: "Create permission space",
-                      path: "/reference/sdk/java/management/Manage data resources and permissions/create-permission-namespace",
+                      path: "/reference/sdk/java/management/管理数据资源与权限/create-permission-namespace",
                     },
                     {
                       title: "Batch create permission spaces",
-                      path: "/reference/sdk/java/management/Manage data resources and permissions/create-permission-namespaces-batch",
+                      path: "/reference/sdk/java/management/管理数据资源与权限/create-permission-namespaces-batch",
                     },
                     {
                       title: "Get permission space details",
-                      path: "/reference/sdk/java/management/Manage data resources and permissions/get-permission-namespace",
+                      path: "/reference/sdk/java/management/管理数据资源与权限/get-permission-namespace",
                     },
                     {
                       title: "Batch get permission space details list",
-                      path: "/reference/sdk/java/management/Manage data resources and permissions/get-permission-namespaces-batch",
+                      path: "/reference/sdk/java/management/管理数据资源与权限/get-permission-namespaces-batch",
                     },
                     {
                       title: "Paged get permission space list",
-                      path: "/reference/sdk/java/management/Management Data Resources and Permissions/list-permission-namespaces",
+                      path: "/reference/sdk/java/management/管理数据资源与权限/list-permission-namespaces",
                     },
                     {
                       title: "Modify Permission Space",
-                      path: "/reference/sdk/java/management/Management Data Resources and Permissions/update-permission-namespace",
+                      path: "/reference/sdk/java/management/管理数据资源与权限/update-permission-namespace",
                     },
                     {
                       title: "Delete Permission Space",
-                      path: "/reference/sdk/java/management/Management Data Resources and Permissions/delete-permission-namespace",
+                      path: "/reference/sdk/java/management/管理数据资源与权限/delete-permission-namespace",
                     },
                     {
                       title: "Batch Delete Permission Space",
-                      path: "/reference/sdk/java/management/Management Data Resources and Permissions/delete-permission-namespaces-batch",
+                      path: "/reference/sdk/java/management/管理数据资源与权限/delete-permission-namespaces-batch",
                     },
                     {
                       title:
                         "Check whether the permission space Code or name is available",
-                      path: "/reference/sdk/java/management/Management Data Resources and Permissions/check-permission-namespace-exists",
+                      path: "/reference/sdk/java/management/管理数据资源与权限/check-permission-namespace-exists",
                     },
                     {
                       title:
                         "Paginated query of all roles in the permission space",
-                      path: "/reference/sdk/java/management/Management of data resources and permissions/list-permission-namespace-roles",
+                      path: "/reference/sdk/java/management/管理数据资源与权限/list-permission-namespace-roles",
                     },
                     {
                       title: "Create data resources",
-                      path: "/reference/sdk/java/management/Management of data resources and permissions/create-data-resource",
+                      path: "/reference/sdk/java/management/管理数据资源与权限/create-data-resource",
                     },
                     {
                       title: "Create string data resources",
-                      path: "/reference/sdk/java/management/Management of data resources and permissions/create-string-data-resource",
+                      path: "/reference/sdk/java/management/管理数据资源与权限/create-string-data-resource",
                     },
                     {
                       title: "Create array data resources",
-                      path: "/reference/sdk/java/management/Management of data resources and permissions/create-array-data-resource",
+                      path: "/reference/sdk/java/management/管理数据资源与权限/create-array-data-resource",
                     },
                     {
                       title: "Create tree data resources",
-                      path: "/reference/sdk/java/management/Management Data Resources and Permissions/create-tree-data-resource",
+                      path: "/reference/sdk/java/management/管理数据资源与权限/create-tree-data-resource",
                     },
                     {
                       title: "Get data resource list",
-                      path: "/reference/sdk/java/management/Management Data Resources and Permissions/list-data-resources",
+                      path: "/reference/sdk/java/management/管理数据资源与权限/list-data-resources",
                     },
                     {
                       title: "Get data resource information",
-                      path: "/reference/sdk/java/management/Management Data Resources and Permissions/get-data-resource",
+                      path: "/reference/sdk/java/management/管理数据资源与权限/get-data-resource",
                     },
                     {
                       title: "Modify data resources",
-                      path: "/reference/sdk/java/management/Management Data Resources and Permissions/update-data-resource",
+                      path: "/reference/sdk/java/management/管理数据资源与权限/update-data-resource",
                     },
                     {
                       title: "Delete data resources",
-                      path: "/reference/sdk/java/management/Management Data Resources and Permissions/delete-data-resource",
+                      path: "/reference/sdk/java/management/管理数据资源与权限/delete-data-resource",
                     },
                     {
                       title: "Check data resource name or Code Is it available",
-                      path: "/reference/sdk/java/management/Manage data resources and permissions/check-data-resource-exists",
+                      path: "/reference/sdk/java/management/管理数据资源与权限/check-data-resource-exists",
                     },
                     {
                       title: "Create data resource extension fields",
-                      path: "/reference/sdk/java/management/Manage data resources and permissions/create-dnef",
+                      path: "/reference/sdk/java/management/管理数据资源与权限/create-dnef",
                     },
                     {
                       title: "Batch create data resource extension fields",
-                      path: "/reference/sdk/java/management/Manage data resources and permissions/batch-create-dnef",
+                      path: "/reference/sdk/java/management/管理数据资源与权限/batch-create-dnef",
                     },
                     {
                       title: "Delete data resource extension fields",
-                      path: "/reference/sdk/java/management/Manage data resources and permissions/delete-dnef",
+                      path: "/reference/sdk/java/management/管理数据资源与权限/delete-dnef",
                     },
                     {
                       title: "Modify data resource extension fields",
-                      path: "/reference/sdk/java/management/Manage data resources and permissions/update-dnef",
+                      path: "/reference/sdk/java/management/管理数据资源与权限/update-dnef",
                     },
                     {
                       title: "Get data resource extension field list",
-                      path: "/reference/sdk/java/management/Manage data resources and permissions/get-dnef-list",
+                      path: "/reference/sdk/java/management/管理数据资源与权限/get-dnef-list",
                     },
                     {
                       title: "Create data policy",
-                      path: "/reference/sdk/java/management/Manage data resources and permissions/create-data-policy",
+                      path: "/reference/sdk/java/management/管理数据资源与权限/create-data-policy",
                     },
                     {
                       title: "Get data policy list",
-                      path: "/reference/sdk/java/management/Manage data resources and permissions/list-data-policies",
+                      path: "/reference/sdk/java/management/管理数据资源与权限/list-data-policies",
                     },
                     {
                       title: "Get a list of simple data policy information",
-                      path: "/reference/sdk/java/management/Manage data resources and permissions/list-simple-data-policies",
+                      path: "/reference/sdk/java/management/管理数据资源与权限/list-simple-data-policies",
                     },
                     {
                       title: "Get data policy information",
-                      path: "/reference/sdk/java/management/Manage data resources and permissions/get-data-policy",
+                      path: "/reference/sdk/java/management/管理数据资源与权限/get-data-policy",
                     },
                     {
                       title: "Modify data policy",
-                      path: "/reference/sdk/java/management/Manage data resources and permissions/update-data-policy",
+                      path: "/reference/sdk/java/management/管理数据资源与权限/update-data-policy",
                     },
                     {
                       title: "Delete data policy",
-                      path: "/reference/sdk/java/management/Manage data resources and permissions/delete-data-policy",
+                      path: "/reference/sdk/java/management/管理数据资源与权限/delete-data-policy",
                     },
                     {
                       title: "Check whether the data policy name exists",
-                      path: "/reference/sdk/java/management/Management Data Resources and Permissions/check-data-policy-exists",
+                      path: "/reference/sdk/java/management/管理数据资源与权限/check-data-policy-exists",
                     },
                     {
                       title:
                         "Get all the information of the authorized subjects under the data policy",
-                      path: "/reference/sdk/java/management/Management Data Resources and Permissions/list-data-policy-targets",
+                      path: "/reference/sdk/java/management/管理数据资源与权限/list-data-policy-targets",
                     },
                     {
                       title: "Authorize Data Policy",
-                      path: "/reference/sdk/java/management/Management Data Resources and Permissions/authorize-data-policies",
+                      path: "/reference/sdk/java/management/管理数据资源与权限/authorize-data-policies",
                     },
                     {
                       title: "Revoke Data Policy",
-                      path: "/reference/sdk/java/management/Management Data Resources and Permissions/revoke-data-policy",
+                      path: "/reference/sdk/java/management/管理数据资源与权限/revoke-data-policy",
                     },
                     {
                       title: "Get User Permission List",
-                      path: "/reference/sdk/java/management/Management Data Resources and Permissions/get-user-permission-list",
+                      path: "/reference/sdk/java/management/管理数据资源与权限/get-user-permission-list",
                     },
                     {
                       title: "Judge user permissions",
-                      path: "/reference/sdk/java/management/Management data resources and permissions/check-permission",
+                      path: "/reference/sdk/java/management/管理数据资源与权限/check-permission",
                     },
                     {
                       title: "Judge external user permissions",
-                      path: "/reference/sdk/java/management/Management data resources and permissions/check-external-user-permission",
+                      path: "/reference/sdk/java/management/管理数据资源与权限/check-external-user-permission",
                     },
                     {
                       title: "Get user-specified resource permission list",
-                      path: "/reference/sdk/java/management/Management data resources and permissions/get-user-resource-permission-list",
+                      path: "/reference/sdk/java/management/管理数据资源与权限/get-user-resource-permission-list",
                     },
                     {
                       title: "Get a list of users authorized to use resources",
-                      path: "/reference/sdk/java/management/Management data resources and permissions/list-resource-targets",
+                      path: "/reference/sdk/java/management/管理数据资源与权限/list-resource-targets",
                     },
                     {
                       title: "Get a list of user-authorized resources",
-                      path: "/reference/sdk/java/management/Management Data Resources and Permissions/get-user-resource-struct",
+                      path: "/reference/sdk/java/management/管理数据资源与权限/get-user-resource-struct",
                     },
                     {
                       title:
                         "Get the structure list of external user authorization resources",
-                      path: "/reference/sdk/java/management/Management Data Resources and Permissions/get-external-user-resource-struct",
+                      path: "/reference/sdk/java/management/管理数据资源与权限/get-external-user-resource-struct",
                     },
                     {
                       title: `Judge the user's permissions under the same level resources of the tree resource`,
-                      path: "/reference/sdk/java/management/Management Data Resources and Permissions/check-user-same-level-permission",
+                      path: "/reference/sdk/java/management/管理数据资源与权限/check-user-same-level-permission",
                     },
                   ],
                 },
@@ -2161,66 +2062,66 @@ const zhCnNavBar = {
                   children: [
                     {
                       title: "Get Application Details",
-                      path: "/reference/sdk/java/management/Management Applications/get-application",
+                      path: "/reference/sdk/java/management/管理应用/get-application",
                     },
                     {
                       title: "Get Application List",
-                      path: "/reference/sdk/java/management/Management Applications/list-applications",
+                      path: "/reference/sdk/java/management/管理应用/list-applications",
                     },
                     {
                       title: "Get Simple Application Information",
-                      path: "/reference/sdk/java/management/Management Applications/get-application-simple-info",
+                      path: "/reference/sdk/java/management/管理应用/get-application-simple-info",
                     },
                     {
                       title: "Get Simple Application Information List",
-                      path: "/reference/sdk/java/management/Management Applications/list-application-simple-info",
+                      path: "/reference/sdk/java/management/管理应用/list-application-simple-info",
                     },
                     {
                       title: "Create Application",
-                      path: "/reference/sdk/java/management/Management Applications/create-application",
+                      path: "/reference/sdk/java/management/管理应用/create-application",
                     },
                     {
                       title: "Delete application",
-                      path: "/reference/sdk/java/management/management application/delete-application",
+                      path: "/reference/sdk/java/management/管理应用/delete-application",
                     },
                     {
                       title: "Get application key",
-                      path: "/reference/sdk/java/management/management application/get-application-secret",
+                      path: "/reference/sdk/java/management/管理应用/get-application-secret",
                     },
                     {
                       title: "Refresh application key",
-                      path: "/reference/sdk/java/management/management application/refresh-application-secret",
+                      path: "/reference/sdk/java/management/管理应用/refresh-application-secret",
                     },
                     {
                       title:
                         "Get the current logged-in user of the application",
-                      path: "/reference/sdk/java/management/management application/list-application-active-users",
+                      path: "/reference/sdk/java/management/管理应用/list-application-active-users",
                     },
                     {
                       title:
                         "Get the default access authorization strategy of the application",
-                      path: "/reference/sdk/java/management/management application/get-application-permission-strategy",
+                      path: "/reference/sdk/java/management/管理应用/get-application-permission-strategy",
                     },
                     {
                       title:
                         "Update the default access authorization strategy of the application",
-                      path: "/reference/sdk/java/management/management application/update-application-permission-strategy",
+                      path: "/reference/sdk/java/management/管理应用/update-application-permission-strategy",
                     },
                     {
                       title: "Authorize application access permissions",
-                      path: "/reference/sdk/java/management/management application/authorize-application-access",
+                      path: "/reference/sdk/java/management/管理应用/authorize-application-access",
                     },
                     {
                       title: "Delete application access authorization records",
-                      path: "/reference/sdk/java/management/management application/revoke-application-access",
+                      path: "/reference/sdk/java/management/管理应用/revoke-application-access",
                     },
                     {
                       title: "Check whether the domain name is available",
-                      path: "/reference/sdk/java/management/management application/check-domain-available",
+                      path: "/reference/sdk/java/management/管理应用/check-domain-available",
                     },
                     {
                       title: "Get user MFA trigger data under the application",
-                      path: "/reference/sdk/java/management/management application/get-application-mfa-trigger-data",
+                      path: "/reference/sdk/java/management/管理应用/get-application-mfa-trigger-data",
                     },
                   ],
                 },
@@ -2229,54 +2130,54 @@ const zhCnNavBar = {
                   children: [
                     {
                       title: "Get Identity Source List",
-                      path: "/reference/sdk/java/management/Manage Identity Sources/list-ext-idp",
+                      path: "/reference/sdk/java/management/外部身份源管理/list-ext-idp",
                     },
                     {
                       title: "Get Identity Source Details",
-                      path: "/reference/sdk/java/management/Manage Identity Sources/get-ext-idp",
+                      path: "/reference/sdk/java/management/外部身份源管理/get-ext-idp",
                     },
                     {
                       title: "Create Identity Source",
-                      path: "/reference/sdk/java/management/Manage Identity Sources/create-ext-idp",
+                      path: "/reference/sdk/java/management/外部身份源管理/create-ext-idp",
                     },
                     {
                       title: "Update Identity Source Configuration",
-                      path: "/reference/sdk/java/management/Manage Identity Sources/update-ext-idp",
+                      path: "/reference/sdk/java/management/外部身份源管理/update-ext-idp",
                     },
                     {
                       title: "Delete Identity Source",
-                      path: "/reference/sdk/java/management/Manage Identity Sources/delete-ext-idp",
+                      path: "/reference/sdk/java/management/外部身份源管理/delete-ext-idp",
                     },
                     {
                       title:
                         "Create a new connection under an existing identity source",
-                      path: "/reference/sdk/java/management/Manage Identity Source/create-ext-idp-conn",
+                      path: "/reference/sdk/java/management/外部身份源管理/create-ext-idp-conn",
                     },
                     {
                       title: "Update Identity Source Connection",
-                      path: "/reference/sdk/java/management/Manage Identity Source/update-ext-idp-conn",
+                      path: "/reference/sdk/java/management/外部身份源管理/update-ext-idp-conn",
                     },
                     {
                       title: "Delete Identity Source Connection",
-                      path: "/reference/sdk/java/management/Manage Identity Source/delete-ext-idp-conn",
+                      path: "/reference/sdk/java/management/外部身份源管理/delete-ext-idp-conn",
                     },
                     {
                       title: "Identity Source Connection Switch",
-                      path: "/reference/sdk/java/management/Manage Identity Source/change-ext-idp-conn-state",
+                      path: "/reference/sdk/java/management/外部身份源管理/change-ext-idp-conn-state",
                     },
                     {
                       title: "Tenant Associate Identity Source",
-                      path: "/reference/sdk/java/management/Manage Identity Source/change-ext-idp-conn-association-state",
+                      path: "/reference/sdk/java/management/外部身份源管理/change-ext-idp-conn-association-state",
                     },
                     {
                       title:
                         "Get the list of identity sources in the tenant console",
-                      path: "/reference/sdk/java/management/Manage Identity Source/list-tenant-ext-idp",
+                      path: "/reference/sdk/java/management/外部身份源管理/list-tenant-ext-idp",
                     },
                     {
                       title:
                         "Connection details of applications under identity sources",
-                      path: "/reference/sdk/java/management/Manage Identity Source/ext-idp-conn-apps",
+                      path: "/reference/sdk/java/management/外部身份源管理/ext-idp-conn-apps",
                     },
                   ],
                 },
@@ -2285,21 +2186,21 @@ const zhCnNavBar = {
                   children: [
                     {
                       title: "Get security configuration",
-                      path: "/reference/sdk/java/management/Manage security configuration/get-security-settings",
+                      path: "/reference/sdk/java/management/管理安全配置/get-security-settings",
                     },
                     {
                       title: "Modify security configuration",
-                      path: "/reference/sdk/java/management/Manage security configuration/update-security-settings",
+                      path: "/reference/sdk/java/management/管理安全配置/update-security-settings",
                     },
                     {
                       title:
                         "Get global multi-factor authentication configuration",
-                      path: "/reference/sdk/java/management/Manage security configuration/get-global-mfa-settings",
+                      path: "/reference/sdk/java/management/管理安全配置/get-global-mfa-settings",
                     },
                     {
                       title:
                         "Modify global multi-factor authentication configuration",
-                      path: "/reference/sdk/java/management/Manage security configuration/update-global-mfa-settings",
+                      path: "/reference/sdk/java/management/管理安全配置/update-global-mfa-settings",
                     },
                   ],
                 },
@@ -2308,72 +2209,23 @@ const zhCnNavBar = {
                   children: [
                     {
                       title: "Get the list of email templates",
-                      path: "/reference/sdk/java/management/Management Message Service/get-email-templates",
+                      path: "/reference/sdk/java/management/管理消息服务/get-email-templates",
                     },
                     {
                       title: "Modify email template",
-                      path: "/reference/sdk/java/management/Management Message Service/update-email-template",
+                      path: "/reference/sdk/java/management/管理消息服务/update-email-template",
                     },
                     {
                       title: "Preview email template",
-                      path: "/reference/sdk/java/management/Management Message Service/preview-email-template",
+                      path: "/reference/sdk/java/management/管理消息服务/preview-email-template",
                     },
                     {
                       title: "Get third-party email service configuration",
-                      path: "/reference/sdk/java/management/Management Message Service/get-email-provider",
+                      path: "/reference/sdk/java/management/管理消息服务/get-email-provider",
                     },
                     {
                       title: "Configure third-party email service",
-                      path: "/reference/sdk/java/management/Management Message Service/config-email-provier",
-                    },
-                  ],
-                },
-                {
-                  title: "Manage Sync Center",
-                  children: [
-                    {
-                      title: "Get sync task details",
-                      path: "/reference/sdk/java/management/Manage Sync Center/get-sync-task",
-                    },
-                    {
-                      title: "Get sync task list",
-                      path: "/reference/sdk/java/management/Manage Sync Center/list-sync-tasks",
-                    },
-                    {
-                      title: "Create sync task",
-                      path: "/reference/sdk/java/management/Manage Sync Center/create-sync-task",
-                    },
-                    {
-                      title: "Modify sync task",
-                      path: "/reference/sdk/java/management/Manage Sync Center/update-sync-task",
-                    },
-                    {
-                      title: "Execute sync task",
-                      path: "/reference/sdk/java/management/Manage Sync Center/trigger-sync-task",
-                    },
-                    {
-                      title: "Get synchronization job details",
-                      path: "/reference/sdk/java/management/Management Sync Center/get-sync-job",
-                    },
-                    {
-                      title: "Get synchronization job details",
-                      path: "/reference/sdk/java/management/Management Sync Center/list-sync-jobs",
-                    },
-                    {
-                      title: "Get synchronization job details",
-                      path: "/reference/sdk/java/management/Management Sync Center/list-sync-job-logs",
-                    },
-                    {
-                      title: "Get synchronization risk operation list",
-                      path: "/reference/sdk/java/management/Management Sync Center/list-sync-risk-operations",
-                    },
-                    {
-                      title: "Execute synchronization risk operation",
-                      path: "/reference/sdk/java/management/Management Sync Center/trigger-sync-risk-operations",
-                    },
-                    {
-                      title: "Cancel synchronization risk operation",
-                      path: "/reference/sdk/java/management/Management Synchronization Center/cancel-sync-risk-operation",
+                      path: "/reference/sdk/java/management/管理消息服务/config-email-provier",
                     },
                   ],
                 },
@@ -2382,35 +2234,35 @@ const zhCnNavBar = {
                   children: [
                     {
                       title: "Create Pipeline function",
-                      path: "/reference/sdk/java/management/Management-pipeline/create-pipeline-function",
+                      path: "/reference/sdk/java/management/管理-pipeline/create-pipeline-function",
                     },
                     {
                       title: "Get Pipeline function details",
-                      path: "/reference/sdk/java/management/Management-pipeline/get-pipeline-function",
+                      path: "/reference/sdk/java/management/管理-pipeline/get-pipeline-function",
                     },
                     {
                       title: "Re-upload Pipeline function",
-                      path: "/reference/sdk/java/management/Management-pipeline/reupload-pipeline-function",
+                      path: "/reference/sdk/java/management/管理-pipeline/reupload-pipeline-function",
                     },
                     {
                       title: "Modify Pipeline function",
-                      path: "/reference/sdk/java/management/Management-pipeline/update-pipeline-function",
+                      path: "/reference/sdk/java/management/管理-pipeline/update-pipeline-function",
                     },
                     {
                       title: "Modify Pipeline function order",
-                      path: "/reference/sdk/java/management/management-pipeline/update-pipeline-order",
+                      path: "/reference/sdk/java/management/管理-pipeline/update-pipeline-order",
                     },
                     {
                       title: "Delete Pipeline function",
-                      path: "/reference/sdk/java/management/management-pipeline/delete-pipeline-function",
+                      path: "/reference/sdk/java/management/管理-pipeline/delete-pipeline-function",
                     },
                     {
                       title: "Get Pipeline function list",
-                      path: "/reference/sdk/java/management/management-pipeline/list-pipeline-functions",
+                      path: "/reference/sdk/java/management/管理-pipeline/list-pipeline-functions",
                     },
                     {
                       title: "Get Pipeline log",
-                      path: "/reference/sdk/java/management/management-pipeline/get-pipeline-logs",
+                      path: "/reference/sdk/java/management/管理-pipeline/get-pipeline-logs",
                     },
                   ],
                 },
@@ -2419,35 +2271,35 @@ const zhCnNavBar = {
                   children: [
                     {
                       title: "Create Webhook",
-                      path: "/reference/sdk/java/management/Management-webhook/create-webhook",
+                      path: "/reference/sdk/java/management/管理-webhook/create-webhook",
                     },
                     {
                       title: "Get Webhook List",
-                      path: "/reference/sdk/java/management/Management-webhook/list-webhooks",
+                      path: "/reference/sdk/java/management/管理-webhook/list-webhooks",
                     },
                     {
                       title: "Modify Webhook Configuration",
-                      path: "/reference/sdk/java/management/Management-webhook/update-webhook",
+                      path: "/reference/sdk/java/management/管理-webhook/update-webhook",
                     },
                     {
                       title: "Delete Webhook",
-                      path: "/reference/sdk/java/management/Management-webhook/delete-webhook",
+                      path: "/reference/sdk/java/management/管理-webhook/delete-webhook",
                     },
                     {
                       title: "Get Webhook Log",
-                      path: "/reference/sdk/java/management/management-webhook/get-webhook-logs",
+                      path: "/reference/sdk/java/management/管理-webhook/get-webhook-logs",
                     },
                     {
                       title: "Manually trigger Webhook execution",
-                      path: "/reference/sdk/java/management/management-webhook/trigger-webhook",
+                      path: "/reference/sdk/java/management/管理-webhook/trigger-webhook",
                     },
                     {
                       title: "Get Webhook details",
-                      path: "/reference/sdk/java/management/management-webhook/get-webhook",
+                      path: "/reference/sdk/java/management/管理-webhook/get-webhook",
                     },
                     {
                       title: "Get Webhook event list",
-                      path: "/reference/sdk/java/management/management-webhook/get-webhook-event-list",
+                      path: "/reference/sdk/java/management/管理-webhook/get-webhook-event-list",
                     },
                   ],
                 },
@@ -2456,11 +2308,11 @@ const zhCnNavBar = {
                   children: [
                     {
                       title: "Get user behavior log",
-                      path: "/reference/sdk/java/management/Get audit log/get-user-action-logs",
+                      path: "/reference/sdk/java/management/管理审计日志/get-user-action-logs",
                     },
                     {
                       title: "Get administrator action log",
-                      path: "/reference/sdk/java/management/Get audit log/get-admin-audit-logs",
+                      path: "/reference/sdk/java/management/管理审计日志/get-admin-audit-logs",
                     },
                   ],
                 },
@@ -2469,31 +2321,31 @@ const zhCnNavBar = {
                   children: [
                     {
                       title: "Get package details",
-                      path: "/reference/sdk/java/management/Manage metering and billing/get-current-package-info",
+                      path: "/reference/sdk/java/management/管理计量计费/get-current-package-info",
                     },
                     {
                       title: "Get usage details",
-                      path: "/reference/sdk/java/management/Manage metering and billing/get-usage-info",
+                      path: "/reference/sdk/java/management/管理计量计费/get-usage-info",
                     },
                     {
                       title: "Get MAU usage records",
-                      path: "/reference/sdk/java/management/Manage metering and billing/get-mau-period-usage-history",
+                      path: "/reference/sdk/java/management/管理计量计费/get-mau-period-usage-history",
                     },
                     {
                       title: "Get all rights",
-                      path: "/reference/sdk/java/management/Manage metering and billing/get-all-rights-items",
+                      path: "/reference/sdk/java/management/管理计量计费/get-all-rights-items",
                     },
                     {
                       title: "Get order list",
-                      path: "/reference/sdk/java/management/Management Metering and Billing/get-orders",
+                      path: "/reference/sdk/java/management/管理计量计费/get-orders",
                     },
                     {
                       title: "Get order details",
-                      path: "/reference/sdk/java/management/Management Metering and Billing/get-order-detail",
+                      path: "/reference/sdk/java/management/管理计量计费/get-order-detail",
                     },
                     {
                       title: "Get order payment details",
-                      path: "/reference/sdk/java/management/Management Metering and Billing/get-order-pay-detail",
+                      path: "/reference/sdk/java/management/管理计量计费/get-order-pay-detail",
                     },
                   ],
                 },
