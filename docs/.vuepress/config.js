@@ -138,7 +138,6 @@ module.exports = {
         searchInDoc: "Search in the document",
         oldVersion: "Old version",
         nav: [
-          { text: "Quick Start", link: "/quickstarts/" },
           { text: "Concepts", link: "/concepts/" },
           { text: "User Guide", link: "/guides/" },
           {
@@ -162,14 +161,14 @@ module.exports = {
             link: "/metadata/",
             hidden: true,
           },
-          {
-            text: "Application Integration",
-            link: "/integration/",
-          },
-          {
-            text: "Join APN",
-            link: "/apn/",
-          },
+          // {
+          //   text: "Application Integration",
+          //   link: "/integration/",
+          // },
+          // {
+          //   text: "Join APN",
+          //   link: "/apn/",
+          // },
           {
             link: "/reference-new/",
             text: "Development Integration",
@@ -205,7 +204,7 @@ module.exports = {
         feedback: {
           title: "Evaluate this document",
           useful: "Helpful",
-          useless: "Not helpful",
+          useless: "Useless",
           editTip: "If you have suggestions or errors, you can directly",
           editLink:
             "If you have suggestions or errors, you can directly feedback on Github",
@@ -252,14 +251,14 @@ module.exports = {
                   text: "Integrated third-party login",
                   link: "/guides/connections/",
                 },
-                {
-                  text: "Mobile phone number flash verification",
-                  link: "https://genauth.ai/verify",
-                },
-                {
-                  text: "Universal login form component",
-                  link: "/reference/ui-components/",
-                },
+                // {
+                //   text: "Mobile phone number flash verification",
+                //   link: "https://genauth.ai/verify",
+                // },
+                // {
+                //   text: "Universal login form component",
+                //   link: "/reference/ui-components/",
+                // },
                 {
                   text: "Customized authentication process",
                   link: "/guides/pipeline/",
@@ -291,21 +290,13 @@ module.exports = {
                   link: "/reference/",
                 },
                 {
-                  text: "Framework Integration",
-                  link: "/reference/frameworks",
-                },
-                {
-                  text: "Blog",
-                  link: "https://genauth.ai/blog",
-                },
-                {
                   text: "GitHub",
-                  link: "https://github.com/authing",
+                  link: "https://github.com/GenAuth-Official",
                 },
-                {
-                  text: "Community User Center",
-                  link: "https://forum.genauth.ai/",
-                },
+                // {
+                //   text: "Community User Center",
+                //   link: "https://forum.genauth.ai/",
+                // },
               ],
             },
           ],
@@ -317,25 +308,23 @@ module.exports = {
             },
             {
               icon: "authing-chat-smile-line",
-              link: "https://forum.genauth.ai/",
+              // link: "https://forum.genauth.ai/",
               title: "Forum",
             },
-            {
-              icon: "authing-zhihu",
-              link: "https://www.zhihu.com/org/authing",
-              title: "知乎",
-            },
+            // {
+            //   icon: "authing-zhihu",
+            //   link: "https://www.zhihu.com/org/authing",
+            //   title: "知乎",
+            // },
           ],
           // serviceStatus: "Service Status",
-          contactPhone: "400 888 2106",
-          contactEmail: "sales@genauth.ai",
+          // contactPhone: "400 888 2106",
+          contactEmail: "official@genauth.ai",
           contactAddress:
             "16th Floor, Building B, Beichen Century Center, Chaoyang District, Beijing (Total)",
           contactChenduAddress:
             "Room 406, 4th Floor, Block B, No. 200, Tianfu Fifth Street, High-tech Zone, Chengdu (Branch)",
-          icp: "京ICP备19051205号",
-          beian: "京公网安备11010802035968号",
-          companyName: "© Beijing Steam Memory Technology Co., Ltd.",
+          companyName: "© Beijing Steamory Technology Co., Ltd.",
         },
       },
       // "/en/": {

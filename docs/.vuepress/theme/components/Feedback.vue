@@ -57,7 +57,7 @@
     >
     </FeedbackSuccess>
 
-    <div class="feedback-help">
+    <!-- <div class="feedback-help">
       <div class="text">
         若你已对系统有基本了解，并且感兴趣的话，点击跳转 GenAuth
         控制台，来开启你的 GenAuth 之旅！
@@ -67,7 +67,7 @@
       >
       <img class="shadow-banner" src="../assets/images/banner.png" />
       <div class="shadow-bg"></div>
-    </div>
+    </div> -->
   </div>
 </template>
 

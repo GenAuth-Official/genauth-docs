@@ -28,41 +28,6 @@ const DATABASE_CONNECTION_MENU_EN = {
  * 菜单
  */
 const zhCnNavBar = {
-  "/quickstarts/": [
-    {
-      title: "Single Page Web Application",
-      path: "/quickstarts/spa/",
-      redirect: "/quickstarts/",
-      children: [
-        {
-          title: "React",
-          path: "/quickstarts/spa/react",
-        },
-      ],
-    },
-    {
-      title: "Standard Web Application",
-      path: "/quickstarts/webApp/",
-      redirect: "/quickstarts/",
-      children: [
-        {
-          title: "Node.js Express Web App",
-          path: "/quickstarts/webApp/nodeJsExpress",
-        },
-      ],
-    },
-    {
-      title: "Backend / API Service",
-      path: "/quickstarts/apiServer/",
-      redirect: "/quickstarts/",
-      children: [
-        {
-          title: "Node.js Express API",
-          path: "/quickstarts/apiServer/nodeJsExpress/",
-        },
-      ],
-    },
-  ],
   "/guides/": [
     {
       title: "Quick Start",
@@ -1066,111 +1031,89 @@ const zhCnNavBar = {
       ],
     },
     {
-      title: "设置",
+      title: "Setting",
       children: [
         {
-          title: "基础设置",
+          title: "Basic Configuration",
           path: "/guides/userpool-config/basic-config",
         },
         {
-          title: "字段管理",
+          title: "Field Management",
           children: [
             {
-              title: "用户字段管理",
+              title: "User Field Management",
               children: [
                 {
-                  title: "用户基础字段",
+                  title: "User Basic Field",
                   path: "/guides/user/user-profile",
                 },
                 {
-                  title: "用户拓展字段",
+                  title: "User Extended Field",
                   path: "/guides/users/user-defined-field/",
                 },
               ],
             },
             {
-              title: "角色字段管理",
+              title: "Role Field Management",
               path: "/guides/authentication/extensibility/role-extend",
             },
           ],
         },
         {
-          title: "开发者",
+          title: "Developer",
           path: "/guides/userpool-config/developer-config",
         },
         {
-          title: "管理员",
+          title: "Cooperator Admin",
           path: "/guides/userpool-config/collaboration-adminstrator",
         },
         {
-          title: "管理员权限（新）",
+          title: "Cooperator Admin(New)",
           path: "/guides/userpool-config/new-collaboration-adminstrator",
         },
       ],
     },
     {
-      title: "GenAuth 令牌",
-      path: "/guides/authingVerify/",
-    },
-    {
-      title: "私有化部署方案",
-      path: "/guides/deployment/",
+      title: "FAQ",
       children: [
         {
-          title: "基础部署模式",
-          path: "/guides/deployment/bare-metal",
-        },
-        {
-          title: "Docker 部署模式",
-          path: "/guides/deployment/docker-compose",
-        },
-        {
-          title: "Kubernetes 部署模式",
-          path: "/guides/deployment/kubernetes",
-        },
-      ],
-    },
-    {
-      title: "常见问题 FAQ",
-      children: [
-        {
-          title: "如何获取用户池 ID",
+          title: "How to get the user pool ID",
           path: "/guides/faqs/get-userpool-id-and-secret.md",
         },
         {
-          title: "如何获取应用 ID",
+          title: "How to get the application ID",
           path: "/guides/faqs/get-app-id-and-secret.md",
         },
         {
-          title: "如何验证用户身份凭证（token）",
+          title: "How to validate the user identity credential (token)",
           path: "/guides/faqs/how-to-validate-user-token",
         },
         {
-          title: `使用统一域名的用户池`,
+          title: `User pool with unified domain name`,
           path: "/guides/faqs/union-domain",
         },
         {
-          title: "如何识别用户来源",
+          title: "How to identify the source of users",
           path: "/guides/faqs/how-to-identify-the-source-users",
         },
         {
-          title: `在本地联表 ${BRAND_NAME_ZH_CN} 用户与你的业务数据`,
+          title: `Join the local table ${BRAND_NAME_ZH_CN} users with your business data`,
           path: "/guides/faqs/how-to-join-authing-user-with-your-business-data",
         },
         {
-          title: `禁用第三方 Cookie 对 GenAuth 的影响`,
+          title: `The impact of disabling third-party cookies on GenAuth`,
           path: "/guides/faqs/block-third-party-cookie-impact",
         },
         {
-          title: "如何部署中转代理服务器",
+          title: "How to deploy a transit proxy server",
           path: "/guides/faqs/how-to-build-a-proxy",
         },
         {
-          title: `如何获取 ${BRAND_NAME_ZH_CN} 服务器集群 IP`,
+          title: `How to obtain the ${BRAND_NAME_ZH_CN} server cluster IP`,
           path: "/guides/faqs/public-ips",
         },
         {
-          title: "Pipeline 常见问题",
+          title: "Pipeline FAQ",
           path: "/guides/faqs/pipeline",
         },
       ],
@@ -1197,7 +1140,1371 @@ const zhCnNavBar = {
       redirect: "/reference/sdk/java/install.html",
       children: [
         // 自动生成粘贴开始
-
+        {
+          title: "Java",
+          path: "/reference/sdk/java/",
+          redirect: "/reference/sdk/java/install.html",
+          children: [
+            {
+              title: "Installation and use",
+              path: "/reference/sdk/java/install.md",
+            },
+            {
+              title: "User authentication module",
+              children: [
+                {
+                  title: "Login",
+                  children: [
+                    {
+                      title: "Account password login",
+                      path: "/reference/sdk/java/authentication/Login/signin-by-account-password.md",
+                    },
+                    {
+                      title: "Username password login",
+                      path: "/reference/sdk/java/authentication/Login/signin-by-username-password.md",
+                    },
+                    {
+                      title: "Mobile phone number password login",
+                      path: "/reference/sdk/java/authentication/Login/signin-by-phone-password.md",
+                    },
+                    {
+                      title: "Email password login",
+                      path: "/reference/sdk/java/authentication/Login/signin-by-email-password.md",
+                    },
+                    {
+                      title: "Login by email verification code",
+                      path: "/reference/sdk/java/authentication/Login/signin-by-email-passcode.md",
+                    },
+                    {
+                      title: "Login by mobile phone verification code",
+                      path: "/reference/sdk/java/authentication/Login/signin-by-phone-passcode.md",
+                    },
+                    {
+                      title: "LDAP account login",
+                      path: "/reference/sdk/java/authentication/Login/signin-by-ldap.md",
+                    },
+                    {
+                      title: "AD account login",
+                      path: "/reference/sdk/java/authentication/Login/signin-by-ad.md",
+                    },
+                    {
+                      title: "Generate login address",
+                      path: "/reference/sdk/java/authentication/登录/build-authorize-url.md",
+                    },
+                    {
+                      title: "Login with user credentials",
+                      path: "/reference/sdk/java/authentication/登录/signin",
+                    },
+                    {
+                      title: "Login with mobile social networking",
+                      path: "/reference/sdk/java/authentication/登录/signin-by-mobile",
+                    },
+                    {
+                      title: "Get Alipay AuthInfo",
+                      path: "/reference/sdk/java/authentication/登录/get-alipay-authinfo",
+                    },
+                    {
+                      title: "Generate a QR code for login",
+                      path: "/reference/sdk/java/authentication/登录/gene-qrcode",
+                    },
+                    {
+                      title: "Query QR code status",
+                      path: "/reference/sdk/java/authentication/登录/check-qrcode-status",
+                    },
+                    {
+                      title: "Use QR code ticket to exchange for TokenSet",
+                      path: "/reference/sdk/java/authentication/登录/exchange-tokenset-with-qrcode-ticket",
+                    },
+                    {
+                      title:
+                        "Self-built APP scan code login: APP end modifies QR code status",
+                      path: "/reference/sdk/java/authentication/登录/change-qrcode-status",
+                    },
+                  ],
+                },
+                {
+                  title: "Logout",
+                  children: [
+                    {
+                      title: "Front-end logout",
+                      path: "/reference/sdk/java/authentication/登录/front-channel-logout.md",
+                    },
+                    {
+                      title: "Back-end logout",
+                      path: "/reference/sdk/java/authentication/logout/backend-channel-logout.md",
+                    },
+                  ],
+                },
+                {
+                  title: "Manage Token",
+                  children: [
+                    {
+                      title: "Get Token",
+                      path: "/reference/sdk/java/authentication/manage-token/get-access-token.md",
+                    },
+                    {
+                      title: "Verify Token",
+                      path: "/reference/sdk/java/authentication/manage-token/introspect-token.md",
+                    },
+                    {
+                      title: "Revoke Token",
+                      path: "/reference/sdk/java/authentication/manage-token/revoke-token.md",
+                    },
+                  ],
+                },
+                {
+                  title: "Register",
+                  children: [
+                    {
+                      title: "Username and Password Registration",
+                      path: "/reference/sdk/java/authentication/Register/signup-by-username-password.md",
+                    },
+                    {
+                      title: "Email Password Registration",
+                      path: "/reference/sdk/java/authentication/Register/signup-by-email-password.md",
+                    },
+                    {
+                      title: "Mobile phone verification code registration",
+                      path: "/reference/sdk/java/authentication/Register/signup-by-phone-passcode.md",
+                    },
+                    {
+                      title: "Email verification code registration",
+                      path: "/reference/sdk/java/authentication/Register/signup-by-email-passcode.md",
+                    },
+                    {
+                      title: "Register",
+                      path: "/reference/sdk/java/authentication/Register/signup",
+                    },
+                  ],
+                },
+                {
+                  title: "User information",
+                  children: [
+                    {
+                      title: "Get user information",
+                      path: "/reference/sdk/java/authentication/User information/get-profile",
+                    },
+                    {
+                      title: "Modify user information",
+                      path: "/reference/sdk/java/authentication/user profile/update-profile",
+                    },
+                    {
+                      title: "Bind email",
+                      path: "/reference/sdk/java/authentication/user profile/bind-email",
+                    },
+                    {
+                      title: "Unbind email",
+                      path: "/reference/sdk/java/authentication/user profile/unbind-email",
+                    },
+                    {
+                      title: "Bind phone number",
+                      path: "/reference/sdk/java/authentication/user profile/bind-phone",
+                    },
+                    {
+                      title: "Unbind phone number",
+                      path: "/reference/sdk/java/authentication/user profile/unbind-phone",
+                    },
+                    {
+                      title:
+                        "Get password strength and account security rating",
+                      path: "/reference/sdk/java/authentication/user profile/get-security-info",
+                    },
+                    {
+                      title: "Change password",
+                      path: "/reference/sdk/java/authentication/user information/update-password",
+                    },
+                    {
+                      title: "Initiate verification request to change email",
+                      path: "/reference/sdk/java/authentication/user information/verify-update-email-request",
+                    },
+                    {
+                      title: "Change email",
+                      path: "/reference/sdk/java/authentication/user information/update-email",
+                    },
+                    {
+                      title:
+                        "Initiate verification request to change mobile phone number",
+                      path: "/reference/sdk/java/authentication/user information/verify-update-phone-request",
+                    },
+                    {
+                      title: "Change mobile phone number",
+                      path: "/reference/sdk/java/authentication/user information/update-phone",
+                    },
+                    {
+                      title: "Initiate forgotten password request",
+                      path: "/reference/sdk/java/authentication/user profile/verify-reset-password-request",
+                    },
+                    {
+                      title: "Forgot password",
+                      path: "/reference/sdk/java/authentication/user profile/reset-password",
+                    },
+                    {
+                      title: "Initiate account cancellation request",
+                      path: "/reference/sdk/java/authentication/user profile/verify-delete-account-request",
+                    },
+                    {
+                      title: "Cancel account",
+                      path: "/reference/sdk/java/authentication/user profile/delete-account",
+                    },
+                  ],
+                },
+                {
+                  title: "Account Binding",
+                  children: [
+                    {
+                      title:
+                        "Generate a link to bind an external identity source",
+                      path: "/reference/sdk/java/authentication/Account Binding/generate-link-extidp-url",
+                    },
+                    {
+                      title: "Unbind an external identity source",
+                      path: "/reference/sdk/java/authentication/Account Binding/unlink-extidp",
+                    },
+                    {
+                      title: "Get the bound external identity source",
+                      path: "/reference/sdk/java/authentication/Account Binding/get-identities",
+                    },
+                    {
+                      title:
+                        "Get the list of external identity sources enabled by the application",
+                      path: "/reference/sdk/java/authentication/Account Binding/get-application-enabled-extidps",
+                    },
+                  ],
+                },
+                {
+                  title: "MFA Factor Management",
+                  children: [
+                    {
+                      title:
+                        "Initiate binding MFA Authentication factor request",
+                      path: "/reference/sdk/java/authentication/mfa-element management/send-enroll-factor-request",
+                    },
+                    {
+                      title: "Bind MFA authentication factor",
+                      path: "/reference/sdk/java/authentication/mfa-element management/enroll-factor",
+                    },
+                    {
+                      title: "Unbind MFA authentication factor",
+                      path: "/reference/sdk/java/authentication/mfa-element management/reset-factor",
+                    },
+                    {
+                      title: "Get all bound MFA authentication factors",
+                      path: "/reference/sdk/java/authentication/mfa-element management/list-enrolled-factors",
+                    },
+                    {
+                      title: "Get a bound MFA authentication factor",
+                      path: "/reference/sdk/java/authentication/mfa-element management/get-factor",
+                    },
+                    {
+                      title: "Get bindable MFA authentication factors",
+                      path: "/reference/sdk/java/authentication/mfa-element management/list-factors-to-enroll",
+                    },
+                  ],
+                },
+                {
+                  title: "User-related resources",
+                  children: [
+                    {
+                      title: "Get login log",
+                      path: "/reference/sdk/java/authentication/User-related resources/get-my-login-history",
+                    },
+                    {
+                      title: "Get login application",
+                      path: "/reference/sdk/java/authentication/User-related resources/get-my-logged-in-apps",
+                    },
+                    {
+                      title: "Get applications with access permissions",
+                      path: "/reference/sdk/java/authentication/User-related resources/get-my-accessible-apps",
+                    },
+                    {
+                      title: "Get tenant list",
+                      path: "/reference/sdk/java/authentication/user-related resources/get-my-tenant-list",
+                    },
+                    {
+                      title: "Get role list",
+                      path: "/reference/sdk/java/authentication/user-related resources/get-my-role-list",
+                    },
+                    {
+                      title: "Get group list",
+                      path: "/reference/sdk/java/authentication/user-related resources/get-my-group-list",
+                    },
+                    {
+                      title: "Get department list",
+                      path: "/reference/sdk/java/authentication/user-related resources/get-my-department-list",
+                    },
+                    {
+                      title: "Get authorized resource list",
+                      path: "/reference/sdk/java/authentication/user-related resources/get-my-authorized-resources",
+                    },
+                  ],
+                },
+                {
+                  title: "Message service",
+                  children: [
+                    {
+                      title: "Send SMS",
+                      path: "/reference/sdk/java/authentication/message service/send-sms",
+                    },
+                    {
+                      title: "Send Email",
+                      path: "/reference/sdk/java/authentication/message service/send-email",
+                    },
+                  ],
+                },
+                {
+                  title: "Authentication",
+                  children: [
+                    {
+                      title: "String type resource authentication",
+                      path: "/reference/sdk/java/authentication/authentication/check-permission-string-resource",
+                    },
+                    {
+                      title: "Array type resource authentication",
+                      path: "/reference/sdk/java/authentication/authentication/check-permission-array-resource",
+                    },
+                    {
+                      title: "Tree type resource authentication",
+                      path: "/reference/sdk/java/authentication/authentication/check-permission-tree-resource",
+                    },
+                    {
+                      title: `Get the user's authorized resource list under the login application`,
+                      path: `/reference/sdk/java/authentication/authentication/get-user-auth-resource-list`,
+                    },
+                    {
+                      title: `Get the user's specified resource permission list under the login application`,
+                      path: "/reference/sdk/java/authentication/authentication/get-user-auth-resource-permission-list",
+                    },
+                    {
+                      title:
+                        "Get the structure list of authorized resources under the user login application",
+                      path: "/reference/sdk/java/authentication/authentication/get-user-auth-resource-struct",
+                    },
+                  ],
+                },
+                {
+                  title: "WeChat related interface",
+                  children: [
+                    {
+                      title: "Decrypt WeChat applet data",
+                      path: "/reference/sdk/java/authentication/WeChat related interface/decrypt-wechat-miniprogram-data",
+                    },
+                    {
+                      title: "Get WeChat applet, public account Access Token",
+                      path: "/reference/sdk/java/authentication/WeChat related interface/get-wechat-access-token",
+                    },
+                  ],
+                },
+                {
+                  title: "Others",
+                  children: [
+                    {
+                      title: "Get server public information",
+                      path: "/reference/sdk/java/authentication/other/system",
+                    },
+                    {
+                      title: "Get country list",
+                      path: "/reference/sdk/java/authentication/other/get-country-list",
+                    },
+                  ],
+                },
+                {
+                  title: "OIDC module",
+                  path: "/reference/sdk/java/authentication/oidc.md",
+                },
+                {
+                  title: "OAuth module",
+                  path: "/reference/sdk/java/authentication/oauth.md",
+                },
+                {
+                  title: "SAML module",
+                  path: "/reference/sdk/java/authentication/saml.md",
+                },
+                {
+                  title: "CAS module",
+                  path: "/reference/sdk/java/authentication/cas.md",
+                },
+                {
+                  title: "Events",
+                  path: "/reference/sdk/java/authentication/events.md",
+                },
+              ],
+            },
+            {
+              title: "Management module",
+              children: [
+                {
+                  title: "Manage users",
+                  children: [
+                    {
+                      title: "Get user list",
+                      path: "/reference/sdk/java/management/Manage users/list-users",
+                    },
+                    {
+                      title: "Get user information",
+                      path: "/reference/sdk/java/management/Manage users/get-user",
+                    },
+                    {
+                      title: "Get user information in batches",
+                      path: "/reference/sdk/java/management/Manage users/get-user-batch",
+                    },
+                    {
+                      title: "Create users",
+                      path: "/reference/sdk/java/management/Manage users/create-user",
+                    },
+                    {
+                      title: "Create users in batches",
+                      path: "/reference/sdk/java/management/Manage users/create-users-batch",
+                    },
+                    {
+                      title: "Modify user information",
+                      path: "/reference/sdk/java/management/Management User/update-user",
+                    },
+                    {
+                      title: "Batch modify user information",
+                      path: "/reference/sdk/java/management/Management User/update-user-batch",
+                    },
+                    {
+                      title: "Delete user",
+                      path: "/reference/sdk/java/management/Management User/delete-users-batch",
+                    },
+                    {
+                      title: `Get the user's external identity source`,
+                      path: "/reference/sdk/java/management/Management User/get-user-identities",
+                    },
+                    {
+                      title: "Get user role list",
+                      path: "/reference/sdk/java/management/Management User/get-user-roles",
+                    },
+                    {
+                      title: "Get user real-name authentication information",
+                      path: "/reference/sdk/java/management/Management User/get-user-principal-authentication-info",
+                    },
+                    {
+                      title: "Delete user real-name authentication information",
+                      path: "/reference/sdk/java/management/Management User/reset-user-principal-authentication-info",
+                    },
+                    {
+                      title: "Get user department list",
+                      path: "/reference/sdk/java/management/Management User/get-user-departments",
+                    },
+                    {
+                      title: "Set user department",
+                      path: "/reference/sdk/java/management/Management User/set-user-departments",
+                    },
+                    {
+                      title: "Get user group list",
+                      path: "/reference/sdk/java/management/Management User/get-user-groups",
+                    },
+                    {
+                      title: "Get user MFA binding information",
+                      path: "/reference/sdk/java/management/management user/get-user-mfa-info",
+                    },
+                    {
+                      title: "Get the archived user list",
+                      path: "/reference/sdk/java/management/management user/list-archived-users",
+                    },
+                    {
+                      title: "Force offline users",
+                      path: "/reference/sdk/java/management/management user/kick-users",
+                    },
+                    {
+                      title: "Judge whether the user exists",
+                      path: "/reference/sdk/java/management/management user/is-user-exists",
+                    },
+                    {
+                      title: "Get user-accessible applications",
+                      path: "/reference/sdk/java/management/management user/get-user-accessible-apps",
+                    },
+                    {
+                      title: "Get user-authorized applications",
+                      path: "/reference/sdk/java/management/management user/get-user-authorized-apps",
+                    },
+                    {
+                      title: "Determine whether the user has a certain role",
+                      path: "/reference/sdk/java/management/management user/has-any-role",
+                    },
+                    {
+                      title: `Get the user's login history`,
+                      path: "/reference/sdk/java/management/management user/get-user-login-history",
+                    },
+                    {
+                      title:
+                        "Get the application that the user has logged in to",
+                      path: "/reference/sdk/java/management/management user/get-user-loggedin-apps",
+                    },
+                    {
+                      title:
+                        "Get the identity source that the user has logged in to",
+                      path: "/reference/sdk/java/management/management user/get-user-logged-in-identities",
+                    },
+                    {
+                      title: "User resignation",
+                      path: "/reference/sdk/java/management/management user/resign-user",
+                    },
+                    {
+                      title: "Batch user resignation",
+                      path: "/reference/sdk/java/management/management user/resign-user-batch",
+                    },
+                    {
+                      title: "Get all resources authorized by the user",
+                      path: "/reference/sdk/java/management/management user/get-user-authorized-resources",
+                    },
+                    {
+                      title:
+                        "Check whether a user has a session login status in the application",
+                      path: "/reference/sdk/java/management/management user/check-session-status",
+                    },
+                    {
+                      title: "Import user OTP",
+                      path: "/reference/sdk/java/management/management user/import-otp",
+                    },
+                    {
+                      title: "Set user MFA status",
+                      path: "/reference/sdk/java/management/management user/set-user-mfa-status",
+                    },
+                    {
+                      title: "Get user MFA status",
+                      path: "/reference/sdk/java/management/Management User/get-user-mfa-status",
+                    },
+                  ],
+                },
+                {
+                  title: "Manage Organization",
+                  children: [
+                    {
+                      title: "Get Organization Details",
+                      path: "/reference/sdk/java/management/Management Organization/get-organization",
+                    },
+                    {
+                      title: "Get Organization Details in Batch",
+                      path: "/reference/sdk/java/management/Management Organization/get-organization-batch",
+                    },
+                    {
+                      title: "Get Organization List",
+                      path: "/reference/sdk/java/management/Management Organization/list-organizations",
+                    },
+                    {
+                      title: "Create Organization",
+                      path: "/reference/sdk/java/management/Management Organization/create-organization",
+                    },
+                    {
+                      title: "Modify organization",
+                      path: "/reference/sdk/java/management/Management Organization/update-organization",
+                    },
+                    {
+                      title: "Delete organization",
+                      path: "/reference/sdk/java/management/Management Organization/delete-organization",
+                    },
+                    {
+                      title: "Search for organization list",
+                      path: "/reference/sdk/java/management/Management Organization/search-organizations",
+                    },
+                    {
+                      title: "Get department information",
+                      path: "/reference/sdk/java/management/Management Organization/get-department",
+                    },
+                    {
+                      title: "Create a department",
+                      path: "/reference/sdk/java/management/Management Organization/create-department",
+                    },
+                    {
+                      title: "Modify department",
+                      path: "/reference/sdk/java/management/Management Organization/update-department",
+                    },
+                    {
+                      title: "Delete department",
+                      path: "/reference/sdk/java/management/Management Organization/delete-department",
+                    },
+                    {
+                      title: "Search department",
+                      path: "/reference/sdk/java/management/Management Organization/search-departments",
+                    },
+                    {
+                      title: "Get a list of child departments",
+                      path: "/reference/sdk/java/management/Management Organization/list-children-departments",
+                    },
+                    {
+                      title: "Get a list of department members",
+                      path: "/reference/sdk/java/management/Management Organization/list-department-members",
+                    },
+                    {
+                      title: "Get the list of department-direct member IDs",
+                      path: "/reference/sdk/java/management/Management Organization/list-department-member-ids",
+                    },
+                    {
+                      title: "Search for members under the department",
+                      path: "/reference/sdk/java/management/Management Organization/search-department-members",
+                    },
+                    {
+                      title: "Add members under the department",
+                      path: "/reference/sdk/java/management/Management Organization/add-department-members",
+                    },
+                    {
+                      title: "Delete members under the department",
+                      path: "/reference/sdk/java/management/Management Organization/remove-department-members",
+                    },
+                    {
+                      title: "Get parent department information",
+                      path: "/reference/sdk/java/management/management organization/get-parent-department",
+                    },
+                    {
+                      title:
+                        "Determine whether the user is in a certain department",
+                      path: "/reference/sdk/java/management/management organization/is-user-in-department",
+                    },
+                  ],
+                },
+                {
+                  title: "Management Roles",
+                  children: [
+                    {
+                      title: "Get Role Details",
+                      path: "/reference/sdk/java/management/Management Roles/get-role",
+                    },
+                    {
+                      title: "Assign Roles",
+                      path: "/reference/sdk/java/management/Management Roles/assign-role",
+                    },
+                    {
+                      title: "Remove Assigned Roles",
+                      path: "/reference/sdk/java/management/Management Roles/revoke-role",
+                    },
+                    {
+                      title: "Get a List of Resources Authorized by a Role",
+                      path: "/reference/sdk/java/management/Management Roles/get-role-authorized-resources",
+                    },
+                    {
+                      title: "Get a List of Role Members",
+                      path: "/reference/sdk/java/management/Management Roles/list-role-members",
+                    },
+                    {
+                      title: "Get the department list of the role",
+                      path: "/reference/sdk/java/management/management role/list-role-departments",
+                    },
+                    {
+                      title: "Create a role",
+                      path: "/reference/sdk/java/management/management role/create-role",
+                    },
+                    {
+                      title: "Get a list of roles",
+                      path: "/reference/sdk/java/management/management role/list-roles",
+                    },
+                    {
+                      title:
+                        "Delete roles within a single permission group (permission space)",
+                      path: "/reference/sdk/java/management/management role/delete-roles-batch",
+                    },
+                    {
+                      title: "Batch create roles",
+                      path: "/reference/sdk/java/management/management role/create-roles-batch",
+                    },
+                    {
+                      title: "Modify roles",
+                      path: "/reference/sdk/java/management/management role/update-role",
+                    },
+                    {
+                      title: "Cross-permission group (space) deletion of roles",
+                      path: "/reference/sdk/java/management/management role/multiple-namespace-delete-roles-batch",
+                    },
+                    {
+                      title: "Check whether the role Code or name is available",
+                      path: "/reference/sdk/java/management/management role/check-role-params",
+                    },
+                    {
+                      title: "Role list paging query",
+                      path: "/reference/sdk/java/management/management role/list-role-assignments",
+                    },
+                  ],
+                },
+                {
+                  title: "Manage user groups",
+                  children: [
+                    {
+                      title: "Get group details",
+                      path: "/reference/sdk/java/management/Manage user groups/get-group",
+                    },
+                    {
+                      title: "Get group list",
+                      path: "/reference/sdk/java/management/Manage user groups/list-groups",
+                    },
+                    {
+                      title: "Create groups",
+                      path: "/reference/sdk/java/management/Manage user groups/create-group",
+                    },
+                    {
+                      title: "Batch create groups",
+                      path: "/reference/sdk/java/management/Manage user groups/create-groups-batch",
+                    },
+                    {
+                      title: "Modify groups",
+                      path: "/reference/sdk/java/management/Manage user groups/update-group",
+                    },
+                    {
+                      title: "Batch delete groups",
+                      path: "/reference/sdk/java/management/Management User Group/delete-groups-batch",
+                    },
+                    {
+                      title: "Add group members",
+                      path: "/reference/sdk/java/management/Management User Group/add-group-members",
+                    },
+                    {
+                      title: "Batch remove group members",
+                      path: "/reference/sdk/java/management/Management User Group/remove-group-members",
+                    },
+                    {
+                      title: "Get group member list",
+                      path: "/reference/sdk/java/management/Management User Group/list-group-members",
+                    },
+                    {
+                      title: "Get group authorized resource list",
+                      path: "/reference/sdk/java/management/Management User Group/get-group-authorized-resources",
+                    },
+                  ],
+                },
+                {
+                  title: "Manage custom fields",
+                  children: [
+                    {
+                      title: "Get a list of user built-in fields",
+                      path: "/reference/sdk/java/management/Manage custom fields/get-user-base-fields",
+                    },
+                    {
+                      title: "Modify user built-in field configuration",
+                      path: "/reference/sdk/java/management/Manage custom fields/set-user-base-fields",
+                    },
+                    {
+                      title: "Get a list of custom fields",
+                      path: "/reference/sdk/java/management/Manage custom fields/get-custom-fields",
+                    },
+                    {
+                      title: "Create/modify custom field definitions",
+                      path: "/reference/sdk/java/management/Manage custom fields/set-custom-fields",
+                    },
+                    {
+                      title: "Set the value of a custom field",
+                      path: "/reference/sdk/java/management/Manage custom fields/set-custom-data",
+                    },
+                    {
+                      title:
+                        "Get custom field values ​​for users, groups, roles, and organizations",
+                      path: "/reference/sdk/java/management/Manage custom fields/get-custom-data",
+                    },
+                  ],
+                },
+                {
+                  title: "Manage Resources and Permissions",
+                  children: [
+                    {
+                      title: "Create Resources",
+                      path: "/reference/sdk/java/management/Manage Resources and Permissions/create-resource",
+                    },
+                    {
+                      title: "Batch Create Resources",
+                      path: "/reference/sdk/java/management/Manage Resources and Permissions/create-resources-batch",
+                    },
+                    {
+                      title: "Get Resource Details",
+                      path: "/reference/sdk/java/management/Manage Resources and Permissions/get-resource",
+                    },
+                    {
+                      title: "Batch Get Resource Details",
+                      path: "/reference/sdk/java/management/Manage Resources and Permissions/get-resources-batch",
+                    },
+                    {
+                      title: "Get Resource List by Page",
+                      path: "/reference/sdk/java/management/Manage Resources and Permissions/list-resources",
+                    },
+                    {
+                      title: "Modify resources",
+                      path: "/reference/sdk/java/management/Management resources and permissions/update-resource",
+                    },
+                    {
+                      title: "Delete resources",
+                      path: "/reference/sdk/java/management/Management resources and permissions/delete-resource",
+                    },
+                    {
+                      title: "Batch delete resources",
+                      path: "/reference/sdk/java/management/Management resources and permissions/delete-resources-batch",
+                    },
+                    {
+                      title:
+                        "Associate/unassociate application resources to tenants",
+                      path: "/reference/sdk/java/management/Management resources and permissions/associate-tenant-resource",
+                    },
+                    {
+                      title: "Create permission groups",
+                      path: "/reference/sdk/java/management/Management resources and permissions/create-namespace",
+                    },
+                    {
+                      title: "Batch create permission groups",
+                      path: "/reference/sdk/java/management/Management Resources and Permissions/create-namespaces-batch",
+                    },
+                    {
+                      title: "Get permission group details",
+                      path: "/reference/sdk/java/management/Management Resources and Permissions/get-namespace",
+                    },
+                    {
+                      title: "Batch get permission group details",
+                      path: "/reference/sdk/java/management/Management Resources and Permissions/get-namespaces-batch",
+                    },
+                    {
+                      title: "Modify permission group information",
+                      path: "/reference/sdk/java/management/Management Resources and Permissions/update-namespace",
+                    },
+                    {
+                      title: "Delete permission group information",
+                      path: "/reference/sdk/java/management/Management Resources and Permissions/delete-namespace",
+                    },
+                    {
+                      title: "Batch delete permission groups",
+                      path: "/reference/sdk/java/management/management resources and permissions/delete-namespaces-batch",
+                    },
+                    {
+                      title: "Authorized resources",
+                      path: "/reference/sdk/java/management/management resources and permissions/authorize-resources",
+                    },
+                    {
+                      title:
+                        "Get a list of resources authorized by a certain subject",
+                      path: "/reference/sdk/java/management/management resources and permissions/get-authorized-resources",
+                    },
+                    {
+                      title:
+                        "Determine whether the user has permission to perform a certain operation on a certain resource",
+                      path: "/reference/sdk/java/management/management resources and permissions/is-action-allowed",
+                    },
+                    {
+                      title: "Get the subject authorized by the resource",
+                      path: "/reference/sdk/java/management/management resources and permissions/get-resource-authorized-targets",
+                    },
+                  ],
+                },
+                {
+                  title: "Manage data resources and permissions",
+                  children: [
+                    {
+                      title: "Create permission space",
+                      path: "/reference/sdk/java/management/Manage data resources and permissions/create-permission-namespace",
+                    },
+                    {
+                      title: "Batch create permission spaces",
+                      path: "/reference/sdk/java/management/Manage data resources and permissions/create-permission-namespaces-batch",
+                    },
+                    {
+                      title: "Get permission space details",
+                      path: "/reference/sdk/java/management/Manage data resources and permissions/get-permission-namespace",
+                    },
+                    {
+                      title: "Batch get permission space details list",
+                      path: "/reference/sdk/java/management/Manage data resources and permissions/get-permission-namespaces-batch",
+                    },
+                    {
+                      title: "Paged get permission space list",
+                      path: "/reference/sdk/java/management/Management Data Resources and Permissions/list-permission-namespaces",
+                    },
+                    {
+                      title: "Modify Permission Space",
+                      path: "/reference/sdk/java/management/Management Data Resources and Permissions/update-permission-namespace",
+                    },
+                    {
+                      title: "Delete Permission Space",
+                      path: "/reference/sdk/java/management/Management Data Resources and Permissions/delete-permission-namespace",
+                    },
+                    {
+                      title: "Batch Delete Permission Space",
+                      path: "/reference/sdk/java/management/Management Data Resources and Permissions/delete-permission-namespaces-batch",
+                    },
+                    {
+                      title:
+                        "Check whether the permission space Code or name is available",
+                      path: "/reference/sdk/java/management/Management Data Resources and Permissions/check-permission-namespace-exists",
+                    },
+                    {
+                      title:
+                        "Paginated query of all roles in the permission space",
+                      path: "/reference/sdk/java/management/Management of data resources and permissions/list-permission-namespace-roles",
+                    },
+                    {
+                      title: "Create data resources",
+                      path: "/reference/sdk/java/management/Management of data resources and permissions/create-data-resource",
+                    },
+                    {
+                      title: "Create string data resources",
+                      path: "/reference/sdk/java/management/Management of data resources and permissions/create-string-data-resource",
+                    },
+                    {
+                      title: "Create array data resources",
+                      path: "/reference/sdk/java/management/Management of data resources and permissions/create-array-data-resource",
+                    },
+                    {
+                      title: "Create tree data resources",
+                      path: "/reference/sdk/java/management/Management Data Resources and Permissions/create-tree-data-resource",
+                    },
+                    {
+                      title: "Get data resource list",
+                      path: "/reference/sdk/java/management/Management Data Resources and Permissions/list-data-resources",
+                    },
+                    {
+                      title: "Get data resource information",
+                      path: "/reference/sdk/java/management/Management Data Resources and Permissions/get-data-resource",
+                    },
+                    {
+                      title: "Modify data resources",
+                      path: "/reference/sdk/java/management/Management Data Resources and Permissions/update-data-resource",
+                    },
+                    {
+                      title: "Delete data resources",
+                      path: "/reference/sdk/java/management/Management Data Resources and Permissions/delete-data-resource",
+                    },
+                    {
+                      title: "Check data resource name or Code Is it available",
+                      path: "/reference/sdk/java/management/Manage data resources and permissions/check-data-resource-exists",
+                    },
+                    {
+                      title: "Create data resource extension fields",
+                      path: "/reference/sdk/java/management/Manage data resources and permissions/create-dnef",
+                    },
+                    {
+                      title: "Batch create data resource extension fields",
+                      path: "/reference/sdk/java/management/Manage data resources and permissions/batch-create-dnef",
+                    },
+                    {
+                      title: "Delete data resource extension fields",
+                      path: "/reference/sdk/java/management/Manage data resources and permissions/delete-dnef",
+                    },
+                    {
+                      title: "Modify data resource extension fields",
+                      path: "/reference/sdk/java/management/Manage data resources and permissions/update-dnef",
+                    },
+                    {
+                      title: "Get data resource extension field list",
+                      path: "/reference/sdk/java/management/Manage data resources and permissions/get-dnef-list",
+                    },
+                    {
+                      title: "Create data policy",
+                      path: "/reference/sdk/java/management/Manage data resources and permissions/create-data-policy",
+                    },
+                    {
+                      title: "Get data policy list",
+                      path: "/reference/sdk/java/management/Manage data resources and permissions/list-data-policies",
+                    },
+                    {
+                      title: "Get a list of simple data policy information",
+                      path: "/reference/sdk/java/management/Manage data resources and permissions/list-simple-data-policies",
+                    },
+                    {
+                      title: "Get data policy information",
+                      path: "/reference/sdk/java/management/Manage data resources and permissions/get-data-policy",
+                    },
+                    {
+                      title: "Modify data policy",
+                      path: "/reference/sdk/java/management/Manage data resources and permissions/update-data-policy",
+                    },
+                    {
+                      title: "Delete data policy",
+                      path: "/reference/sdk/java/management/Manage data resources and permissions/delete-data-policy",
+                    },
+                    {
+                      title: "Check whether the data policy name exists",
+                      path: "/reference/sdk/java/management/Management Data Resources and Permissions/check-data-policy-exists",
+                    },
+                    {
+                      title:
+                        "Get all the information of the authorized subjects under the data policy",
+                      path: "/reference/sdk/java/management/Management Data Resources and Permissions/list-data-policy-targets",
+                    },
+                    {
+                      title: "Authorize Data Policy",
+                      path: "/reference/sdk/java/management/Management Data Resources and Permissions/authorize-data-policies",
+                    },
+                    {
+                      title: "Revoke Data Policy",
+                      path: "/reference/sdk/java/management/Management Data Resources and Permissions/revoke-data-policy",
+                    },
+                    {
+                      title: "Get User Permission List",
+                      path: "/reference/sdk/java/management/Management Data Resources and Permissions/get-user-permission-list",
+                    },
+                    {
+                      title: "Judge user permissions",
+                      path: "/reference/sdk/java/management/Management data resources and permissions/check-permission",
+                    },
+                    {
+                      title: "Judge external user permissions",
+                      path: "/reference/sdk/java/management/Management data resources and permissions/check-external-user-permission",
+                    },
+                    {
+                      title: "Get user-specified resource permission list",
+                      path: "/reference/sdk/java/management/Management data resources and permissions/get-user-resource-permission-list",
+                    },
+                    {
+                      title: "Get a list of users authorized to use resources",
+                      path: "/reference/sdk/java/management/Management data resources and permissions/list-resource-targets",
+                    },
+                    {
+                      title: "Get a list of user-authorized resources",
+                      path: "/reference/sdk/java/management/Management Data Resources and Permissions/get-user-resource-struct",
+                    },
+                    {
+                      title:
+                        "Get the structure list of external user authorization resources",
+                      path: "/reference/sdk/java/management/Management Data Resources and Permissions/get-external-user-resource-struct",
+                    },
+                    {
+                      title: `Judge the user's permissions under the same level resources of the tree resource`,
+                      path: "/reference/sdk/java/management/Management Data Resources and Permissions/check-user-same-level-permission",
+                    },
+                  ],
+                },
+                {
+                  title: "Manage Applications",
+                  children: [
+                    {
+                      title: "Get Application Details",
+                      path: "/reference/sdk/java/management/Management Applications/get-application",
+                    },
+                    {
+                      title: "Get Application List",
+                      path: "/reference/sdk/java/management/Management Applications/list-applications",
+                    },
+                    {
+                      title: "Get Simple Application Information",
+                      path: "/reference/sdk/java/management/Management Applications/get-application-simple-info",
+                    },
+                    {
+                      title: "Get Simple Application Information List",
+                      path: "/reference/sdk/java/management/Management Applications/list-application-simple-info",
+                    },
+                    {
+                      title: "Create Application",
+                      path: "/reference/sdk/java/management/Management Applications/create-application",
+                    },
+                    {
+                      title: "Delete application",
+                      path: "/reference/sdk/java/management/management application/delete-application",
+                    },
+                    {
+                      title: "Get application key",
+                      path: "/reference/sdk/java/management/management application/get-application-secret",
+                    },
+                    {
+                      title: "Refresh application key",
+                      path: "/reference/sdk/java/management/management application/refresh-application-secret",
+                    },
+                    {
+                      title:
+                        "Get the current logged-in user of the application",
+                      path: "/reference/sdk/java/management/management application/list-application-active-users",
+                    },
+                    {
+                      title:
+                        "Get the default access authorization strategy of the application",
+                      path: "/reference/sdk/java/management/management application/get-application-permission-strategy",
+                    },
+                    {
+                      title:
+                        "Update the default access authorization strategy of the application",
+                      path: "/reference/sdk/java/management/management application/update-application-permission-strategy",
+                    },
+                    {
+                      title: "Authorize application access permissions",
+                      path: "/reference/sdk/java/management/management application/authorize-application-access",
+                    },
+                    {
+                      title: "Delete application access authorization records",
+                      path: "/reference/sdk/java/management/management application/revoke-application-access",
+                    },
+                    {
+                      title: "Check whether the domain name is available",
+                      path: "/reference/sdk/java/management/management application/check-domain-available",
+                    },
+                    {
+                      title: "Get user MFA trigger data under the application",
+                      path: "/reference/sdk/java/management/management application/get-application-mfa-trigger-data",
+                    },
+                  ],
+                },
+                {
+                  title: "Manage Identity Sources",
+                  children: [
+                    {
+                      title: "Get Identity Source List",
+                      path: "/reference/sdk/java/management/Manage Identity Sources/list-ext-idp",
+                    },
+                    {
+                      title: "Get Identity Source Details",
+                      path: "/reference/sdk/java/management/Manage Identity Sources/get-ext-idp",
+                    },
+                    {
+                      title: "Create Identity Source",
+                      path: "/reference/sdk/java/management/Manage Identity Sources/create-ext-idp",
+                    },
+                    {
+                      title: "Update Identity Source Configuration",
+                      path: "/reference/sdk/java/management/Manage Identity Sources/update-ext-idp",
+                    },
+                    {
+                      title: "Delete Identity Source",
+                      path: "/reference/sdk/java/management/Manage Identity Sources/delete-ext-idp",
+                    },
+                    {
+                      title:
+                        "Create a new connection under an existing identity source",
+                      path: "/reference/sdk/java/management/Manage Identity Source/create-ext-idp-conn",
+                    },
+                    {
+                      title: "Update Identity Source Connection",
+                      path: "/reference/sdk/java/management/Manage Identity Source/update-ext-idp-conn",
+                    },
+                    {
+                      title: "Delete Identity Source Connection",
+                      path: "/reference/sdk/java/management/Manage Identity Source/delete-ext-idp-conn",
+                    },
+                    {
+                      title: "Identity Source Connection Switch",
+                      path: "/reference/sdk/java/management/Manage Identity Source/change-ext-idp-conn-state",
+                    },
+                    {
+                      title: "Tenant Associate Identity Source",
+                      path: "/reference/sdk/java/management/Manage Identity Source/change-ext-idp-conn-association-state",
+                    },
+                    {
+                      title:
+                        "Get the list of identity sources in the tenant console",
+                      path: "/reference/sdk/java/management/Manage Identity Source/list-tenant-ext-idp",
+                    },
+                    {
+                      title:
+                        "Connection details of applications under identity sources",
+                      path: "/reference/sdk/java/management/Manage Identity Source/ext-idp-conn-apps",
+                    },
+                  ],
+                },
+                {
+                  title: "Manage security configuration",
+                  children: [
+                    {
+                      title: "Get security configuration",
+                      path: "/reference/sdk/java/management/Manage security configuration/get-security-settings",
+                    },
+                    {
+                      title: "Modify security configuration",
+                      path: "/reference/sdk/java/management/Manage security configuration/update-security-settings",
+                    },
+                    {
+                      title:
+                        "Get global multi-factor authentication configuration",
+                      path: "/reference/sdk/java/management/Manage security configuration/get-global-mfa-settings",
+                    },
+                    {
+                      title:
+                        "Modify global multi-factor authentication configuration",
+                      path: "/reference/sdk/java/management/Manage security configuration/update-global-mfa-settings",
+                    },
+                  ],
+                },
+                {
+                  title: "Manage message service",
+                  children: [
+                    {
+                      title: "Get the list of email templates",
+                      path: "/reference/sdk/java/management/Management Message Service/get-email-templates",
+                    },
+                    {
+                      title: "Modify email template",
+                      path: "/reference/sdk/java/management/Management Message Service/update-email-template",
+                    },
+                    {
+                      title: "Preview email template",
+                      path: "/reference/sdk/java/management/Management Message Service/preview-email-template",
+                    },
+                    {
+                      title: "Get third-party email service configuration",
+                      path: "/reference/sdk/java/management/Management Message Service/get-email-provider",
+                    },
+                    {
+                      title: "Configure third-party email service",
+                      path: "/reference/sdk/java/management/Management Message Service/config-email-provier",
+                    },
+                  ],
+                },
+                {
+                  title: "Manage Sync Center",
+                  children: [
+                    {
+                      title: "Get sync task details",
+                      path: "/reference/sdk/java/management/Manage Sync Center/get-sync-task",
+                    },
+                    {
+                      title: "Get sync task list",
+                      path: "/reference/sdk/java/management/Manage Sync Center/list-sync-tasks",
+                    },
+                    {
+                      title: "Create sync task",
+                      path: "/reference/sdk/java/management/Manage Sync Center/create-sync-task",
+                    },
+                    {
+                      title: "Modify sync task",
+                      path: "/reference/sdk/java/management/Manage Sync Center/update-sync-task",
+                    },
+                    {
+                      title: "Execute sync task",
+                      path: "/reference/sdk/java/management/Manage Sync Center/trigger-sync-task",
+                    },
+                    {
+                      title: "Get synchronization job details",
+                      path: "/reference/sdk/java/management/Management Sync Center/get-sync-job",
+                    },
+                    {
+                      title: "Get synchronization job details",
+                      path: "/reference/sdk/java/management/Management Sync Center/list-sync-jobs",
+                    },
+                    {
+                      title: "Get synchronization job details",
+                      path: "/reference/sdk/java/management/Management Sync Center/list-sync-job-logs",
+                    },
+                    {
+                      title: "Get synchronization risk operation list",
+                      path: "/reference/sdk/java/management/Management Sync Center/list-sync-risk-operations",
+                    },
+                    {
+                      title: "Execute synchronization risk operation",
+                      path: "/reference/sdk/java/management/Management Sync Center/trigger-sync-risk-operations",
+                    },
+                    {
+                      title: "Cancel synchronization risk operation",
+                      path: "/reference/sdk/java/management/Management Synchronization Center/cancel-sync-risk-operation",
+                    },
+                  ],
+                },
+                {
+                  title: "Manage Pipeline",
+                  children: [
+                    {
+                      title: "Create Pipeline function",
+                      path: "/reference/sdk/java/management/Management-pipeline/create-pipeline-function",
+                    },
+                    {
+                      title: "Get Pipeline function details",
+                      path: "/reference/sdk/java/management/Management-pipeline/get-pipeline-function",
+                    },
+                    {
+                      title: "Re-upload Pipeline function",
+                      path: "/reference/sdk/java/management/Management-pipeline/reupload-pipeline-function",
+                    },
+                    {
+                      title: "Modify Pipeline function",
+                      path: "/reference/sdk/java/management/Management-pipeline/update-pipeline-function",
+                    },
+                    {
+                      title: "Modify Pipeline function order",
+                      path: "/reference/sdk/java/management/management-pipeline/update-pipeline-order",
+                    },
+                    {
+                      title: "Delete Pipeline function",
+                      path: "/reference/sdk/java/management/management-pipeline/delete-pipeline-function",
+                    },
+                    {
+                      title: "Get Pipeline function list",
+                      path: "/reference/sdk/java/management/management-pipeline/list-pipeline-functions",
+                    },
+                    {
+                      title: "Get Pipeline log",
+                      path: "/reference/sdk/java/management/management-pipeline/get-pipeline-logs",
+                    },
+                  ],
+                },
+                {
+                  title: "Manage Webhook",
+                  children: [
+                    {
+                      title: "Create Webhook",
+                      path: "/reference/sdk/java/management/Management-webhook/create-webhook",
+                    },
+                    {
+                      title: "Get Webhook List",
+                      path: "/reference/sdk/java/management/Management-webhook/list-webhooks",
+                    },
+                    {
+                      title: "Modify Webhook Configuration",
+                      path: "/reference/sdk/java/management/Management-webhook/update-webhook",
+                    },
+                    {
+                      title: "Delete Webhook",
+                      path: "/reference/sdk/java/management/Management-webhook/delete-webhook",
+                    },
+                    {
+                      title: "Get Webhook Log",
+                      path: "/reference/sdk/java/management/management-webhook/get-webhook-logs",
+                    },
+                    {
+                      title: "Manually trigger Webhook execution",
+                      path: "/reference/sdk/java/management/management-webhook/trigger-webhook",
+                    },
+                    {
+                      title: "Get Webhook details",
+                      path: "/reference/sdk/java/management/management-webhook/get-webhook",
+                    },
+                    {
+                      title: "Get Webhook event list",
+                      path: "/reference/sdk/java/management/management-webhook/get-webhook-event-list",
+                    },
+                  ],
+                },
+                {
+                  title: "Get audit log",
+                  children: [
+                    {
+                      title: "Get user behavior log",
+                      path: "/reference/sdk/java/management/Get audit log/get-user-action-logs",
+                    },
+                    {
+                      title: "Get administrator action log",
+                      path: "/reference/sdk/java/management/Get audit log/get-admin-audit-logs",
+                    },
+                  ],
+                },
+                {
+                  title: "Manage metering and billing",
+                  children: [
+                    {
+                      title: "Get package details",
+                      path: "/reference/sdk/java/management/Manage metering and billing/get-current-package-info",
+                    },
+                    {
+                      title: "Get usage details",
+                      path: "/reference/sdk/java/management/Manage metering and billing/get-usage-info",
+                    },
+                    {
+                      title: "Get MAU usage records",
+                      path: "/reference/sdk/java/management/Manage metering and billing/get-mau-period-usage-history",
+                    },
+                    {
+                      title: "Get all rights",
+                      path: "/reference/sdk/java/management/Manage metering and billing/get-all-rights-items",
+                    },
+                    {
+                      title: "Get order list",
+                      path: "/reference/sdk/java/management/Management Metering and Billing/get-orders",
+                    },
+                    {
+                      title: "Get order details",
+                      path: "/reference/sdk/java/management/Management Metering and Billing/get-order-detail",
+                    },
+                    {
+                      title: "Get order payment details",
+                      path: "/reference/sdk/java/management/Management Metering and Billing/get-order-pay-detail",
+                    },
+                  ],
+                },
+                {
+                  title: "Events",
+                  path: "/reference/sdk/java/management/events.md",
+                },
+              ],
+            },
+          ],
+        },
         {
           title: "Node.js",
           path: "/reference/sdk/node/",
@@ -3522,356 +4829,356 @@ const zhCnNavBar = {
           ],
         },
         // 自动生成粘贴结束
-        {
-          title: "Android",
-          path: "/reference/mobile/sdk-for-android/",
-          redirect: "/reference/mobile/sdk-for-android/install.html",
-          children: [
-            {
-              title: "Installation and Usage",
-              path: "/reference/mobile/sdk-for-android/install",
-            },
-            {
-              title: "User Authentication Module",
-              children: [
-                {
-                  title: "Login",
-                  children: [
-                    {
-                      title: "Login with Account Password",
-                      path: "/reference/mobile/sdk-for-android/apis/登录/signin-by-account-password.md",
-                    },
-                    {
-                      title: "Login with Username Password",
-                      path: "/reference/mobile/sdk-for-android/apis/登录/signin-by-username-password.md",
-                    },
-                    {
-                      title: "Login with Phone Password",
-                      path: "/reference/mobile/sdk-for-android/apis/登录/signin-by-phone-password.md",
-                    },
-                    {
-                      title: "Login with Email Password",
-                      path: "/reference/mobile/sdk-for-android/apis/登录/signin-by-email-password.md",
-                    },
-                    {
-                      title: "Login with Email Passcode",
-                      path: "/reference/mobile/sdk-for-android/apis/登录/signin-by-email-passcode.md",
-                    },
-                    {
-                      title: "Login with Phone Passcode",
-                      path: "/reference/mobile/sdk-for-android/apis/登录/signin-by-phone-passcode.md",
-                    },
-                    {
-                      title: "Login with LDAP Account",
-                      path: "/reference/mobile/sdk-for-android/apis/登录/signin-by-ldap.md",
-                    },
-                    {
-                      title: "Login with AD Account",
-                      path: "/reference/mobile/sdk-for-android/apis/登录/signin-by-ad.md",
-                    },
-                    {
-                      title: "One-Click Login with Phone Number",
-                      path: "/reference/mobile/sdk-for-android/apis/登录/signin-by-oneauth",
-                    },
-                    {
-                      title: "Mobile Social Login",
-                      path: "/reference/mobile/sdk-for-android/apis/登录/signin-by-mobile",
-                    },
-                    {
-                      title: "Check QR Code Status",
-                      path: "/reference/mobile/sdk-for-android/apis/登录/check-qrcode-status",
-                    },
-                    {
-                      title:
-                        "Custom APP QR Code Login: Change QR Code Status on APP Side",
-                      path: "/reference/mobile/sdk-for-android/apis/登录/change-qrcode-status",
-                    },
-                  ],
-                },
-                {
-                  title: "Register",
-                  children: [
-                    {
-                      title: "Register with Username Password",
-                      path: "/reference/mobile/sdk-for-android/apis/注册/signup-by-username-password.md",
-                    },
-                    {
-                      title: "Register with Email Password",
-                      path: "/reference/mobile/sdk-for-android/apis/注册/signup-by-email-password.md",
-                    },
-                    {
-                      title: "Register with Phone Passcode",
-                      path: "/reference/mobile/sdk-for-android/apis/注册/signup-by-phone-passcode.md",
-                    },
-                    {
-                      title: "Register with Email Passcode",
-                      path: "/reference/mobile/sdk-for-android/apis/注册/signup-by-email-passcode.md",
-                    },
-                  ],
-                },
-                {
-                  title: "User Profile",
-                  children: [
-                    {
-                      title: "Get User Profile",
-                      path: "/reference/mobile/sdk-for-android/apis/用户资料/get-profile",
-                    },
-                    {
-                      title: "Update User Profile",
-                      path: "/reference/mobile/sdk-for-android/apis/用户资料/update-profile",
-                    },
-                    {
-                      title: "Bind Email",
-                      path: "/reference/mobile/sdk-for-android/apis/用户资料/bind-email",
-                    },
-                    {
-                      title: "Unbind Email",
-                      path: "/reference/mobile/sdk-for-android/apis/用户资料/unbind-email",
-                    },
-                    {
-                      title: "Bind Phone",
-                      path: "/reference/mobile/sdk-for-android/apis/用户资料/bind-phone",
-                    },
-                    {
-                      title: "Unbind Phone",
-                      path: "/reference/mobile/sdk-for-android/apis/用户资料/unbind-phone",
-                    },
-                    {
-                      title: "Get Password Strength and Account Security Score",
-                      path: "/reference/mobile/sdk-for-android/apis/用户资料/get-security-info",
-                    },
-                    {
-                      title: "Update Password",
-                      path: "/reference/mobile/sdk-for-android/apis/用户资料/update-password",
-                    },
-                    {
-                      title: "Initiate Email Update Verification Request",
-                      path: "/reference/mobile/sdk-for-android/apis/用户资料/verify-update-email-request",
-                    },
-                    {
-                      title: "Update Email",
-                      path: "/reference/mobile/sdk-for-android/apis/用户资料/update-email",
-                    },
-                    {
-                      title: "Initiate Phone Update Verification Request",
-                      path: "/reference/mobile/sdk-for-android/apis/用户资料/verify-update-phone-request",
-                    },
-                    {
-                      title: "Update Phone",
-                      path: "/reference/mobile/sdk-for-android/apis/用户资料/update-phone",
-                    },
-                    {
-                      title: "Initiate Reset Password Request",
-                      path: "/reference/mobile/sdk-for-android/apis/用户资料/verify-reset-password-request",
-                    },
-                    {
-                      title: "Reset Password",
-                      path: "/reference/mobile/sdk-for-android/apis/用户资料/reset-password",
-                    },
-                    {
-                      title: "Initiate Account Deletion Request",
-                      path: "/reference/mobile/sdk-for-android/apis/用户资料/verify-delete-account-request",
-                    },
-                    {
-                      title: "Delete Account",
-                      path: "/reference/mobile/sdk-for-android/apis/用户资料/delete-account",
-                    },
-                  ],
-                },
-                {
-                  title: "Account Binding",
-                  children: [
-                    {
-                      title: "Link External Identity Provider",
-                      path: "/reference/mobile/sdk-for-android/apis/账号绑定/link-extidp",
-                    },
-                    {
-                      title: "Unlink External Identity Provider",
-                      path: "/reference/mobile/sdk-for-android/apis/账号绑定/unlink-extidp",
-                    },
-                    {
-                      title: "Get Linked External Identity Providers",
-                      path: "/reference/mobile/sdk-for-android/apis/账号绑定/get-identities",
-                    },
-                    {
-                      title: "Get Enabled External Identity Providers",
-                      path: "/reference/mobile/sdk-for-android/apis/账号绑定/get-extidps",
-                    },
-                  ],
-                },
-                {
-                  title: "MFA Factor Management",
-                  children: [
-                    {
-                      title: "Initiate MFA Factor Enrollment Request",
-                      path: "/reference/mobile/sdk-for-android/apis/mfa-要素管理/send-enroll-factor-request",
-                    },
-                    {
-                      title: "Enroll MFA Factor",
-                      path: "/reference/mobile/sdk-for-android/apis/mfa-要素管理/enroll-factor",
-                    },
-                    {
-                      title: "Reset MFA Factor",
-                      path: "/reference/mobile/sdk-for-android/apis/mfa-要素管理/reset-factor",
-                    },
-                    {
-                      title: "List Enrolled MFA Factors",
-                      path: "/reference/mobile/sdk-for-android/apis/mfa-要素管理/list-enrolled-factors",
-                    },
-                    {
-                      title: "Get Enrolled MFA Factor",
-                      path: "/reference/mobile/sdk-for-android/apis/mfa-要素管理/get-factor",
-                    },
-                    {
-                      title: "List Available MFA Factors",
-                      path: "/reference/mobile/sdk-for-android/apis/mfa-要素管理/list-factors-to-enroll",
-                    },
-                  ],
-                },
-                {
-                  title: "User Resources",
-                  children: [
-                    {
-                      title: "Get Login History",
-                      path: "/reference/mobile/sdk-for-android/apis/用户相关资源/get-my-login-history",
-                    },
-                    {
-                      title: "Get Logged In Applications",
-                      path: "/reference/mobile/sdk-for-android/apis/用户相关资源/get-my-logged-in-apps",
-                    },
-                    {
-                      title: "Get Accessible Applications",
-                      path: "/reference/mobile/sdk-for-android/apis/用户相关资源/get-my-accessible-apps",
-                    },
-                    {
-                      title: "Get Tenant List",
-                      path: "/reference/mobile/sdk-for-android/apis/用户相关资源/get-my-tenant-list",
-                    },
-                    {
-                      title: "Get Role List",
-                      path: "/reference/mobile/sdk-for-android/apis/用户相关资源/get-my-role-list",
-                    },
-                    {
-                      title: "Get Group List",
-                      path: "/reference/mobile/sdk-for-android/apis/用户相关资源/get-my-group-list",
-                    },
-                    {
-                      title: "Get Department List",
-                      path: "/reference/mobile/sdk-for-android/apis/用户相关资源/get-my-department-list",
-                    },
-                    {
-                      title: "Get Authorized Resources List",
-                      path: "/reference/mobile/sdk-for-android/apis/用户相关资源/get-my-authorized-resources",
-                    },
-                  ],
-                },
-                {
-                  title: "Message Service",
-                  children: [
-                    {
-                      title: "Send SMS",
-                      path: "/reference/mobile/sdk-for-android/apis/消息服务/send-sms",
-                    },
-                    {
-                      title: "Send Email",
-                      path: "/reference/mobile/sdk-for-android/apis/消息服务/send-email",
-                    },
-                  ],
-                },
-                {
-                  title: "Others",
-                  children: [
-                    {
-                      title: "Get Server Public Information",
-                      path: "/reference/mobile/sdk-for-android/apis/其他/system",
-                    },
-                    {
-                      title: "Get Country List",
-                      path: "/reference/mobile/sdk-for-android/apis/其他/get-country-list",
-                    },
-                  ],
-                },
-                {
-                  title: "OIDC Module",
-                  path: "/reference/mobile/sdk-for-android/apis/oidc.md",
-                },
-                {
-                  title: "Events",
-                  path: "/reference/mobile/sdk-for-android/apis/events.md",
-                },
-              ],
-            },
-            {
-              title: "Compliance Guidelines",
-              path: "/reference/mobile/sdk-for-android/compliance-guidelines.md",
-            },
-          ],
-        },
-        {
-          title: "Flutter",
-          path: "/reference/mobile/sdk-for-flutter/",
-          children: [
-            {
-              title: "Installation and Usage",
-              path: "/reference/mobile/sdk-for-flutter/quick",
-            },
-            {
-              title: "User Authentication Module",
-              path: "/reference/mobile/sdk-for-flutter/apis/",
-              children: [
-                "/reference/mobile/sdk-for-flutter/apis/login",
-                "/reference/mobile/sdk-for-flutter/apis/register",
-                "/reference/mobile/sdk-for-flutter/apis/user",
-                "/reference/mobile/sdk-for-flutter/apis/mfa",
-                "/reference/mobile/sdk-for-flutter/apis/user-resources",
-                "/reference/mobile/sdk-for-flutter/apis/message",
-                "/reference/mobile/sdk-for-flutter/apis/utils",
-                "/reference/mobile/sdk-for-flutter/apis/oidc",
-                "/reference/mobile/sdk-for-flutter/apis/options",
-                "/reference/mobile/sdk-for-flutter/apis/enum",
-              ],
-            },
-            {
-              title: "Flutter SDK Change Log",
-              path: "/reference/mobile/sdk-for-flutter/change-log",
-            },
-          ],
-        },
-        {
-          title: "iOS",
-          path: "/reference/mobile/sdk-for-ios/",
-          children: [
-            {
-              title: "Installation and Usage",
-              path: "/reference/mobile/sdk-for-ios/quick",
-            },
-            {
-              title: "User Authentication Module",
-              path: "/reference/mobile/sdk-for-ios/apis/",
-              children: [
-                "/reference/mobile/sdk-for-ios/apis/login",
-                "/reference/mobile/sdk-for-ios/apis/register",
-                "/reference/mobile/sdk-for-ios/apis/user",
-                "/reference/mobile/sdk-for-ios/apis/mfa",
-                "/reference/mobile/sdk-for-ios/apis/user-resources",
-                "/reference/mobile/sdk-for-ios/apis/message",
-                "/reference/mobile/sdk-for-ios/apis/utils",
-                "/reference/mobile/sdk-for-ios/apis/oidc",
-                "/reference/mobile/sdk-for-ios/apis/options",
-                "/reference/mobile/sdk-for-ios/apis/enum",
-                "/reference/mobile/sdk-for-ios/apis/events",
-              ],
-            },
-            {
-              title: "Error Codes",
-              path: "/reference/mobile/sdk-for-ios/errorcode",
-            },
-            {
-              title: "iOS SDK Change Log",
-              path: "/reference/mobile/sdk-for-ios/change-log",
-            },
-          ],
-        },
+        // {
+        //   title: "Android",
+        //   path: "/reference/mobile/sdk-for-android/",
+        //   redirect: "/reference/mobile/sdk-for-android/install.html",
+        //   children: [
+        //     {
+        //       title: "Installation and Usage",
+        //       path: "/reference/mobile/sdk-for-android/install",
+        //     },
+        //     {
+        //       title: "User Authentication Module",
+        //       children: [
+        //         {
+        //           title: "Login",
+        //           children: [
+        //             {
+        //               title: "Login with Account Password",
+        //               path: "/reference/mobile/sdk-for-android/apis/登录/signin-by-account-password.md",
+        //             },
+        //             {
+        //               title: "Login with Username Password",
+        //               path: "/reference/mobile/sdk-for-android/apis/登录/signin-by-username-password.md",
+        //             },
+        //             {
+        //               title: "Login with Phone Password",
+        //               path: "/reference/mobile/sdk-for-android/apis/登录/signin-by-phone-password.md",
+        //             },
+        //             {
+        //               title: "Login with Email Password",
+        //               path: "/reference/mobile/sdk-for-android/apis/登录/signin-by-email-password.md",
+        //             },
+        //             {
+        //               title: "Login with Email Passcode",
+        //               path: "/reference/mobile/sdk-for-android/apis/登录/signin-by-email-passcode.md",
+        //             },
+        //             {
+        //               title: "Login with Phone Passcode",
+        //               path: "/reference/mobile/sdk-for-android/apis/登录/signin-by-phone-passcode.md",
+        //             },
+        //             {
+        //               title: "Login with LDAP Account",
+        //               path: "/reference/mobile/sdk-for-android/apis/登录/signin-by-ldap.md",
+        //             },
+        //             {
+        //               title: "Login with AD Account",
+        //               path: "/reference/mobile/sdk-for-android/apis/登录/signin-by-ad.md",
+        //             },
+        //             {
+        //               title: "One-Click Login with Phone Number",
+        //               path: "/reference/mobile/sdk-for-android/apis/登录/signin-by-oneauth",
+        //             },
+        //             {
+        //               title: "Mobile Social Login",
+        //               path: "/reference/mobile/sdk-for-android/apis/登录/signin-by-mobile",
+        //             },
+        //             {
+        //               title: "Check QR Code Status",
+        //               path: "/reference/mobile/sdk-for-android/apis/登录/check-qrcode-status",
+        //             },
+        //             {
+        //               title:
+        //                 "Custom APP QR Code Login: Change QR Code Status on APP Side",
+        //               path: "/reference/mobile/sdk-for-android/apis/登录/change-qrcode-status",
+        //             },
+        //           ],
+        //         },
+        //         {
+        //           title: "Register",
+        //           children: [
+        //             {
+        //               title: "Register with Username Password",
+        //               path: "/reference/mobile/sdk-for-android/apis/注册/signup-by-username-password.md",
+        //             },
+        //             {
+        //               title: "Register with Email Password",
+        //               path: "/reference/mobile/sdk-for-android/apis/注册/signup-by-email-password.md",
+        //             },
+        //             {
+        //               title: "Register with Phone Passcode",
+        //               path: "/reference/mobile/sdk-for-android/apis/注册/signup-by-phone-passcode.md",
+        //             },
+        //             {
+        //               title: "Register with Email Passcode",
+        //               path: "/reference/mobile/sdk-for-android/apis/注册/signup-by-email-passcode.md",
+        //             },
+        //           ],
+        //         },
+        //         {
+        //           title: "User Profile",
+        //           children: [
+        //             {
+        //               title: "Get User Profile",
+        //               path: "/reference/mobile/sdk-for-android/apis/用户资料/get-profile",
+        //             },
+        //             {
+        //               title: "Update User Profile",
+        //               path: "/reference/mobile/sdk-for-android/apis/用户资料/update-profile",
+        //             },
+        //             {
+        //               title: "Bind Email",
+        //               path: "/reference/mobile/sdk-for-android/apis/用户资料/bind-email",
+        //             },
+        //             {
+        //               title: "Unbind Email",
+        //               path: "/reference/mobile/sdk-for-android/apis/用户资料/unbind-email",
+        //             },
+        //             {
+        //               title: "Bind Phone",
+        //               path: "/reference/mobile/sdk-for-android/apis/用户资料/bind-phone",
+        //             },
+        //             {
+        //               title: "Unbind Phone",
+        //               path: "/reference/mobile/sdk-for-android/apis/用户资料/unbind-phone",
+        //             },
+        //             {
+        //               title: "Get Password Strength and Account Security Score",
+        //               path: "/reference/mobile/sdk-for-android/apis/用户资料/get-security-info",
+        //             },
+        //             {
+        //               title: "Update Password",
+        //               path: "/reference/mobile/sdk-for-android/apis/用户资料/update-password",
+        //             },
+        //             {
+        //               title: "Initiate Email Update Verification Request",
+        //               path: "/reference/mobile/sdk-for-android/apis/用户资料/verify-update-email-request",
+        //             },
+        //             {
+        //               title: "Update Email",
+        //               path: "/reference/mobile/sdk-for-android/apis/用户资料/update-email",
+        //             },
+        //             {
+        //               title: "Initiate Phone Update Verification Request",
+        //               path: "/reference/mobile/sdk-for-android/apis/用户资料/verify-update-phone-request",
+        //             },
+        //             {
+        //               title: "Update Phone",
+        //               path: "/reference/mobile/sdk-for-android/apis/用户资料/update-phone",
+        //             },
+        //             {
+        //               title: "Initiate Reset Password Request",
+        //               path: "/reference/mobile/sdk-for-android/apis/用户资料/verify-reset-password-request",
+        //             },
+        //             {
+        //               title: "Reset Password",
+        //               path: "/reference/mobile/sdk-for-android/apis/用户资料/reset-password",
+        //             },
+        //             {
+        //               title: "Initiate Account Deletion Request",
+        //               path: "/reference/mobile/sdk-for-android/apis/用户资料/verify-delete-account-request",
+        //             },
+        //             {
+        //               title: "Delete Account",
+        //               path: "/reference/mobile/sdk-for-android/apis/用户资料/delete-account",
+        //             },
+        //           ],
+        //         },
+        //         {
+        //           title: "Account Binding",
+        //           children: [
+        //             {
+        //               title: "Link External Identity Provider",
+        //               path: "/reference/mobile/sdk-for-android/apis/账号绑定/link-extidp",
+        //             },
+        //             {
+        //               title: "Unlink External Identity Provider",
+        //               path: "/reference/mobile/sdk-for-android/apis/账号绑定/unlink-extidp",
+        //             },
+        //             {
+        //               title: "Get Linked External Identity Providers",
+        //               path: "/reference/mobile/sdk-for-android/apis/账号绑定/get-identities",
+        //             },
+        //             {
+        //               title: "Get Enabled External Identity Providers",
+        //               path: "/reference/mobile/sdk-for-android/apis/账号绑定/get-extidps",
+        //             },
+        //           ],
+        //         },
+        //         {
+        //           title: "MFA Factor Management",
+        //           children: [
+        //             {
+        //               title: "Initiate MFA Factor Enrollment Request",
+        //               path: "/reference/mobile/sdk-for-android/apis/mfa-要素管理/send-enroll-factor-request",
+        //             },
+        //             {
+        //               title: "Enroll MFA Factor",
+        //               path: "/reference/mobile/sdk-for-android/apis/mfa-要素管理/enroll-factor",
+        //             },
+        //             {
+        //               title: "Reset MFA Factor",
+        //               path: "/reference/mobile/sdk-for-android/apis/mfa-要素管理/reset-factor",
+        //             },
+        //             {
+        //               title: "List Enrolled MFA Factors",
+        //               path: "/reference/mobile/sdk-for-android/apis/mfa-要素管理/list-enrolled-factors",
+        //             },
+        //             {
+        //               title: "Get Enrolled MFA Factor",
+        //               path: "/reference/mobile/sdk-for-android/apis/mfa-要素管理/get-factor",
+        //             },
+        //             {
+        //               title: "List Available MFA Factors",
+        //               path: "/reference/mobile/sdk-for-android/apis/mfa-要素管理/list-factors-to-enroll",
+        //             },
+        //           ],
+        //         },
+        //         {
+        //           title: "User Resources",
+        //           children: [
+        //             {
+        //               title: "Get Login History",
+        //               path: "/reference/mobile/sdk-for-android/apis/用户相关资源/get-my-login-history",
+        //             },
+        //             {
+        //               title: "Get Logged In Applications",
+        //               path: "/reference/mobile/sdk-for-android/apis/用户相关资源/get-my-logged-in-apps",
+        //             },
+        //             {
+        //               title: "Get Accessible Applications",
+        //               path: "/reference/mobile/sdk-for-android/apis/用户相关资源/get-my-accessible-apps",
+        //             },
+        //             {
+        //               title: "Get Tenant List",
+        //               path: "/reference/mobile/sdk-for-android/apis/用户相关资源/get-my-tenant-list",
+        //             },
+        //             {
+        //               title: "Get Role List",
+        //               path: "/reference/mobile/sdk-for-android/apis/用户相关资源/get-my-role-list",
+        //             },
+        //             {
+        //               title: "Get Group List",
+        //               path: "/reference/mobile/sdk-for-android/apis/用户相关资源/get-my-group-list",
+        //             },
+        //             {
+        //               title: "Get Department List",
+        //               path: "/reference/mobile/sdk-for-android/apis/用户相关资源/get-my-department-list",
+        //             },
+        //             {
+        //               title: "Get Authorized Resources List",
+        //               path: "/reference/mobile/sdk-for-android/apis/用户相关资源/get-my-authorized-resources",
+        //             },
+        //           ],
+        //         },
+        //         {
+        //           title: "Message Service",
+        //           children: [
+        //             {
+        //               title: "Send SMS",
+        //               path: "/reference/mobile/sdk-for-android/apis/消息服务/send-sms",
+        //             },
+        //             {
+        //               title: "Send Email",
+        //               path: "/reference/mobile/sdk-for-android/apis/消息服务/send-email",
+        //             },
+        //           ],
+        //         },
+        //         {
+        //           title: "Others",
+        //           children: [
+        //             {
+        //               title: "Get Server Public Information",
+        //               path: "/reference/mobile/sdk-for-android/apis/其他/system",
+        //             },
+        //             {
+        //               title: "Get Country List",
+        //               path: "/reference/mobile/sdk-for-android/apis/其他/get-country-list",
+        //             },
+        //           ],
+        //         },
+        //         {
+        //           title: "OIDC Module",
+        //           path: "/reference/mobile/sdk-for-android/apis/oidc.md",
+        //         },
+        //         {
+        //           title: "Events",
+        //           path: "/reference/mobile/sdk-for-android/apis/events.md",
+        //         },
+        //       ],
+        //     },
+        //     {
+        //       title: "Compliance Guidelines",
+        //       path: "/reference/mobile/sdk-for-android/compliance-guidelines.md",
+        //     },
+        //   ],
+        // },
+        // {
+        //   title: "Flutter",
+        //   path: "/reference/mobile/sdk-for-flutter/",
+        //   children: [
+        //     {
+        //       title: "Installation and Usage",
+        //       path: "/reference/mobile/sdk-for-flutter/quick",
+        //     },
+        //     {
+        //       title: "User Authentication Module",
+        //       path: "/reference/mobile/sdk-for-flutter/apis/",
+        //       children: [
+        //         "/reference/mobile/sdk-for-flutter/apis/login",
+        //         "/reference/mobile/sdk-for-flutter/apis/register",
+        //         "/reference/mobile/sdk-for-flutter/apis/user",
+        //         "/reference/mobile/sdk-for-flutter/apis/mfa",
+        //         "/reference/mobile/sdk-for-flutter/apis/user-resources",
+        //         "/reference/mobile/sdk-for-flutter/apis/message",
+        //         "/reference/mobile/sdk-for-flutter/apis/utils",
+        //         "/reference/mobile/sdk-for-flutter/apis/oidc",
+        //         "/reference/mobile/sdk-for-flutter/apis/options",
+        //         "/reference/mobile/sdk-for-flutter/apis/enum",
+        //       ],
+        //     },
+        //     {
+        //       title: "Flutter SDK Change Log",
+        //       path: "/reference/mobile/sdk-for-flutter/change-log",
+        //     },
+        //   ],
+        // },
+        // {
+        //   title: "iOS",
+        //   path: "/reference/mobile/sdk-for-ios/",
+        //   children: [
+        //     {
+        //       title: "Installation and Usage",
+        //       path: "/reference/mobile/sdk-for-ios/quick",
+        //     },
+        //     {
+        //       title: "User Authentication Module",
+        //       path: "/reference/mobile/sdk-for-ios/apis/",
+        //       children: [
+        //         "/reference/mobile/sdk-for-ios/apis/login",
+        //         "/reference/mobile/sdk-for-ios/apis/register",
+        //         "/reference/mobile/sdk-for-ios/apis/user",
+        //         "/reference/mobile/sdk-for-ios/apis/mfa",
+        //         "/reference/mobile/sdk-for-ios/apis/user-resources",
+        //         "/reference/mobile/sdk-for-ios/apis/message",
+        //         "/reference/mobile/sdk-for-ios/apis/utils",
+        //         "/reference/mobile/sdk-for-ios/apis/oidc",
+        //         "/reference/mobile/sdk-for-ios/apis/options",
+        //         "/reference/mobile/sdk-for-ios/apis/enum",
+        //         "/reference/mobile/sdk-for-ios/apis/events",
+        //       ],
+        //     },
+        //     {
+        //       title: "Error Codes",
+        //       path: "/reference/mobile/sdk-for-ios/errorcode",
+        //     },
+        //     {
+        //       title: "iOS SDK Change Log",
+        //       path: "/reference/mobile/sdk-for-ios/change-log",
+        //     },
+        //   ],
+        // },
         // {
         //   title: "Mini Program",
         //   path: "/reference/sdk/miniapp/",
@@ -3939,14 +5246,14 @@ const zhCnNavBar = {
     //   }
     // ]
     // },
-    {
-      title: "Frameworks Integration",
-      path: "https://docs.genauth.ai/reference/frameworks.html",
-    },
-    {
-      title: "Radius",
-      path: "https://docs.genauth.ai/reference/radius/",
-    },
+    // {
+    //   title: "Frameworks Integration",
+    //   path: "https://docs.genauth.ai/reference/frameworks.html",
+    // },
+    // {
+    //   title: "Radius",
+    //   path: "https://docs.genauth.ai/reference/radius/",
+    // },
     {
       title: "Error Codes",
       path: "/reference/error-code",
@@ -5861,79 +7168,79 @@ const zhCnNavBar = {
       path: "/concepts/cryptography",
     },
   ],
-  "/integration/": [],
+  // "/integration/": [],
   "/frameworks/": [
     {
       title: "",
       path: "",
     },
   ],
-  "/apn/": [
-    {
-      title: "Overview",
-      path: "/apn/overview/",
-    },
-    {
-      title: "Integrate OIDC into Your Application",
-      path: "/apn/integrated-oidc/",
-    },
-    {
-      title: "Test OIDC Capabilities with GenAuth",
-      path: "/apn/test-oidc/",
-      children: [
-        {
-          title: "Step 1: Create a Custom Application in GenAuth",
-          path: "/apn/test-oidc/get-oidc-parameter/step1",
-        },
-        {
-          title: "Step 2: Click the Created Application to Get OIDC Parameters",
-          path: "/apn/test-oidc/get-oidc-parameter/step2",
-        },
-        {
-          title: "Step 3: Prepare a GenAuth User",
-          path: "/apn/test-oidc/get-oidc-parameter/step3",
-        },
-        {
-          title: "Step 4: Test Your Application Through GenAuth IDP",
-          path: "/apn/test-oidc/get-oidc-parameter/step4",
-        },
-      ],
-    },
-    {
-      title: "Important Notes Before Joining APN",
-      path: "/apn/attention/",
-    },
-    {
-      title: "Invite Administrators",
-      path: "/guides/userpool-config/collaboration-adminstrator",
-    },
-    {
-      title: "Submit Application",
-      path: "/apn/submit-app/",
-    },
-    {
-      title: "More OIDC Testing Methods",
-      path: "/apn/more-oidc-tests/",
-      children: [
-        {
-          title: "Type 2: Authorization Code + PKCE Mode Testing",
-          path: "/apn/more-oidc-tests/type2",
-        },
-        {
-          title: "Type 3: Implicit Mode Testing",
-          path: "/apn/more-oidc-tests/type3",
-        },
-        {
-          title: "Type 4: Password Mode Testing",
-          path: "/apn/more-oidc-tests/type4",
-        },
-        {
-          title: "Type 5: Client Credentials Mode Testing",
-          path: "/apn/more-oidc-tests/type5",
-        },
-      ],
-    },
-  ],
+  // "/apn/": [
+  //   {
+  //     title: "Overview",
+  //     path: "/apn/overview/",
+  //   },
+  //   {
+  //     title: "Integrate OIDC into Your Application",
+  //     path: "/apn/integrated-oidc/",
+  //   },
+  //   {
+  //     title: "Test OIDC Capabilities with GenAuth",
+  //     path: "/apn/test-oidc/",
+  //     children: [
+  //       {
+  //         title: "Step 1: Create a Custom Application in GenAuth",
+  //         path: "/apn/test-oidc/get-oidc-parameter/step1",
+  //       },
+  //       {
+  //         title: "Step 2: Click the Created Application to Get OIDC Parameters",
+  //         path: "/apn/test-oidc/get-oidc-parameter/step2",
+  //       },
+  //       {
+  //         title: "Step 3: Prepare a GenAuth User",
+  //         path: "/apn/test-oidc/get-oidc-parameter/step3",
+  //       },
+  //       {
+  //         title: "Step 4: Test Your Application Through GenAuth IDP",
+  //         path: "/apn/test-oidc/get-oidc-parameter/step4",
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     title: "Important Notes Before Joining APN",
+  //     path: "/apn/attention/",
+  //   },
+  //   {
+  //     title: "Invite Administrators",
+  //     path: "/guides/userpool-config/collaboration-adminstrator",
+  //   },
+  //   {
+  //     title: "Submit Application",
+  //     path: "/apn/submit-app/",
+  //   },
+  //   {
+  //     title: "More OIDC Testing Methods",
+  //     path: "/apn/more-oidc-tests/",
+  //     children: [
+  //       {
+  //         title: "Type 2: Authorization Code + PKCE Mode Testing",
+  //         path: "/apn/more-oidc-tests/type2",
+  //       },
+  //       {
+  //         title: "Type 3: Implicit Mode Testing",
+  //         path: "/apn/more-oidc-tests/type3",
+  //       },
+  //       {
+  //         title: "Type 4: Password Mode Testing",
+  //         path: "/apn/more-oidc-tests/type4",
+  //       },
+  //       {
+  //         title: "Type 5: Client Credentials Mode Testing",
+  //         path: "/apn/more-oidc-tests/type5",
+  //       },
+  //     ],
+  //   },
+  // ],
   "/metadata/": [
     {
       title: "Metadata Overview",

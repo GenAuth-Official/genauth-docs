@@ -9,17 +9,11 @@ exploreUse: Explore the use of {{$localeConfig.brandName}}
 banner:
   - title: GenAuth API/SDK V3 Officially Launched！
     text: GenAuth API/SDK V3 is now available, offering HTTP API and SDKs for over 10 different languages and frameworks, allowing you to flexibly build secure and stable authentication processes in just 5 minutes！
-    url: https://docs.genauth.ai/v3
-    btnText: View Documentation
+    url: /reference/
+    btnText: View Docs
     icon: https://files.authing.co/authing-docs-v2/images/common/banner-icon.svg
     background: https://files.authing.co/authing-docs-v2/images/common/banner-bg.png
-  - title: GenAuth API Explorer Officially Launched！
-    text: GenAuth API Explorer is now available, providing an online debugging center for developers, efficiently meeting the needs of API debugging and learning.
-    url: https://api-explorer.genauth.ai
-    btnText: Go View
-    icon: https://files.authing.co/authing-docs-v2/images/common/banner-icon-2.svg
-    background: https://files.authing.co/authing-docs-v2/images/common/banner-bg-2.png
-    open: true
+
 hotSearch:
   - text: How to Authenticate Users
     link: /guides/authentication/
@@ -96,48 +90,6 @@ sdkConfig:
     name: PHP
     link: /reference/sdk-for-php/
     icon: php
-applicationSdks:
-  - title: Client Applications
-    description: Native applications running on mobile, desktop, and other smart devices
-    color: "#396AFF"
-    sdks:
-      - ios
-      - android
-      - flutter
-      - reactNative
-      - cSharp
-  - title: Single-Page Web Applications
-    description: Pure front-end web applications with only one page
-    color: "#75A3FF"
-    sdks:
-      - javascript
-      - react
-      - angular
-      - vue
-  - title: Standard Web Applications
-    description: Web applications with multiple pages and support for jumping
-    color: "#28B1B0"
-    sdks:
-      - javascript
-      - python
-      - cSharp
-      - nodeJs
-      - ruby
-      - java
-      - golang
-      - php
-  - title: Backend / API Services
-    description: Applications with no front-end interface, only providing backend services
-    color: "#F8BC00"
-    sdks:
-      - javascript
-      - python
-      - cSharp
-      - nodeJs
-      - ruby
-      - java
-      - golang
-      - php
 sections:
   - title: Concepts
     description: Understand the foundation of {{$localeConfig.brandName}} system architecture

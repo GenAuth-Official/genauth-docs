@@ -9,15 +9,10 @@
 
     <div class="home-banner">
       <div
-        class="
-          banner-container
-          content-layout-container content-layout-container__without-sidebar
-        "
+        class="banner-container content-layout-container content-layout-container__without-sidebar"
       >
         <template v-if="data.banner">
-          <banner-card
-            :banners="data.banner"
-          />
+          <banner-card :banners="data.banner" />
         </template>
         <h1 class="home-title">
           {{ data.mainTitle }}
@@ -40,7 +35,10 @@
           />
         </div>
 
-        <div class="sdk-card-container">
+        <div
+          v-if="data.applicationSdks && data.applicationSdks.length > 0"
+          class="sdk-card-container"
+        >
           <SdkCard
             v-for="(cardInfo, index) of data.applicationSdks"
             :key="index"
@@ -52,10 +50,7 @@
     </div>
 
     <section
-      class="
-        home-main-content
-        content-layout-container content-layout-container__without-sidebar
-      "
+      class="home-main-content content-layout-container content-layout-container__without-sidebar"
     >
       <div class="section-card-container layout-container">
         <SectionCard
