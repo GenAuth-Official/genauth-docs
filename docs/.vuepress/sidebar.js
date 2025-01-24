@@ -1227,7 +1227,7 @@ const zhCnNavBar = {
                   children: [
                     {
                       title: "Front-end logout",
-                      path: "/reference/sdk/java/authentication/登录/front-channel-logout.md",
+                      path: "/reference/sdk/java/authentication/登出/front-channel-logout.md",
                     },
                     {
                       title: "Back-end logout",
@@ -1460,24 +1460,24 @@ const zhCnNavBar = {
                     },
                     {
                       title: "Array type resource authentication",
-                      path: "/reference/sdk/java/鉴权/authentication/check-permission-array-resource",
+                      path: "/reference/sdk/java/authentication/鉴权/check-permission-array-resource",
                     },
                     {
                       title: "Tree type resource authentication",
-                      path: "/reference/sdk/java/鉴权/authentication/check-permission-tree-resource",
+                      path: "/reference/sdk/java/authentication/鉴权/check-permission-tree-resource",
                     },
                     {
                       title: `Get the user's authorized resource list under the login application`,
-                      path: `/reference/sdk/java/鉴权/authentication/get-user-auth-resource-list`,
+                      path: `/reference/sdk/java/authentication/鉴权/get-user-auth-resource-list`,
                     },
                     {
                       title: `Get the user's specified resource permission list under the login application`,
-                      path: "/reference/sdk/java/鉴权/authentication/get-user-auth-resource-permission-list",
+                      path: "/reference/sdk/java/authentication/鉴权/get-user-auth-resource-permission-list",
                     },
                     {
                       title:
                         "Get the structure list of authorized resources under the user login application",
-                      path: "/reference/sdk/java/鉴权/authentication/get-user-auth-resource-struct",
+                      path: "/reference/sdk/java/authentication/鉴权/get-user-auth-resource-struct",
                     },
                   ],
                 },
