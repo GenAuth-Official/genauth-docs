@@ -13,7 +13,7 @@
         :download="data.downloadFileName || fileName(data.downloadUrl)"
         target="_Blank"
         class="download-demo-button nav-link"
-        style="background: #215AE5; color: #ffffff"
+        style="background: #682AE9; color: #ffffff"
       >
         下载
       </a>
@@ -22,7 +22,7 @@
         :href="data.jumpUrl"
         target="_Blank"
         class="download-demo-button nav-link"
-        style="background: #ffffff; color: #215AE5"
+        style="background: #ffffff; color: #682AE9"
       >
         在 GitHub 查看
       </a>

@@ -27,7 +27,7 @@ GenAuth Flutter SDK 提供：
 
 <br>
 
-<span style="background-color: #215ae5;a:link:color:#FFF;padding:8px;border-radius: 4px;"><a href="./develop.html" style="color:#FFF;">快速开始 →</a>
+<span style="background-color: #682AE9;a:link:color:#FFF;padding:8px;border-radius: 4px;"><a href="./develop.html" style="color:#FFF;">快速开始 →</a>
 </span>
 
 <br>

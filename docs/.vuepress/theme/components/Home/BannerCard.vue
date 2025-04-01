@@ -66,7 +66,7 @@ export default {
 };
 </script>
 <style lang="scss">
-$color: #215ae5;
+$color: #682AE9;
 .docs-banner {
   background-color: $color;
   border-radius: 4px;
