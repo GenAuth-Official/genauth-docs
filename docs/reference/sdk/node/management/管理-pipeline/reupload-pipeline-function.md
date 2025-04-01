@@ -26,7 +26,7 @@ When the Pipeline function fails to upload, re-upload the Pipeline function
 ## Sample code
 
 ```ts
-import { ManagementClient, Models } from "authing-node-sdk";
+import { ManagementClient, Models } from "@genauth/nodejs";
 
 // Initialize ManagementClient
 const managementClient = new ManagementClient({

@@ -26,7 +26,7 @@ If the user unbinds the email, if the user has not bound other login methods (mo
 ## Sample code
 
 ```ts
-import { AuthenticationClient, Models } from "authing-node-sdk";
+import { AuthenticationClient, Models } from "@genauth/nodejs";
 
 const authenticationClient = new AuthenticationClient({
   // Need to be replaced with your GenAuth AppId, Secret and Host

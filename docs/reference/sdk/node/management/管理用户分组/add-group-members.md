@@ -27,7 +27,7 @@ Add group members, and members are passed in the form of user ID arrays.
 ## Sample code
 
 ```ts
-import { ManagementClient, Models } from "authing-node-sdk";
+import { ManagementClient, Models } from "@genauth/nodejs";
 
 // Initialize ManagementClient
 const managementClient = new ManagementClient({

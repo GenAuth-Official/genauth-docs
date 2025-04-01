@@ -25,7 +25,7 @@ Get the list of resource permissions specified by the user. The user obtains the
 ## Sample code
 
 ```ts
-import { AuthenticationClient, Models } from "authing-node-sdk";
+import { AuthenticationClient, Models } from "@genauth/nodejs";
 
 const authenticationClient = new AuthenticationClient({
   // Need to replace with your GenAuth AppId, Secret and Host

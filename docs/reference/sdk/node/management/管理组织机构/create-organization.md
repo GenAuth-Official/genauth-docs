@@ -33,7 +33,7 @@ Create an organization, which will create an organization with only one node. Yo
 ## Sample code
 
 ```ts
-import { ManagementClient, Models } from "authing-node-sdk";
+import { ManagementClient, Models } from "@genauth/nodejs";
 
 // Initialize ManagementClient
 const managementClient = new ManagementClient({

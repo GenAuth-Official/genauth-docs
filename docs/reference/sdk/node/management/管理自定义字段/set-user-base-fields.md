@@ -26,7 +26,7 @@ Modify user built-in field configuration. Built-in fields are not allowed to mod
 ## Sample code
 
 ```ts
-import { ManagementClient, Models } from "authing-node-sdk";
+import { ManagementClient, Models } from "@genauth/nodejs";
 
 // Initialize ManagementClient
 const managementClient = new ManagementClient({

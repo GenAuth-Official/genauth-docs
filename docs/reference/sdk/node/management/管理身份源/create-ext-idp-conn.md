@@ -33,7 +33,7 @@ Create a new connection under an existing identity source, you can set the ident
 ## Sample code
 
 ```ts
-import { ManagementClient, Models } from "authing-node-sdk";
+import { ManagementClient, Models } from "@genauth/nodejs";
 
 // Initialize ManagementClient
 const managementClient = new ManagementClient({

@@ -26,7 +26,7 @@ If the user has not yet **bound a mobile phone number**, this interface can be u
 ## Sample code
 
 ```ts
-import { AuthenticationClient, Models } from "authing-node-sdk";
+import { AuthenticationClient, Models } from "@genauth/nodejs";
 
 const authenticationClient = new AuthenticationClient({
   // Need to be replaced with your GenAuth AppId, Secret and Host

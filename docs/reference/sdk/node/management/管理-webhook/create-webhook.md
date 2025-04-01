@@ -31,7 +31,7 @@ You need to specify the Webhook name, Webhook callback address, request data for
 ## Example code
 
 ```ts
-import { ManagementClient, Models } from "authing-node-sdk";
+import { ManagementClient, Models } from "@genauth/nodejs";
 
 // Initialize ManagementClient
 const managementClient = new ManagementClient({

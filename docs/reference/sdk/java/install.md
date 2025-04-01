@@ -21,7 +21,7 @@ In a project, ManagementClient should only be initialized once, while an instanc
 | Item                     | Description                                                                                                                    |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
 | Supported versions       | Java 8 +                                                                                                                       |
-| GitHub address           | [https://github.com/Authing/authing-java-sdk](https://github.com/Authing/authing-java-sdk)                                     |
+| GitHub address           | [https://github.com/GenAuth-Official/gen-auth-java-sdk](https://github.com/GenAuth-Official/gen-auth-java-sdk)                                     |
 | Maven repository address | [https://search.maven.org/artifact/cn.authing/authing-java-sdk](https://search.maven.org/artifact/cn.authing/authing-java-sdk) |
 
 ## Installation

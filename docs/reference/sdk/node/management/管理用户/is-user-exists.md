@@ -29,7 +29,7 @@ Determine if the user exists based on the conditions, you can filter the user na
 ## Example Code
 
 ```ts
-import { ManagementClient, Models } from "authing-node-sdk";
+import { ManagementClient, Models } from "@genauth/nodejs";
 
 // Init ManagementClient
 const managementClient = new ManagementClient({

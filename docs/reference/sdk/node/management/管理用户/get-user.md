@@ -32,7 +32,7 @@ Get user details through user ID, you can choose to get custom data, identities,
 ## Example Code
 
 ```ts
-import { ManagementClient, Models } from "authing-node-sdk";
+import { ManagementClient, Models } from "@genauth/nodejs";
 
 // Initialize ManagementClient
 const managementClient = new ManagementClient({

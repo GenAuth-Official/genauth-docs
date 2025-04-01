@@ -21,7 +21,7 @@ This interface is used to revoke the issued `access_token` and `refresh_token`.
 ## Sample code
 
 ```typescript
-import { AuthenticationClient, Models } from "authing-node-sdk";
+import { AuthenticationClient, Models } from "@genauth/nodejs";
 
 const authenticationClient = new AuthenticationClient({
   // Need to be replaced with your GenAuth application ID

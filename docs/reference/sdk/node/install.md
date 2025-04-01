@@ -18,24 +18,24 @@ In a project, ManagementClient should only be initialized once, while an instanc
 
 ### GitHub / NPM address
 
-| Item                   | Description                                                                                      |
-| ---------------------- | ------------------------------------------------------------------------------------------------ |
-| Supported versions     | Node 8.0.0 +                                                                                     |
-| GitHub address         | [https://github.com/Authing/authing-node-sdk](https://github.com/Authing/authing-node-sdk)       |
-| NPM repository address | [https://www.npmjs.com/package/authing-node-sdk](https://www.npmjs.com/package/authing-node-sdk) |
+| Item                   | Description                                                                                                  |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------ |
+| Supported versions     | Node 8.0.0 +                                                                                                 |
+| GitHub address         | [https://github.com/GenAuth-Official/genauth-node-sdk](https://github.com/GenAuth-Official/genauth-node-sdk) |
+| NPM repository address | [https://www.npmjs.com/package/@genauth/nodejs](https://www.npmjs.com/package/@genauth/nodejs)               |
 
 ## Installation
 
 ### NPM
 
 ```bash
-npm install authing-node-sdk
+npm install @genauth/nodejs
 ```
 
 ### Yarn
 
 ```bash
-yarn add authing-node-sdk
+yarn add @genauth/nodejs
 ```
 
 ## Use the user authentication module
@@ -53,7 +53,7 @@ yarn add authing-node-sdk
 The initialization sample code is as follows:
 
 ```javascript
-import { AuthenticationClient } from "authing-node-sdk";
+import { AuthenticationClient } from "@genauth/nodejs";
 
 const authenticationClient = new AuthenticationClient({
   appId: "GEN_AUTH_APP_ID",
@@ -107,7 +107,7 @@ Using this method, after the Nodejs SDK generates the login address, it can guid
 Generate a one-time address for login and guide users to visit this link.
 
 ```javascript
-import { AuthenticationClient } from "authing-node-sdk";
+import { AuthenticationClient } from "@genauth/nodejs";
 
 const authenticationClient = new AuthenticationClient({
   appId: "GEN_AUTH_APP_ID",
@@ -125,7 +125,7 @@ console.log(url);
 
 When the user completes the login on the hosted login page of GenAuth, the login callback address you configured (and the `redirectUri` passed in when initializing AuthenticationClient) will be called back, and the one-time temporary credential `code` will be carried in the Query parameter of the URL. You can use this `code` to exchange for an `access_token`.
 
-```javascript import { AuthenticationClient } from "authing-node-sdk"; const authenticationClient = new AuthenticationClient({ appId: "GEN_AUTH_APP_ID", // GenAuth application ID appSecret: "GEN_AUTH_APP_SECRET", // GenAuth application secret appHost: "GEN_AUTH_APP_HOST", // GenAuth application domain name, such as https://example.genauth.ai. Note: The Host address is an example style. The application Host address format of different versions of user pools is different. The actual address is based on the `Authentication Address` field under Self-built Application->Application Configuration->Authentication Configuration.
+```javascript import { AuthenticationClient } from "@genauth/nodejs"; const authenticationClient = new AuthenticationClient({ appId: "GEN_AUTH_APP_ID", // GenAuth application ID appSecret: "GEN_AUTH_APP_SECRET", // GenAuth application secret appHost: "GEN_AUTH_APP_HOST", // GenAuth application domain name, such as https://example.genauth.ai. Note: The Host address is an example style. The application Host address format of different versions of user pools is different. The actual address is based on the `Authentication Address` field under Self-built Application->Application Configuration->Authentication Configuration.
 redirectUri: "GEN_AUTH_APP_REDIRECT_URI", // Login callback address configured by GenAuth application
 });
 
@@ -146,7 +146,7 @@ main().then().catch(console.error);
 In addition to the above authentication method using the hosted login page, if you need to build your own login page, GenAuth It also provides an authentication method in the form of an interface. If the authentication is successful, you can also get the user's `access_token`. After getting the `access_token`, you can call methods such as modifying user information.
 
 ```javascript
-import { AuthenticationClient } from "authing-node-sdk";
+import { AuthenticationClient } from "@genauth/nodejs";
 
 // Initialize AuthenticationClient
 const authenticationClient = new AuthenticationClient({
@@ -211,7 +211,7 @@ In the [GenAuth console](https://console.genauth.ai)**Settings** -> **Basic Sett
 The initialization sample code is as follows:
 
 ```javascript
-import { ManagementClient } from "authing-node-sdk";
+import { ManagementClient } from "@genauth/nodejs";
 
 // Initialize ManagementClient
 const managementClient = new ManagementClient({
@@ -235,7 +235,7 @@ const managementClient = new ManagementClient({
 
 After initializing ManagementClient, you can get an instance of ManagementClient and then call methods on this instance.
 
-#### Get user list `javascript import { ManagementClient } from "authing-node-sdk"; //Initialize ManagementClient const managementClient = new ManagementClient({ accessKeyId: "GEN_AUTH_ACCESS_KEY_ID", // GenAuth Access Key ID accessKeySecret: "GEN_AUTH_ACCESS_KEY_SECRET", // GenAuth Access Key Secret }); const main = async () => { const { data } = await managementClient.listUsers({ options: { pagination: { page: 1, limit: 10, }, }, }); }; main().then().catch(console.error); ` #### Create role ```javascript import { ManagementClient } from "authing-node-sdk"; //Initialize ManagementClient const managementClient = new ManagementClient({
+#### Get user list `javascript import { ManagementClient } from "@genauth/nodejs"; //Initialize ManagementClient const managementClient = new ManagementClient({ accessKeyId: "GEN_AUTH_ACCESS_KEY_ID", // GenAuth Access Key ID accessKeySecret: "GEN_AUTH_ACCESS_KEY_SECRET", // GenAuth Access Key Secret }); const main = async () => { const { data } = await managementClient.listUsers({ options: { pagination: { page: 1, limit: 10, }, }, }); }; main().then().catch(console.error); ` #### Create role ```javascript import { ManagementClient } from "@genauth/nodejs"; //Initialize ManagementClient const managementClient = new ManagementClient({
 
 accessKeyId: "GEN_AUTH_ACCESS_KEY_ID", // GenAuth Access Key ID
 accessKeySecret: "GEN_AUTH_ACCESS_KEY_SECRET", // GenAuth Access Key Secret
@@ -269,7 +269,7 @@ For a detailed list of `statusCode` and `apiCode`, please see [error code](../..
 If you are using the privately deployed GenAuth IDaaS service, you need to specify the API address of the private GenAuth instance during initialization, as shown below:
 
 ```javascript
-import { ManagementClient } from "authing-node-sdk";
+import { ManagementClient } from "@genauth/nodejs";
 
 const managementClient = new ManagementClient({
 accessKeyId: "GEN_AUTH_ACCESS_KEY_ID", // GenAuth Access Key ID

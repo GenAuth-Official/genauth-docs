@@ -194,7 +194,7 @@ Filter users who have logged in to applications `appId1` or `appId2`:
 ## Example Code
 
 ```ts
-import { ManagementClient, Models } from "authing-node-sdk";
+import { ManagementClient, Models } from "@genauth/nodejs";
 
 // Init ManagementClient
 const managementClient = new ManagementClient({

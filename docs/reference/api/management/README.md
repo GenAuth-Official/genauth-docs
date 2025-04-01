@@ -1,20 +1,20 @@
-# GenAuth 管理 API
+# GenAuth Management API
 
-GenAuth 管理 API 指的是以管理员（Administrator）的身份进行请求，用于管理用户池资源和执行管理任务，如管理用户、组织机构、角色、应用、权限、用户池配置等。一般来说，你在 GenAuth 控制台中能做的所有操作，都能用此模块完成。[点此查看](https://api-explorer.genauth.ai/?source=GenAuth%20管理%20API)。
+The GenAuth Management API allows requests to be made with administrator privileges to manage user pool resources and perform administrative tasks. These include managing users, organizations, roles, applications, permissions, and user pool configurations. In general, any action that can be performed in the GenAuth console can also be executed through this API module.
 
-常用接口包含：
+Commonly used endpoints include:
 
-- 管理用户：修改用户资料、获取用户列表、搜索用户、查看用户日志等；
-- 管理组织机构：维护组织机构和部门的增删改查、员工的入转调离等；
-- 管理角色：创建角色、授权角色等；
-- 管理分组：创建分组、添加成员等；
-- 管理自定义字段：自定义用户、角色、组织机构的 Schema；
-- 管理资源与权限：创建资源、授权资源、获取资源被授权的对象等；
-- 管理应用：创建应用、修改应用信息等；
-- 管理同步中心：自动创建同步任务、执行同步任务等；
-- 管理审计日志：获取用户池下的用户行为日志、管理员操作日志等；
-- 管理计量计费：查询用户池的 MAU 使用情况、套餐使用情况等；
+- User Management: Modify user profiles, retrieve user lists, search for users, and view user logs.
+- Organization Management: Perform CRUD operations on organizations and departments, as well as manage employee onboarding, transfers, and departures.
+- Role Management: Create roles and assign permissions.
+- Group Management: Create groups and add members.
+- Custom Field Management: Define custom schemas for users, roles, and organizations.
+- Resource and Permission Management: Create resources, grant permissions, and retrieve authorized entities for a resource.
+- Application Management: Create applications and update application details.
+- Sync Center Management: Automatically create and execute synchronization tasks.
+- Audit Log Management: Retrieve user activity logs and administrator operation logs within the user pool.
+- Billing and Usage Management: Check Monthly Active Users (MAU) statistics and subscription plan usage.
 
-## 获取帮助
+<!-- ## 获取帮助
 
-有任何建议或者问题反馈，欢迎在 [GenAuth 论坛](https://forum.genauth.ai/)中提出。
+有任何建议或者问题反馈，欢迎在 [GenAuth 论坛](https://forum.genauth.ai/)中提出。 -->

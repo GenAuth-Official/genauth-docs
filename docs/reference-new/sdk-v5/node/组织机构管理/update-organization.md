@@ -26,9 +26,9 @@
 ## 示例代码
 
 ```ts
-import { ManagementClient } from 'authing-node-sdk';
+import { ManagementClient } from '@genauth/nodejs';
 // 在 Node.js 中引用：
-// const { ManagementClient } = require('authing-node-sdk');
+// const { ManagementClient } = require('@genauth/nodejs');
 
 const managementClient = new ManagementClient({
   accessKeyId: 'GEN_AUTH_USERPOOL_ID',

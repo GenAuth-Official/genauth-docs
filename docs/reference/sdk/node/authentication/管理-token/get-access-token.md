@@ -44,7 +44,7 @@ Note: `refresh_token` will only be returned when `offline_access` is added to `s
 ### Sample code
 
 ```typescript
-import { AuthenticationClient, Models } from "authing-node-sdk";
+import { AuthenticationClient, Models } from "@genauth/nodejs";
 
 const authenticationClient = new AuthenticationClient({
   // Need to be replaced with your GenAuth application ID
@@ -83,7 +83,7 @@ When `access_token` expires, `refresh_token` can be used to exchange for a new `
 ### Sample code
 
 ```typescript
-import { AuthenticationClient, Models } from "authing-node-sdk";
+import { AuthenticationClient, Models } from "@genauth/nodejs";
 
 const authenticationClient = new AuthenticationClient({
   // Need to be replaced with your GenAuth application ID

@@ -28,7 +28,7 @@ Use user ID to determine whether the user has a certain role. Supports passing i
 ## Example Code
 
 ```ts
-import { ManagementClient, Models } from "authing-node-sdk";
+import { ManagementClient, Models } from "@genauth/nodejs";
 
 // Initialize ManagementClient
 const managementClient = new ManagementClient({

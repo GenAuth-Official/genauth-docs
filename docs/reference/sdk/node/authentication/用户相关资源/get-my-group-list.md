@@ -25,7 +25,7 @@ Get the group list
 ## Sample code
 
 ```ts
-import { AuthenticationClient, Models } from "authing-node-sdk";
+import { AuthenticationClient, Models } from "@genauth/nodejs";
 
 const authenticationClient = new AuthenticationClient({
   // Need to replace with your GenAuth AppId, Secret and Host

@@ -28,7 +28,7 @@ Get webhook logs by specifying webhookId, optional page and limit. If webhookId 
 ## Sample code
 
 ```ts
-import { ManagementClient, Models } from "authing-node-sdk";
+import { ManagementClient, Models } from "@genauth/nodejs";
 
 // Initialize ManagementClient
 const managementClient = new ManagementClient({

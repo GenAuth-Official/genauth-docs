@@ -28,7 +28,7 @@ Get the list of resources authorized by the group through the group code, and fi
 ## Sample Code
 
 ```ts
-import { ManagementClient, Models } from "authing-node-sdk";
+import { ManagementClient, Models } from "@genauth/nodejs";
 
 // Initialize ManagementClient
 const managementClient = new ManagementClient({

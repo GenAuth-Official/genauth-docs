@@ -22,9 +22,9 @@ Tenants can associate or disassociate identity source connections.
 ## Sample code
 
 ```ts
-import { ManagementClient } from "authing-node-sdk";
+import { ManagementClient } from "@genauth/nodejs";
 // In Node.js Reference:
-// const { ManagementClient } = require('authing-node-sdk');
+// const { ManagementClient } = require('@genauth/nodejs');
 
 const managementClient = new ManagementClient({
   accessKeyId: "GEN_AUTH_USERPOOL_ID",

@@ -36,7 +36,7 @@
         <a
           class="link"
           target="_blank"
-          href="https://github.com/Authing/docs/issues/new?assignees=&labels=question&template=question.md"
+          href="https://github.com/GenAuth-Official/genauth-docs/issues/new?assignees=&labels=question&template=question.md"
           >{{ feedbackConfig.editLink }}
         </a>
       </div>

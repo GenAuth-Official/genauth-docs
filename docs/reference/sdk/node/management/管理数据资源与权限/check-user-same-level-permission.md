@@ -87,7 +87,7 @@ If your business scenario is: when a user deletes certain files in a folder in a
 ## Example code
 
 ```ts
-import { ManagementClient, Models } from "authing-node-sdk";
+import { ManagementClient, Models } from "@genauth/nodejs";
 
 // Initialize ManagementClient
 const managementClient = new ManagementClient({

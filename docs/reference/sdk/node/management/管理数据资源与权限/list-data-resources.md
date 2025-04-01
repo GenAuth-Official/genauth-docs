@@ -29,7 +29,7 @@ Get the data resource list, you can specify the filter by data resource name, da
 ## Example code
 
 ```ts
-import { ManagementClient, Models } from 'authing-node-sdk';
+import { ManagementClient, Models } from '@genauth/nodejs';
 
 // Initialize ManagementClient
 const managementClient = new ManagementClient({
