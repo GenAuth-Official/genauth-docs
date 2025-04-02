@@ -30,7 +30,7 @@ Customize the login box with some advanced custom styles through custom CSS. For
 
 ```css
 .authing-guard-layout {
-  background: gray;
+  background: gray !important;
 }
 ```
 
