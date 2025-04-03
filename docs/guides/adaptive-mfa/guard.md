@@ -32,18 +32,6 @@ For detailed configuration, please refer to: https://docs.genauth.ai/guides/app-
 
 ![cmfa1](./images/cmfa1.jpeg)
 
-2. In the application details, click Security Management, find the Multi-Factor Authentication module, click Advanced Mode, and you can see the workflow orchestrated by the MFA security policy.
-
-![cmfa2](./images/cmfa2.png)
-
-3. You can configure the relevant policies and MFA methods for triggering MFA in the workflow node. Currently, policy configuration is supported based on the user's role, user group attributes, the user's last visited city, and the attributes of the frequently visited cities.
-
-![cmfa3](./images/cmfa3.png)
-
-4. In addition to configuring for each application, you can also configure a global continuous adaptive MFA security policy for all applications in the user pool. You can click Security Settings > Multi-factor Authentication in the console, and then click Advanced Mode to see and configure the workflow of the global MFA security policy orchestration for the user pool. All applications that do not have security settings enabled will inherit the global policy configuration.
-
-![cmfa4](./images/cmfa4.png)
-
 ### Step 3. Connect to GenAuth Guard SDK to implement MFA
 
 GenAuth Guard is a lightweight authentication component that you can embed in any application that interacts with users through a browser to handle complex user authentication processes in one stop. MFA is a module in the Guard component. You can use MFA capabilities by connecting GenAuth Guard to your project.

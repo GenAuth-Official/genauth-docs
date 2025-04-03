@@ -16,14 +16,6 @@ You need to create an MFA application in GenAuth first. Go to Console (opens new
 
 ![Create GenAuth MFA application](./images/create_app.png)
 
-### Step 2. Configure adaptive MFA based on GenAuth application
-
-Enter [Console](https://console.genauth.ai/console) > Application > Click Application Details > Click Security Management, and find the multi-factor authentication factor configuration interface as follows (click the corresponding switch to enable the authentication factor):
-![Create application](./images/guard4.png)
-
-> The adaptive MFA authentication strategy is based on GenAuth UEBA, which can perform in-depth analysis of user behavior and user profiles, and automatically select the MFA strategy that matches the current behavior.
-> In the adaptive MFA authentication strategy, the GenAuth UEBA engine analyzes and judges based on the user's behavior and profile, such as the user's login history, device information, IP address, geographic location, activity mode, etc., to determine the current user's identity and risk level, and select the MFA strategy that matches it.
-
 ### Step 3. Modify the existing IAM/IDaaS/authentication system to access GenAuth adaptive MFA capabilities
 
 > Assuming that your system has a relatively simple login authentication process, we will show you how to add GenAuth adaptive MFA security policy authentication capabilities to the simple login authentication process step by step
