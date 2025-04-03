@@ -335,7 +335,7 @@ export default {
       height 28px
       text-align center
       line-height 28px
-      background #215AE5
+      background #682AE9
       font-size 14px
       color #fff
       border-radius 4px

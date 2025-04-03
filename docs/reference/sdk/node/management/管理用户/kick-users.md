@@ -28,7 +28,7 @@ Force users to go offline through user ID and App ID list, and you can choose to
 ## Example Code
 
 ```ts
-import { ManagementClient, Models } from "authing-node-sdk";
+import { ManagementClient, Models } from "@genauth/nodejs";
 
 // Init ManagementClient
 const managementClient = new ManagementClient({
@@ -114,7 +114,7 @@ Force users to go offline through user ID and App ID lists, and you can choose t
 ## Example Code
 
 ```ts
-import { ManagementClient, Models } from "authing-node-sdk";
+import { ManagementClient, Models } from "@genauth/nodejs";
 
 // Init ManagementClient
 const managementClient = new ManagementClient({

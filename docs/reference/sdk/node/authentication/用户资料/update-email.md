@@ -27,7 +27,7 @@ This parameter requires a one-time temporary credential `updateEmailToken`, whic
 ## Sample code
 
 ```ts
-import { AuthenticationClient, Models } from "authing-node-sdk";
+import { AuthenticationClient, Models } from "@genauth/nodejs";
 
 const authenticationClient = new AuthenticationClient({
   // Need to be replaced with your GenAuth AppId, Secret and Host

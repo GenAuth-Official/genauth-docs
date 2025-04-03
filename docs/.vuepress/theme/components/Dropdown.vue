@@ -169,7 +169,7 @@ $color: #4b5a78;
   animation: fadeOut 0.2s forwards;
 }
 
-$accentColor: #215ae5;
+$accentColor: #682AE9;
 .dropdown-active {
   position: relative;
   color: $accentColor;

@@ -208,7 +208,7 @@ $border-color: #dfe2e5;
 $text-color: #5c6971;
 $gray-000: #fafafa;
 $small-spacing: 0.55rem;
-$accentColor: #215AE5;
+$accentColor: #682AE9;
 
 .stack-selector {
   border: 1px solid $border-color;

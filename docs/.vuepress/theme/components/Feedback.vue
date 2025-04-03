@@ -36,7 +36,7 @@
         <a
           class="link"
           target="_blank"
-          href="https://github.com/Authing/docs/issues/new?assignees=&labels=question&template=question.md"
+          href="https://github.com/GenAuth-Official/genauth-docs/issues/new?assignees=&labels=question&template=question.md"
           >{{ feedbackConfig.editLink }}
         </a>
       </div>
@@ -169,9 +169,9 @@ export default {
     text-align right
     & a:hover
       text-decoration: underline
-    color #215AE5
+    color #682AE9
     .link
-      color #215AE5
+      color #682AE9
   .feedback-action-container
     display flex
     align-items center
@@ -224,7 +224,7 @@ export default {
     width 100%
     height 154px
     border-radius 4px
-    background #215AE5
+    background #682AE9
     font-size 14px
     font-family PingFang SC
     line-height 22px
@@ -254,7 +254,7 @@ export default {
       background #FFFFFF
       border-radius 4px
       box-sizing border-box
-      color #215AE5
+      color #682AE9
       font-size 14px
   .bad-reason
     background: #F8FAFC;
@@ -318,7 +318,7 @@ export default {
           margin-left 0
     .shadow-bg
       position absolute
-      background #215AE5
+      background #682AE9
       border-radius 4px
       width 503px
       height 125px

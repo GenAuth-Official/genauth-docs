@@ -42,13 +42,13 @@ Administrators can set the background of the application panel to any solid colo
 2. Open **Branding->Application Panel->Style Configuration**, select **Desktop Device->Custom Background->Image Background**
 3. Hover the mouse over the image box, click [Retransmit], upload the image from the local computer, and view the preview effect
 
-<img src="../images/upload.jpeg" style="display:block;margin: 0 auto;"><br>
+<img src="../images/upload.png" style="display:block;margin: 0 auto;"><br>
 <img src="../images/review.png" style="display:block;margin: 0 auto;"><br>
 
 4. Click the button [Save Configuration] on the right side of the page header. After saving successfully, you can log in to the application panel to experience it.
 
-<img src="../images/save.jpeg" style="display:block;margin: 0 auto;"><br>
-<img src="../images/userPanel.jpeg" style="display:block;margin: 0 auto;"><br>
+<img src="../images/save.png" style="display:block;margin: 0 auto;"><br>
+<img src="../images/userPanel.png" style="display:block;margin: 0 auto;"><br>
 
 ::: hint-info
 When uploading images, make sure the image size does not exceed 2M.
@@ -58,7 +58,7 @@ When uploading images, make sure the image size does not exceed 2M.
 
 To customize the application panel frame through custom CSS, you need to turn on the **Custom CSS** switch in the **Style Configuration** tab.
 
-<img src="../images/app-panel-custom-css.png" style="display:block;margin: 0 auto;">
+<img src="../images/app-theme.png" style="display:block;margin: 0 auto;">
 <br>
 Custom CSS can achieve more detailed appearance control of the hosted application panel page to meet the expectations of your enterprise employees or end users for the application panel. By customizing CSS, you can make some advanced custom styles for the application panel frame, such as background and position of specific elements.
 
@@ -66,7 +66,7 @@ Custom CSS can achieve more detailed appearance control of the hosted applicatio
 
 ```css
 .authing-launchpad-container {
-  background: #f5f7fa !important;
+  background: #000 !important;
 }
 ```
 

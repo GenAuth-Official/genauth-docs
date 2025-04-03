@@ -13,7 +13,7 @@
 ### Example
 
 ```javascript
-import { ManagementClient } from "authing-node-sdk";
+import { ManagementClient } from "@genauth/nodejs";
 
 const managementClient = new ManagementClient({
   accessKeyId: "ACCESS_KEY_ID",

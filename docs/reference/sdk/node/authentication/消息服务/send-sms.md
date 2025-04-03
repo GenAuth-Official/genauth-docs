@@ -28,7 +28,7 @@ When sending SMS, you must specify the SMS Channel. Each mobile phone number can
 ## Sample code
 
 ```ts
-import { AuthenticationClient, Models } from "authing-node-sdk";
+import { AuthenticationClient, Models } from "@genauth/nodejs";
 
 const authenticationClient = new AuthenticationClient({
   // Need to be replaced with your GenAuth AppId, Secret and Host

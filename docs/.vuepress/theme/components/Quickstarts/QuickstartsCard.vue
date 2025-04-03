@@ -1,7 +1,7 @@
 <template>
 	<div class="quickstarts-card">
 		<div class="title">
-			<IconFont :type="appType.icon" style="font-size: 26px; color: #215AE5" />
+			<IconFont :type="appType.icon" style="font-size: 26px; color: #682AE9" />
 			<span>{{ appType.title }}</span>
 		</div>
 		<div class="description">

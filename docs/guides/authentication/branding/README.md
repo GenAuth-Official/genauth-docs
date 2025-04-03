@@ -27,7 +27,8 @@ In the "Global Login Box", you can perform relevant "Style Configuration" and "F
 If you want to customize the login box of a self-built application independently of the global one, you can do this:
 
 First, find the "Advanced Configuration" area and turn on the "Customize this application's login box" switch. After turning on this switch, the login box of this application will first inherit your configuration in the "Global Login Box". You can make changes based on this without worrying about causing sudden changes to the login box style for users.
-![](../images/guard-branding3.png)
+
+<!-- ![](../images/guard-branding3.png) -->
 
 After turning on this switch, you can configure it independently in the "Branding" function area of ​​the self-built application.
 ![](../images/guard-branding4.png)

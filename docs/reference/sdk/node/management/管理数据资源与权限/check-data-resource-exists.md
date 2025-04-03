@@ -102,7 +102,7 @@ Check if the data resource name or Code is valid in the permission space. Use th
 ## Example code
 
 ```ts
-import { ManagementClient, Models } from "authing-node-sdk";
+import { ManagementClient, Models } from "@genauth/nodejs";
 
 // Initialize ManagementClient
 const managementClient = new ManagementClient({

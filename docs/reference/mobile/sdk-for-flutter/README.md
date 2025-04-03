@@ -32,7 +32,7 @@ GenAuth Flutter SDK 为 Flutter 接入者提供了以下 GenAuth 认证能力：
 
 <img src="./images/create_client_application.png" alt="drawing" width="620"/>
 
-<span style="background-color: #215ae5;a:link:color:#FFF;padding:8px;border-radius: 4px;"><a href="./quick.html" style="color:#FFF;">快速开始 →</a>
+<span style="background-color: #682AE9;a:link:color:#FFF;padding:8px;border-radius: 4px;"><a href="./quick.html" style="color:#FFF;">快速开始 →</a>
 </span>
 
 <br>

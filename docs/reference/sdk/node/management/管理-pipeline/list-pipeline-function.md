@@ -20,9 +20,9 @@ Get Pipeline function list
 ## Sample code
 
 ```ts
-import { ManagementClient } from "authing-node-sdk";
+import { ManagementClient } from "@genauth/nodejs";
 // Reference in Node.js:
-// const { ManagementClient } = require('authing-node-sdk');
+// const { ManagementClient } = require('@genauth/nodejs');
 
 const managementClient = new ManagementClient({
   accessKeyId: "GEN_AUTH_USERPOOL_ID",

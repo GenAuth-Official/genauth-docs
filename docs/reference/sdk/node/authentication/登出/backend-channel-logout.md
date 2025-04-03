@@ -19,7 +19,7 @@ This part of the document describes the method of generating a backend to withdr
 ## Sample code
 
 ```javascript
-import { AuthenticationClient, Models } from "authing-node-sdk";
+import { AuthenticationClient, Models } from "@genauth/nodejs";
 
 const authenticationClient = new AuthenticationClient({
   // Need to be replaced with your GenAuth AppId, Secret and Host

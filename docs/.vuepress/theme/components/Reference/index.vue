@@ -9,7 +9,7 @@
 
     <div class="main-content">
       <!-- <slot name="sidebar"></slot> -->
-      <div class="breadcrumb-content-container">
+      <div class="breadcrumb-content-container" :class="pathnameClass">
         <slot name="breadcrumb"></slot>
         <div class="sdk-banner">
           <div>
@@ -102,6 +102,12 @@ export default {
       const download = this.$frontmatter.downloadDemo;
 
       return !!(download && (download.downloadUrl || download.jumpUrl));
+    },
+    pathnameClass() {
+      // 获取当前页面路径并处理成适合做class名的格式
+      const path = this.$route.path;
+      // 移除开头的斜杠，替换所有斜杠为破折号，并添加前缀
+      return `page-${path.replace(/^\//, "").replace(/\//g, "-")}`;
     },
   },
 };

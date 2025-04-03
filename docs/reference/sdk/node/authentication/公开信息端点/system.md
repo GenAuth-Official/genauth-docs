@@ -25,7 +25,7 @@ The endpoint can obtain the server's public information, such as RSA256 public k
 ## Sample code
 
 ```ts
-import { AuthenticationClient, Models } from "authing-node-sdk";
+import { AuthenticationClient, Models } from "@genauth/nodejs";
 
 const authenticationClient = new AuthenticationClient({
   // Need to replace with your GenAuth AppId, Secret and Host

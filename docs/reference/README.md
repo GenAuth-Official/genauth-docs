@@ -68,6 +68,6 @@ Some typical management scenarios include:
 - View audit logs and user behavior logs.
 - Manage user directories, etc.
 
-## Get help
+<!-- ## Get help
 
-If you have any suggestions or feedback, please raise them in the [GenAuth forum](https://forum.genauth.ai/).
+If you have any suggestions or feedback, please raise them in the [GenAuth forum](https://forum.genauth.ai/). -->

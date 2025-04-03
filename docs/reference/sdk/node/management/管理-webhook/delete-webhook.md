@@ -26,7 +26,7 @@ By specifying multiple webhookIds, webhook is deleted in the form of an array. I
 ## Sample code
 
 ```ts
-import { ManagementClient, Models } from "authing-node-sdk";
+import { ManagementClient, Models } from "@genauth/nodejs";
 
 // Initialization ManagementClient
 const managementClient = new ManagementClient({

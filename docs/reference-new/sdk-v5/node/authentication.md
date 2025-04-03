@@ -15,7 +15,7 @@
 
 ```javascript
 // 使用 AppId appSecret 、 userPoolHost 、redirectUri 进行初始化
-import { AuthenticationClient } from "authing-node-sdk";
+import { AuthenticationClient } from "@genauth/nodejs";
 
 const authenticationClient = new AuthenticationClient({
   host: "userPoolHost",

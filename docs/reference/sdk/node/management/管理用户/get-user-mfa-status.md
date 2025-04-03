@@ -25,7 +25,7 @@ Get user MFA status by user ID, you can choose to specify user ID type, etc.
 ## Sample code
 
 ```ts
-import { ManagementClient, Models } from "authing-node-sdk";
+import { ManagementClient, Models } from "@genauth/nodejs";
 
 // Initialize ManagementClient
 const managementClient = new ManagementClient({

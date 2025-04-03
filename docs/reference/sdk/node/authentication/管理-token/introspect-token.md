@@ -24,7 +24,7 @@ This interface is used to verify `access_token` and `refresh_token` online.
 ### Sample code
 
 ```typescript
-import { AuthenticationClient, Models } from "authing-node-sdk";
+import { AuthenticationClient, Models } from "@genauth/nodejs";
 
 const authenticationClient = new AuthenticationClient({
   // Need to be replaced with your GenAuth application ID
@@ -87,7 +87,7 @@ Sample result:
 ### Sample code
 
 ```typescript
-import { AuthenticationClient, Models } from "authing-node-sdk";
+import { AuthenticationClient, Models } from "@genauth/nodejs";
 
 const authenticationClient = new AuthenticationClient({
   // Need to be replaced with your GenAuth application ID

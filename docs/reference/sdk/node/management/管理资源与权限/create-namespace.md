@@ -28,7 +28,7 @@ Create a permission group, you can set the permission group name, code and descr
 ## Sample code
 
 ```ts
-import { ManagementClient, Models } from "authing-node-sdk";
+import { ManagementClient, Models } from "@genauth/nodejs";
 
 // Initialization ManagementClient
 const managementClient = new ManagementClient({

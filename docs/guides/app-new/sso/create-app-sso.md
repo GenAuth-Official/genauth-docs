@@ -42,7 +42,7 @@ After success, it will jump to the application callback address:
 
 The user does not need to enter the password again and directly enters the callback address of the application:
 
-![](../images/sso07.png)
+![](../images/sso05.png)
 
 ## Use SDK to access single sign-on
 

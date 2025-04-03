@@ -5,16 +5,16 @@
 ### NPM
 
 ```bash
-npm install authing-node-sdk
+npm install @genauth/nodejs
 ```
 
 ### Yarn
 
 ```bash
-yarn add authing-node-sdk
+yarn add @genauth/nodejs
 ```
 
-Github 仓库： <https://github.com/Authing/authing-node-sdk>
+Github 仓库： <https://github.com/Authing/@genauth/nodejs>
 
 ## 使用 管理模块
 
@@ -23,7 +23,7 @@ Github 仓库： <https://github.com/Authing/authing-node-sdk>
 初始化 `ManagementClient` 需要使用 `accessKeyId` 和 `accessKeySecret` 参数:
 
 ```typescript
-import { ManagementClient } from "authing-node-sdk";
+import { ManagementClient } from "@genauth/nodejs";
 
 const managementClient = new ManagementClient({
   accessKeyId: "YOUR_ACCESS_KEY_ID",
@@ -77,7 +77,7 @@ const managementClient = new ManagementClient({
 初始化 `AuthenticationClient` 需要使用 `appId` 、 `appSecret` 和 `host` 参数:
 
 ```typescript
-import { AuthenticationClient } from "authing-node-sdk";
+import { AuthenticationClient } from "@genauth/nodejs";
 
 const authenticationClient = new AuthenticationClient({
   appId: "GEN_AUTH_APP_ID",
@@ -104,7 +104,7 @@ const authenticationClient = new AuthenticationClient({
 如果你使用的是私有化部署的 GenAuth IDaaS 服务，需要指定此 GenAuth 私有化实例的 `host`，如：
 
 ```typescript
-import { ManagementClient } from "authing-node-sdk";
+import { ManagementClient } from "@genauth/nodejs";
 
 const managementClient = new ManagementClient({
   accessKeyId: "YOUR_ACCESS_KEY_ID",

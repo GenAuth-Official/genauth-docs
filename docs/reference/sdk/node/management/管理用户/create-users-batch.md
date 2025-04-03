@@ -23,7 +23,7 @@ To create users in batches, one of the email, mobile number, and username must b
 | ------- | -------------------------------------------------------- | -------------------------------------- | ------------------------------------ | ----------------------------------- | -------------------------- ... | `[{"status":"Activated","email":"test@example.com","username":"bob","name":"xxxx","nickname":"xxxx","password":"passw0rd","photo":"https://files.authing.co/authing-console/default-user-avatar.png","gender":"M","birthdate":"2022-06-03","country":"CN","province":"BJ","city":"BJ","address":"xxxxxxx","streetAddress":"xxx street","postalCode":"438100","company":"steamory","browser":"Mozilla/5.0 (Linux; Android 10; V2001A; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.141 Mobile Safari/537.36 VivoBrowser/10.2.10.0","device":"iOS","givenName":"xx","familyName":"xx","middleName":"James","profile":"alice","pr eferredUsername":"alice","website":"https://my-website.com","zoneinfo":"GMT-08:00","locale":"af","formatted":"132, My Street, Kingston, New York 12401.","region":"Xinjiang Uyghur Autonomous Region"}]` | | options | <a href="#CreateUserOptionsDto">CreateUserOptionsDto</a> | No | - | Optional parameters | `{"autoGeneratePassword":true,"resetPasswordOnFirstLogin":true,"passwordEncryptType":"none"}` | ## Sample code
 
 ```ts
-import { ManagementClient, Models } from "authing-node-sdk";
+import { ManagementClient, Models } from "@genauth/nodejs";
 
 // Initialize ManagementClient
 const managementClient = new ManagementClient({

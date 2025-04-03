@@ -7,6 +7,6 @@ You can configure [Alibaba Cloud International SMS Service](https://sms-intl.con
 - Message Template: SMS template. Customize the template for sending SMS. Currently supported variables are Verification Code: ${code}, Validity Time (Seconds): ${ttl}, Validity Time (Minutes): ${ttl_minutes};
 - Validity Time: The validity time of the SMS verification code. Example: your code: ${code}. Valid for ${ttl_minutes} minutes.
 
-![](./images/Xnip2021-12-08_14-43-40.jpg)
+![](./images/Xnip2021-03-04_11-19-46.png)
 
 After configuration, you can click **Save and send test SMS** in the upper left corner to test.

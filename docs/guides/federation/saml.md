@@ -72,7 +72,7 @@ You can add some custom attributes to the SAML identity assertion, and the newly
 
 **Example**:
 
-![Configure custom SAML Response attributes](https://cdn.genauth.ai/docs/20200929104332.png)
+![Configure custom SAML Response attributes](~@imagesZhCn/guides/federation/saml/1-4.png)
 ::: img-description
 Configure custom SAML Response attributes
 :::

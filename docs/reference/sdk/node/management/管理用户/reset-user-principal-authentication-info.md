@@ -27,7 +27,7 @@ Delete user real-name authentication information through user ID, and you can ch
 ## Example Code
 
 ```ts
-import { ManagementClient, Models } from "authing-node-sdk";
+import { ManagementClient, Models } from "@genauth/nodejs";
 
 // Init ManagementClient
 const managementClient = new ManagementClient({

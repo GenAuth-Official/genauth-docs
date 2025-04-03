@@ -28,7 +28,7 @@ Get the archived user list, support paging, can filter the start time, etc.
 ## Example Code
 
 ```ts
-import { ManagementClient, Models } from "authing-node-sdk";
+import { ManagementClient, Models } from "@genauth/nodejs";
 
 // Init ManagementClient
 const managementClient = new ManagementClient({

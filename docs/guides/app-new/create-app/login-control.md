@@ -186,27 +186,6 @@ In addition to integrating existing third-party social identity sources, adminis
 
 For a detailed introduction to social login methods, see [Social Identity Sources](/guides/connections/social.md).
 
-## Enterprise Login Methods ​
-
-​
-Enterprise identity source login refers to the process of users using the company's identity authentication information to authenticate and log in to internal company applications or third-party applications. In the {{$localeConfig.brandName}} console, enterprise identity sources include two categories: office applications (such as Lark, WeChat for Enterprise, DingTalk) and standard protocol applications (such as OIDC, SAML, CAS and other standard protocols). You can configure the enterprise identity source connection to use a third-party identity source to log in to the {{$localeConfig.brandName}} application and [import organizations and users from third-party identity sources](/guides/org/create-or-import-org/#Import organizations) to reduce migration costs. GenAuth will automatically synchronize user information to the user directory of {{$localeConfig.brandName}} every time a user logs in using an enterprise identity source.
-
-::: hint-info
-You need to create the enterprise identity source to be used before you can select the created identity source in the **Self-built application->Login control** tab.
-:::
-​
-<img src="../images/login-enterprise.png" style="display:block;margin: 0 auto;">
-
-To add an enterprise identity source for a single application, perform the following steps:
-
-1. Select **Login Control->Enterprise Login Method** on the application details page.
-
-2. Click **+Add Identity Source** to open the **Select Enterprise Identity Source** page.
-
-3. Select the target enterprise identity source to add.
-
-For more information about enterprise login methods, see [Enterprise Identity Source](/guides/connections/enterprise.md).
-
 ## Logged-in Users
 
 Administrators can view the list of logged-in users of the current application, view and manage user information, and force offline in the **Login Control** tab:

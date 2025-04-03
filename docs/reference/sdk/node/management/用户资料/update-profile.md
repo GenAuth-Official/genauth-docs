@@ -38,7 +38,7 @@ This interface is used to modify the user's user information, including the user
 ## Sample code
 
 ````ts
-import { AuthenticationClient, Models } from "authing-node-sdk";
+import { AuthenticationClient, Models } from "@genauth/nodejs";
 
 const authenticationClient = new AuthenticationClient({
 // Need to be replaced with your GenAuth AppId, Secret and Host
@@ -102,7 +102,7 @@ This interface is used to modify the user's user information, including the user
 ## Sample code
 
 ```ts
-import { AuthenticationClient, Models } from "authing-node-sdk";
+import { AuthenticationClient, Models } from "@genauth/nodejs";
 
 const authenticationClient = new AuthenticationClient({
 // Need to be replaced with your GenAuth AppId, Secret and Host

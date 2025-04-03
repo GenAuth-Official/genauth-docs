@@ -22,7 +22,7 @@ Use email + verification code to log in.
 ## Example Code
 
 ```typescript
-import { AuthenticationClient, Models } from "authing-node-sdk";
+import { AuthenticationClient, Models } from "@genauth/nodejs";
 
 const authenticationClient = new AuthenticationClient({
   // Need to be replaced with your GenAuth AppId, Secret and Host

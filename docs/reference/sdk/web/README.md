@@ -23,6 +23,6 @@ GenAuth Web SDK 目前支持的功能如下：
 
 <br>
 
-<span style="background-color: #215ae5; a:link:color:#FFF; padding:8px; border-radius: 4px;">
+<span style="background-color: #682AE9; a:link:color:#FFF; padding:8px; border-radius: 4px;">
   <a href="./quick.html" style="color:#FFF;">快速开始 →</a>
 </span>

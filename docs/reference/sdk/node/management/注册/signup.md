@@ -34,7 +34,7 @@ For social login and other external identity source "registration", please use t
 ## Sample code
 
 ```ts
-import { AuthenticationClient, Models } from "authing-node-sdk";
+import { AuthenticationClient, Models } from "@genauth/nodejs";
 
 const authenticationClient = new AuthenticationClient({
 // Need to be replaced with your GenAuth AppId, Secret and Host appId: "GEN_AUTH_APP_ID", appSecret: "GEN_AUTH_APP_SECRET", appHost: "GEN_AUTH_APP_HOST", }); (async () => { const result = await authenticationClient.signUp({ connection: Models.SignUpDto.connection.PASSWORD, passwordPayload: { password: "passw0rd", email: "test-user@example.com", }, profile: { nickname: "", company: "GenAuth.Inc", photo: "https://www.genauth.ai/demo.jpg", device: "iOS", browser: "Edge", name: "Mike", givenName: "Zhou", familyName: "Jay", middleName: "Jane", profile: "this is my profile", preferredUsername: "Mike", website: "https://www.genauth.ai",

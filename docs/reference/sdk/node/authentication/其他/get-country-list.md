@@ -23,7 +23,7 @@ Dynamically get the country list, which can be used for front-end login page cou
 ## Sample code
 
 ```ts
-import { AuthenticationClient, Models } from "authing-node-sdk";
+import { AuthenticationClient, Models } from "@genauth/nodejs";
 
 const authenticationClient = new AuthenticationClient({
   // Need to replace with your GenAuth AppId, Secret and Host
