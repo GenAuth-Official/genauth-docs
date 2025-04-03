@@ -62,10 +62,6 @@ Administrators can choose between **Upgraded version** and **Classic version** l
 Starting from August 2022, newly created user pools will not support switching to the classic login box. All of our feature updates and performance maintenance will also be completed based on the upgraded login box. For user pools created before this point in time, the classic login box you are using will not be affected.
 :::
 
-The following figure is the classic version configuration page:
-
-![](../images/classic-customize-page.png)
-
 #### Default language
 
 Define the display language of the login box:
