@@ -21,7 +21,7 @@ The automatic detection method, similar to the Meituan App, can detect the relev
 
 As shown below:
 
-<img src="https://cdn.genauth.ai/blog/image%20%28595%29.png" height=500 style="display:block;margin: 0 auto;">
+<img src="../images/meituan.png" height=500 style="display:block;margin: 0 auto;">
 
 You can view the demonstration in this video:
 
