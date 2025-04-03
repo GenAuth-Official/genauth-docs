@@ -168,10 +168,10 @@ const zhCnNavBar = {
           title: "Authentication in Mini Programs",
           path: "/guides/authentication/wechat-mini-program/",
         },
-        {
-          title: "One-click Mobile Login",
-          path: "/guides/oneauth/",
-        },
+        // {
+        //   title: "One-click Mobile Login",
+        //   path: "/guides/oneauth/",
+        // },
         {
           title: "Implement Single Sign-On (SSO)",
           path: "/guides/app-new/sso/",
@@ -188,22 +188,22 @@ const zhCnNavBar = {
           title: "Extend Authentication Process",
           path: "/guides/authentication/extensibility/",
           children: [
-            {
-              title: "Add Custom User Fields",
-              path: "/guides/authentication/extensibility/user-defined-field",
-            },
-            {
-              title: "Add Custom Role Fields",
-              path: "/guides/authentication/extensibility/role-extend",
-            },
+            // {
+            //   title: "Add Custom User Fields",
+            //   path: "/guides/authentication/extensibility/user-defined-field",
+            // },
+            // {
+            //   title: "Add Custom Role Fields",
+            //   path: "/guides/authentication/extensibility/role-extend",
+            // },
             {
               title: "Add Custom Fields to IdToken",
               path: "/guides/authentication/extensibility/customize-id-token",
             },
-            {
-              title: "Use Custom Database for Authentication",
-              path: "/guides/authentication/extensibility/database-connection",
-            },
+            // {
+            //   title: "Use Custom Database for Authentication",
+            //   path: "/guides/authentication/extensibility/database-connection",
+            // },
             {
               title: "Extend Authentication Process with Pipeline",
               path: "/guides/authentication/extensibility/pipeline",
@@ -347,10 +347,10 @@ const zhCnNavBar = {
           title: "Link Accounts",
           path: "/guides/user/bind-social-account",
         },
-        {
-          title: "Manage User Custom Data",
-          path: "/guides/user/user-defined-field/",
-        },
+        // {
+        //   title: "Manage User Custom Data",
+        //   path: "/guides/user/user-defined-field/",
+        // },
         {
           title: "View Login History",
           path: "/guides/user/login-history",
@@ -1047,16 +1047,16 @@ const zhCnNavBar = {
                   title: "User Basic Field",
                   path: "/guides/user/user-profile",
                 },
-                {
-                  title: "User Extended Field",
-                  path: "/guides/users/user-defined-field/",
-                },
+                // {
+                //   title: "User Extended Field",
+                //   path: "/guides/users/user-defined-field/",
+                // },
               ],
             },
-            {
-              title: "Role Field Management",
-              path: "/guides/authentication/extensibility/role-extend",
-            },
+            // {
+            //   title: "Role Field Management",
+            //   path: "/guides/authentication/extensibility/role-extend",
+            // },
           ],
         },
         {

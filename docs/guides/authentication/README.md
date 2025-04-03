@@ -8,7 +8,7 @@
 - [Authentication using social login](/guides/authentication/social/README.md)
 - [Authentication using QR code scanning](/guides/authentication/qrcode/README.md)
 - [Authentication in mini program](/guides/authentication/wechat-mini-program/README.md)
-- [One-click login using mobile phone number](/guides/oneauth/README.md)
+<!-- - [One-click login using mobile phone number](/guides/oneauth/README.md) -->
 - [Implement single sign-on (SSO)](/guides/app-new/sso/README.md)
 - [Single sign-on on mobile](/guides/authentication/mobile-sso/README.md)
 - [Multi-factor authentication](/guides/security/mfa/README.md)

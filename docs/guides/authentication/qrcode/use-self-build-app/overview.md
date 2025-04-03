@@ -31,7 +31,7 @@ authenticationClient.qrcode.startScanning("qrcode", {
 
 After running, a QR code for scanning and logging in to the APP will be automatically generated:
 
-<img src="https://cdn.genauth.ai/blog/image%20%28619%29.png" style="display:block;margin: 0 auto;" height="250">
+<img src="../../images/qrcode.png" style="display:block;margin: 0 auto;" height="250">
 
 After the code is scanned successfully, {{$localeConfig.brandName}} will call back the `onSuccess` function passed in by the developer. The callback parameters include `userInfo` and `ticket`. `ticket` can be used to [exchange for user information](./full-api-list.md#Use-ticket-to-exchange-for-user-information).
 
@@ -85,7 +85,7 @@ For details of these three interfaces, please see the [full interface list page]
 
 After the mobile terminal confirms the scan code, the web will see relevant prompts.
 
-<img src="https://cdn.genauth.ai/blog/image%20%28579%29.png" style="display:block;margin: 0 auto;" height="250">
+<img src="../../images/qrcodeSuccess.png" style="display:block;margin: 0 auto;" height="250">
 
 After the mobile terminal agrees to the authorization, the entire login process is completed, and the developer can use the ticket to exchange for user information.
 
