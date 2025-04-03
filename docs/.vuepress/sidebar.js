@@ -465,14 +465,14 @@ const zhCnNavBar = {
               title: "Security Management",
               path: "/guides/app-new/create-app/security-management",
             },
-            {
-              title: "Advanced Settings",
-              path: "/guides/app-new/create-app/advanced-settings",
-            },
-            {
-              title: "Tenant Configuration",
-              path: "/guides/app-new/create-app/tenant-config",
-            },
+            // {
+            //   title: "Advanced Settings",
+            //   path: "/guides/app-new/create-app/advanced-settings",
+            // },
+            // {
+            //   title: "Tenant Configuration",
+            //   path: "/guides/app-new/create-app/tenant-config",
+            // },
           ],
         },
         {
@@ -483,49 +483,49 @@ const zhCnNavBar = {
               title: "Application Panel",
               path: "/guides/dashboard/",
             },
-            {
-              title: "Integration Application SSO Solutions",
-              path: "/guides/apn/",
-              children: [],
-            },
+            // {
+            //   title: "Integration Application SSO Solutions",
+            //   path: "/guides/apn/",
+            //   children: [],
+            // },
             {
               title: "Self-built Application SSO Solutions",
               path: "/guides/app-new/sso/create-app-sso.md",
             },
-            {
-              title: "Third-party SSO Solutions",
-              path: "/guides/app-new/sso/third-party-sso/",
-              children: [
-                {
-                  title: "Lark Workspace SSO Solution",
-                  path: "/guides/lark-sso/",
-                },
-                {
-                  title: "WeCom SSO Solution",
-                  path: "/guides/qiwei-sso/",
-                },
-                {
-                  title: "DingTalk SSO Solution",
-                  path: "/guides/dingding-sso/",
-                },
-                {
-                  title: "WeLink SSO Solution",
-                  path: "/guides/welink-sso/",
-                },
-              ],
-            },
-            {
-              title: "ASA Form Fill",
-              path: "/guides/asa/",
-            },
-            {
-              title: "ASAD Form Fill",
-              path: "/guides/asad/",
-            },
-            {
-              title: "Gateway Form Fill",
-              path: "/guides/gateway/",
-            },
+            // {
+            //   title: "Third-party SSO Solutions",
+            //   path: "/guides/app-new/sso/third-party-sso/",
+            //   children: [
+            //     {
+            //       title: "Lark Workspace SSO Solution",
+            //       path: "/guides/lark-sso/",
+            //     },
+            //     {
+            //       title: "WeCom SSO Solution",
+            //       path: "/guides/qiwei-sso/",
+            //     },
+            //     {
+            //       title: "DingTalk SSO Solution",
+            //       path: "/guides/dingding-sso/",
+            //     },
+            //     {
+            //       title: "WeLink SSO Solution",
+            //       path: "/guides/welink-sso/",
+            //     },
+            //   ],
+            // },
+            // {
+            //   title: "ASA Form Fill",
+            //   path: "/guides/asa/",
+            // },
+            // {
+            //   title: "ASAD Form Fill",
+            //   path: "/guides/asad/",
+            // },
+            // {
+            //   title: "Gateway Form Fill",
+            //   path: "/guides/gateway/",
+            // },
           ],
         },
       ],

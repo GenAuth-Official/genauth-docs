@@ -20,8 +20,6 @@ To manage the application resources of tenants, you can do the following:
    _ [Access Authorization](/guides/app-new/create-app/application-access-control.md)
    _ [Branding](/guides/app-new/create-app/customize-guard.md)
    _ [Security Management](/guides/app-new/create-app/security-management.md)
-   _ [Advanced Configuration](/guides/app-new/create-app/advanced-settings.md)
-   _ [Tenant Configuration](/guides/app-new/create-app/tenant-config.md)
    ​
 4. After completing the configuration, you can also perform the following operations: ​
    - **Data Overview**: Displays login and user statistics for accessing the current application. ​
