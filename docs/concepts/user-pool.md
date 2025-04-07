@@ -32,12 +32,6 @@ In most cases, your company or project has only one user pool. A single user poo
 However, in more complex situations, you may need multiple user pools. For example, your company is a large organization with more than 10,000 employees and many upstream and downstream suppliers. You need to coordinate employees and suppliers in an ERP application to complete a business process. At this time, you can create two user pools, one for internal employees and another for external suppliers. By connecting to external identity sources, suppliers are allowed to access internal ERP applications, achieving segmented management and collaborative work between internal and external organizations.
 Multiple user pools allow complete isolation of internal and external users, and applications and changes of internal or external organizations do not affect each other. However, multiple user pools increase complexity in terms of the number of environments to be managed. We recommend reducing the number of user pools as much as possible to reduce system complexity.
 
-## What is a user pool scenario
-
-In {{$localeConfig.brandName}}, we divide user pools into different usage scenarios to better serve you. Each scenario has an independent service plan, which is divided into "B2C", "B2B" and "B2E". Before creating a user pool, you must select the scenario. The corresponding options are: B2C - I want to provide a better identity authentication experience for my C-end users; B2B - I want to provide a better identity authentication experience for my B-end customers; B2E - I want to manage employee identities for the enterprise.
-
-<img src="./images/userpool_02.png" alt="drawing"/>
-
 ## Fees
 
 In {{$localeConfig.brandName}}, different user pool scenarios have different charges. Except for B2E, each scenario is divided into "Free Edition", "Basic Edition", "Premium Edition" and "Enterprise Edition".

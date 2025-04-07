@@ -12,7 +12,7 @@ A user pool may have multiple applications. For example, all students of a schoo
 
 You can view all your applications on the **Applications->Self-built Applications** page of the [console](https://console.genauth.ai):
 
-![](./images/Xnip2022-11-09_15-15-59.jpeg)
+![](./images/Xnip2022-11-09_15-15-59.png)
 
 ## Applications share a user directory
 
@@ -20,7 +20,7 @@ The first thing you need to remember is that all applications in a user pool sha
 
 ## Implement single sign-on between applications
 
-You need to first click **Add self-built application** or **Add integrated application** on the **Application->Single sign-on SSO** management page, as shown in the figure below:
+You need to first click **Add self-built application** on the **Application->Single sign-on SSO** management page, as shown in the figure below:
 
 ![](./images/app-panel3.png)
 
@@ -50,7 +50,7 @@ By default, all users in your user pool can log in to your application. You can 
 
 > You can grant users, roles, groups, and organizations access to the app.
 
-![](./images/Xnip2022-11-09_16-48-59.jpeg)
+![](./images/Xnip2022-11-09_16-48-59.png)
 
 ## Other features
 
