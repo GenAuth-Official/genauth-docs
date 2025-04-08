@@ -80,7 +80,7 @@ You can also use API & SDK to create roles. For details, see [Role Management SD
 
 On the role details page, you can authorize this role to users. You can search for users by username, phone number, email address, or nickname:
 
-![](~@imagesZhCn/guides/access-control/Xnip2021-03-01_15-51-01.png)
+![](./images/permission-role.png)
 
 After selecting a user, click Confirm. You can view a list of users authorized with this role.
 
@@ -122,8 +122,6 @@ You can abstract some objects of the system into resources, and define some oper
 - Release Notes: create, read, edit, delete, etc.
 
 We create these resources in {{$localeConfig.brandName}}:
-
-![](./images/resources.png)
 
 ### Authorize roles to operate resources
 

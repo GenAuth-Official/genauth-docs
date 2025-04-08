@@ -10,12 +10,12 @@ The role management module is mainly used to centrally manage roles in all permi
 
 You can click Create Permission Space on the list page to enter the creation page
 
-| Field Name | Description |
-| ---------------- | ------------------------------------------------------------ |
-| Role Name | Name the role according to the permission scenario to be granted to the role, such as "Administrator" or "Auditor" |
-| Role Code | The unique identifier of the role. It is recommended to use a semantic description, such as "admin" |
-| Permission Space | The permission space to which the role belongs |
-| Role Description | Optional |
+| Field Name             | Description                                                                                                                                                                           |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Role Name              | Name the role according to the permission scenario to be granted to the role, such as "Administrator" or "Auditor"                                                                    |
+| Role Code              | The unique identifier of the role. It is recommended to use a semantic description, such as "admin"                                                                                   |
+| Permission Space       | The permission space to which the role belongs                                                                                                                                        |
+| Role Description       | Optional                                                                                                                                                                              |
 | Role Auto-disable Time | You can set an auto-disable time for temporary roles. After disabling, the permissions associated with the role will be revoked. You can restore the permissions by enabling the role |
 
 ![Create a role](./images/roles-create.png)
@@ -57,13 +57,3 @@ On the permission management page of the role details, you can mainly
   - Remove the data policy authorized to the current role
 
 ![Role permission management](./images/roles-permission.png)
-
-## Role Audit
-
-On the Role Audit page of the role details, you can view the historical change records of the current role, mainly including
-
-- Create a role
-- Add a subject to a role, remove a subject
-- Add authorization to a role, remove authorization
-
-![Role Audit](./images/roles-audit.png)

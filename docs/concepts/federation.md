@@ -33,31 +33,9 @@ The following is the process of federated authentication. The user is redirected
 
 GenAuth supports multiple standard protocols for federated authentication. You can [use this application to quickly experience it](https://federation-poc.genauth.ai/).
 
-![](~@imagesZhCn/concepts/federation/1-3.png)
-
-## OAuth2
-
 GenAuth supports a wide range of [social login](/guides/connections/social.md) service providers, and can also [customize OAuth2 social login](/connections/custom-social-provider/).
 
 ![](~@imagesZhCn/concepts/federation/1-4.png)
-
-## OpenID Connect
-
-GenAuth supports federation authentication using the OIDC protocol. For details, please refer to the document [Connecting to OIDC Identity Source](/connections/oidc/).
-
-![](~@imagesZhCn/concepts/federation/1-5.png)
-
-## SAML2
-
-GenAuth supports federation authentication using the SAML2 protocol. For details, please refer to the document [Connecting to SAML Identity Source](/connections/saml/).
-
-![](~@imagesZhCn/concepts/federation/1-6.png)
-
-## CAS
-
-GenAuth supports federation authentication using the CAS protocol. For details, please refer to the document [Connecting to CAS Identity Source](/connections/cas/).
-
-![](~@imagesZhCn/concepts/federation/1-7.png)
 
 ## Experience federation authentication online
 

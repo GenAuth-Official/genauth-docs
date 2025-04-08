@@ -92,20 +92,20 @@ const zhCnNavBar = {
             // },
           ],
         },
-        {
-          title: "Trial Period",
-          path: "/guides/basics/trial/",
-          children: [
-            {
-              title: "Admin Operations",
-              path: "/guides/basics/trial/admin",
-            },
-            {
-              title: "End User Operations",
-              path: "/guides/basics/trial/end-user",
-            },
-          ],
-        },
+        // {
+        //   title: "Trial Period",
+        //   path: "/guides/basics/trial/",
+        //   children: [
+        //     {
+        //       title: "Admin Operations",
+        //       path: "/guides/basics/trial/admin",
+        //     },
+        //     {
+        //       title: "End User Operations",
+        //       path: "/guides/basics/trial/end-user",
+        //     },
+        //   ],
+        // },
         {
           title: "Console Overview",
           path: "/guides/basics/console/",
@@ -236,14 +236,14 @@ const zhCnNavBar = {
           title: "Integrate ABAC Model",
           path: "/guides/access-control/abac",
         },
-        {
-          title: "Use Permission Groups",
-          path: "/guides/access-control/resource-group",
-        },
-        {
-          title: "Manage Resource Permissions",
-          path: "/guides/access-control/resource-acl",
-        },
+        // {
+        //   title: "Use Permission Groups",
+        //   path: "/guides/access-control/resource-group",
+        // },
+        // {
+        //   title: "Manage Resource Permissions",
+        //   path: "/guides/access-control/resource-acl",
+        // },
         {
           title: "Manage New Data Resource Permissions",
           path: "/guides/access-control/data-permission/",

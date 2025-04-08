@@ -16,10 +16,6 @@ This document will introduce how to use the {{$localeConfig.brandName}} hosted l
 
 <img src="./images/create-userpool-3.png" height=360 style="display:block;margin: 0 auto;">
 
-Select the user pool type:
-
-<img src="./images/select-trial-userpool.png" height=480 style="display:block;margin: 0 auto;">
-
 For details on creating a user pool, please refer to [How to create a user pool for new and old users](/guides/basics/trial/admin.md#New user opening trial period).
 
 ## Step 2: Create an application
