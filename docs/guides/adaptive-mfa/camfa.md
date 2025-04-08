@@ -65,10 +65,6 @@ GenAuth provides more friendly ways to obtain user behavior information, please 
 The purpose of transmitting data to the server is to make the data more secure, avoid data leakage, abuse and arbitrary modification, and also facilitate data persistence and ensure that data will not be lost. It is also convenient for data processing, better mining of data value, and support data sharing for use by other applications or devices.
 ```
 
-#### Step 4. Configure the continuous adaptive MFA security policy flow and publish security events
-
-![CAMFA](./images/4.4.png)
-
 #### Step 5. Subscribe to the events published by the security policy flow
 
 The continuous adaptive security policy requires your client to continuously monitor the MFA events and respond in real time after receiving the MFA events. The specific process is as follows

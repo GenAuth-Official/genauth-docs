@@ -313,10 +313,10 @@ const zhCnNavBar = {
             "Advanced MFA: Continuous Adaptive Multi-Factor Authentication (CAMFA) Guide",
           path: "/guides/adaptive-mfa/camfa",
         },
-        {
-          title: "Adaptive MFA Orchestration/Policy Configuration Guide",
-          path: "/guides/adaptive-mfa/config",
-        },
+        // {
+        //   title: "Adaptive MFA Orchestration/Policy Configuration Guide",
+        //   path: "/guides/adaptive-mfa/config",
+        // },
       ],
     },
     {
