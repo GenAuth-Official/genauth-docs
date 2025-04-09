@@ -29,8 +29,8 @@ For detailed configuration, please refer to: https://docs.genauth.ai/guides/app-
 ### Step 2. Configure adaptive MFA based on GenAuth application
 
 1. Enter [Console (opens new window)](https://console.genauth.ai/console) > Click Application Details > Click Advanced Configuration, and turn on **Customize the security rules for this application. **
-
-![cmfa1](./images/cmfa1.jpeg)
+<!-- 
+![cmfa1](./images/cmfa1.jpeg) -->
 
 ### Step 3. Connect to GenAuth Guard SDK to implement MFA
 

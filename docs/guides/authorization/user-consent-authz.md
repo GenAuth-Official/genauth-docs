@@ -25,15 +25,13 @@ In the application details, click the Access Authorization tab, switch to the Da
 
 We create a chat data resource, define several operations such as add, delete, modify, and query, and finally click Save.
 
-![](./images/add-resource-action.png)
-
 Then add authorization rules in **Resource Authorization**.
 
 ![](./images/add-acl-1.png)
 
 **Authorized Subject** Select user1@123.com and user2@123.com, **Resource Type** Select Chat Data, and then click OK.
 
-![](./images/add-acl-2.png)
+<!-- ![](./images/add-acl-2.png) -->
 
 At this point, the administrator's permission management operations are all completed.
 
@@ -56,14 +54,6 @@ RS256 is an asymmetric signature algorithm. GenAuth holds the private key to sig
 1. Anyone can verify the signature using the application public key, and the signer must be GenAuth.
 2. There is no risk of private key leakage. If you use HS256 but leak the application key, you need to refresh the key and redeploy all APIs.
    For more information about signature issues, please refer to [Verify Token](/guides/faqs/how-to-validate-user-token.md).
-
-## Display the confirmation page
-
-When **business software** and **identity data** are not controlled by the same party, as an identity provider, you need to show the [Confirmation](/docs/concepts/authentication-vs-authorization.md#Authentication Authorization Confirmation and Authentication) page to users. In this case, your company controls the identity data and your partner company controls the business software, so when they obtain user data, you as an identity provider are obliged to inform end users which user data (such as mobile phone number, email address) and resource permissions other companies need to obtain.
-
-You can open the application authorization page in **Console** > **Application** > **Application Details** > "Advanced Configuration" tab.
-
-![](./images/auth-page-switch.png)
 
 ## Get an AccessToken with permissions
 
