@@ -162,13 +162,9 @@ const vlidatePassword = (plainText, encrypted) => {
 
 If you have not imported any packages, you can directly upload the template file in .js format; if you have imported a package, please package it with node_modules in .zip format and upload it in the {{$localeConfig.brandName}} console.
 
-![](~@imagesZhCn/guides/migrations/1616579059776.jpg)
-
 ### Test password encryption function
 
 After successful upload, developers can test the password encryption effect. As shown below, enter the original password in the input box and click "Encryption Test" to see the encrypted password (if no encryption function is uploaded, the default password encryption result of {{$localeConfig.brandName}} will be displayed).
-
-![](~@imagesZhCn/guides/migrations/1616579347869.jpg)
 
 ## Notes
 

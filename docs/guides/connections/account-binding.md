@@ -94,11 +94,7 @@ After following the above steps to enable the query binding, when your users log
 
 Step 1: Scan the code using WeChat public account
 
-<img src='./images/Untitled 4.png'/>
-
 Step 2: Select "Create a new account" or "Bind an existing account"
-
-<img src='./images/Untitled 5.png'/>
 
 If the user chooses "Create a new account", the account binding process will be skipped, and a new independent user account will be created directly in the GenAuth user pool after successful login;
 
@@ -106,13 +102,9 @@ If the user chooses "Bind an existing account", the third step will be entered.
 
 Step 3: Enter the account to be bound
 
-<img src='./images/Untitled 6.png'/>
-
 Enter an existing third-party account in the GenAuth user pool that is not bound to other third-party accounts (in this case, not bound to other WeChat accounts), and the user will complete the account binding journey.
 
 In addition to binding an account when logging in, your users can also directly bind a third-party account in the **[Personal Center](https://docs.genauth.ai/concepts/application.html#%E8%AE%BF%E9%97%AE%E5%9C%A8%E7%BA%BF%E7%89%88%E7%9A%84%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83)** (regardless of whether you use GenAuth's Personal Center or your own Personal Center) (you can also unbind it yourself). After completing the binding, you can log in to the same account through any login method (regular account password, third-party account).
-
-<img src='./images/Untitled 7.png'/>
 
 ### Administrator configuration steps
 

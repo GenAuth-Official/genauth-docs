@@ -389,18 +389,18 @@ const zhCnNavBar = {
           title: "User Directory Settings",
           path: "/guides/users/settings",
         },
-        {
-          title: "Add Custom User Fields",
-          path: "/guides/users/user-defined-field/",
-        },
+        // {
+        //   title: "Add Custom User Fields",
+        //   path: "/guides/users/user-defined-field/",
+        // },
         {
           title: "Search Users",
           path: "/guides/users/search",
         },
-        {
-          title: "Use LDAP User Directory",
-          path: "/guides/users/ldap-user-directory",
-        },
+        // {
+        //   title: "Use LDAP User Directory",
+        //   path: "/guides/users/ldap-user-directory",
+        // },
       ],
     },
     {
@@ -751,28 +751,28 @@ const zhCnNavBar = {
         // path: "/guides/connections/user-mapping"
         //},
         // DATABASE_CONNECTION_MENU
-        {
-          title: "Custom Database",
-          path: "/guides/database-connection/overview.html",
-          children: [
-            {
-              title: "Configure Database Connection and Write Scripts",
-              path: "/guides/database-connection/configuration/",
-            },
-            {
-              title: `Lazy Migration of Users to ${BRAND_NAME_ZH_CN}`,
-              path: "/guides/database-connection/lazy-migration",
-            },
-            {
-              title: "Fully Use Custom Database to Store User Data",
-              path: "/guides/database-connection/custom-user-store.md",
-            },
-            {
-              title: "Best Practices",
-              path: "/guides/database-connection/best-practices.md",
-            },
-          ],
-        },
+        // {
+        //   title: "Custom Database",
+        //   path: "/guides/database-connection/overview.html",
+        //   children: [
+        //     {
+        //       title: "Configure Database Connection and Write Scripts",
+        //       path: "/guides/database-connection/configuration/",
+        //     },
+        //     {
+        //       title: `Lazy Migration of Users to ${BRAND_NAME_ZH_CN}`,
+        //       path: "/guides/database-connection/lazy-migration",
+        //     },
+        //     {
+        //       title: "Fully Use Custom Database to Store User Data",
+        //       path: "/guides/database-connection/custom-user-store.md",
+        //     },
+        //     {
+        //       title: "Best Practices",
+        //       path: "/guides/database-connection/best-practices.md",
+        //     },
+        //   ],
+        // },
         {
           title: "Account Binding",
           path: "/guides/connections/account-binding.md",
