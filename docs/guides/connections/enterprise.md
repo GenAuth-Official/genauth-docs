@@ -8,8 +8,6 @@ For information about the {{$localeConfig.brandName}} user pool version that sup
 
 Enterprise Identity Source Login refers to the process of users using the enterprise's identity authentication information to authenticate and log in to internal company applications or third-party applications. In the {{$localeConfig.brandName}} console, enterprise identity sources include two categories: office applications (such as Lark, WeChat for Enterprise, DingTalk) and standard protocol applications (such as OIDC, SAML, CAS and other standard protocols). You can configure the enterprise identity source connection to use a third-party identity source to log in to the {{$localeConfig.brandName}} application and [import organizations and users from third-party identity sources](/guides/org/create-or-import-org/#Import organizations).
 
-![](./images/add_enterprise.png)
-
 ## Enterprise identity source login list
 
 The following is a complete list of enterprise logins currently supported by the platform and related usage documents:
