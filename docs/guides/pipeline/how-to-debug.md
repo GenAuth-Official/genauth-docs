@@ -22,10 +22,6 @@ Click the debug button of the Pipeline function:
 
 Click this button to open the debug window: {{$localeConfig.brandName}} will **produce corresponding test data based on your user pool**.
 
-![](~@imagesZhCn/pipeline/5.png)
-
-![](~@imagesZhCn/pipeline/4.png)
-
 ## View log
 
 ::: hint-warning
@@ -37,8 +33,6 @@ Use the function editor to modify the code and add a line at the beginning of th
 ```js
 log(context);
 ```
-
-![](~@imagesZhCn/pipeline/6.png)
 
 ::: hint-info
 If there is no log output, please try again a few times!

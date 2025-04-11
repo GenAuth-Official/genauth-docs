@@ -845,28 +845,28 @@ const zhCnNavBar = {
         },
       ],
     },
-    {
-      title: "Manage Organizations",
-      path: "/guides/org/",
-      children: [
-        {
-          title: "Create or Import Organizations",
-          path: "/guides/org/create-or-import-org/",
-        },
-        {
-          title: "Manage Organizations",
-          path: "/guides/org/manage-org/",
-        },
-        {
-          title: "Manage Member Lifecycle",
-          path: "/guides/org/staff-life-cycle-management/",
-        },
-        {
-          title: "Manage End Devices",
-          path: "/guides/org/device-management/",
-        },
-      ],
-    },
+    // {
+    //   title: "Manage Organizations",
+    //   path: "/guides/org/",
+    //   children: [
+    //     {
+    //       title: "Create or Import Organizations",
+    //       path: "/guides/org/create-or-import-org/",
+    //     },
+    //     {
+    //       title: "Manage Organizations",
+    //       path: "/guides/org/manage-org/",
+    //     },
+    //     {
+    //       title: "Manage Member Lifecycle",
+    //       path: "/guides/org/staff-life-cycle-management/",
+    //     },
+    //     {
+    //       title: "Manage End Devices",
+    //       path: "/guides/org/device-management/",
+    //     },
+    //   ],
+    // },
     {
       title: "Security Settings",
       children: [
@@ -1037,36 +1037,15 @@ const zhCnNavBar = {
           title: "Basic Configuration",
           path: "/guides/userpool-config/basic-config",
         },
-        {
-          title: "Field Management",
-          children: [
-            {
-              title: "User Field Management",
-              children: [
-                {
-                  title: "User Basic Field",
-                  path: "/guides/user/user-profile",
-                },
-                // {
-                //   title: "User Extended Field",
-                //   path: "/guides/users/user-defined-field/",
-                // },
-              ],
-            },
-            // {
-            //   title: "Role Field Management",
-            //   path: "/guides/authentication/extensibility/role-extend",
-            // },
-          ],
-        },
+
         {
           title: "Developer",
           path: "/guides/userpool-config/developer-config",
         },
-        {
-          title: "Cooperator Admin",
-          path: "/guides/userpool-config/collaboration-adminstrator",
-        },
+        // {
+        //   title: "Cooperator Admin",
+        //   path: "/guides/userpool-config/collaboration-adminstrator",
+        // },
         {
           title: "Cooperator Admin(New)",
           path: "/guides/userpool-config/new-collaboration-adminstrator",

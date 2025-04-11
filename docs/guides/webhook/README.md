@@ -55,8 +55,6 @@ The newly created Hook request events are all empty. At this time, you can click
 Webhook Test
 :::
 
-![](~@imagesZhCn/webhooks/webhook-zh-07.png)
-
 The request data is:
 
 ```js

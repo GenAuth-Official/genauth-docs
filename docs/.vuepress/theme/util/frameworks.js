@@ -37,7 +37,7 @@ export const COMMON_NAME_TO_FANCY_NAME = {
   'hosted-page': '使用托管登录页',
   'embeded-component': '使用嵌入登录组件',
   manually: '手动调用接口',
-  dashboard: '使用控制台',
+  dashboard: 'GenAuth Console',
   'wechat-work': '企业微信',
   dingtalk: '钉钉',
   ldap: 'LDAP',

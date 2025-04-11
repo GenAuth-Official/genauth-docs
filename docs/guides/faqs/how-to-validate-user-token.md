@@ -19,8 +19,6 @@ If you **directly call** login methods (loginByEmail, loginByPhone, loginByUsern
 
 You can get the key in **Console** > **Application** > **Application Details**, as shown in the figure below:
 
-![](./images/app-id-and-secret.png)
-
 The following code for verifying legitimacy takes Node as an example ([JSON Web Token](https://www.npmjs.com/package/jsonwebtoken) needs to be installed).
 
 ```javascript

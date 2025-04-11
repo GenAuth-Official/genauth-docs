@@ -109,7 +109,7 @@ module.exports.validate = function (request, response, context) {
 };
 ```
 
-### 编写代码
+### Coding
 
 You need to write the corresponding password encryption method in the `encryptPassword` function, and write the corresponding password validation method in the `vlidatePassword` function.
 

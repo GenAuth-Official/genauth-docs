@@ -25,13 +25,9 @@ You can also view the list of Pipeline template functions here: [https://github.
 
 2. Select **Register email suffix whitelist** in access control.
 
-![Register email suffix whitelist](../../images/pipeline/pipeline_create_template_zh.png)
-
 ## Step 2: Create a Pipeline function
 
 1. Here we set the domain name whitelist to `example.com`, you can also customize it.
-
-![](~@imagesZhCn/pipeline/pipeline-zh-03.png)
 
 2. Click the **Create** button in the lower left corner. We will deploy this function to the cloud. It will take some time, please be patient.
 
@@ -47,11 +43,7 @@ If you have multiple Pipeline functions, you can drag the leftmost button to sor
 
 1. First, register with an email address that does not have the suffix `example.com`. The system prompts "Access Denied." This is the prompt message we specified in the custom Pipeline function.
 
-<img src="../../images/pipeline/20200927195409.png" height=500 style="display:block;margin: 0 auto;">
-
 2. Then register with an email address with the suffix `example.com`. Registration is successful!
-
-<img src="../../images/pipeline/20200927195137.png" height=500 style="display:block;margin: 0 auto;">
 
 ## Step 4: You may also need to
 
