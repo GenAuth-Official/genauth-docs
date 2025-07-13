@@ -537,14 +537,36 @@ SDK 发现截图上报响应数据里是人机验证的话，则需要调用该�
         }
     }
     ```
-## 4. 常量数据说明
-### 4.1. Ping 包响应数据常量
+
+## 4. 人机验证
+    我们在完成自动化登录和注册的过程中会帮您自动解决人机验证的交互，解放您的双手，我们目前支持的人机验证类型如下。
+### 4.1 ReCaptcha
+    如果您的目标网站使用的是 Goggle 的ReCaptcha V2 人机验证码，我们会自动为您破解。
+![](./images/recaptcha.png)
+### 4.2 HCaptcha
+    如果您的目标网站使用的是 HCaptcha 人机验证码，我们会自动为您破解。
+![](./images/hcaptcha.png)
+### 4.2 FunCaptcha
+    如果您的目标网站使用的是游戏类型的人机验证码，我们会自动为您破解。
+![](./images/funcaptcha.png)
+### 4.2 Cloudflare
+    如果您的目标网站使用的是 Cloudflare 人机验证码，我们会自动为您破解。
+![](./images/cloudflare.png)
+### 4.2 Normal
+    如果您的目标网站使用的是基础 Normal 类型人机验证码，我们会自动为您破解。
+![](./images/normal.png)
+### 4.2 Text
+    如果您的目标网站使用的是 Text 类型人机验证码，我们会自动为您破解。
+
+![](./images/text.png)
+## 5. 常量数据说明
+### 5.1. Ping 包响应数据常量
     | 参数      | 值    | 备注                                     |
-        | :-------- | :------ | :--------------------------------------- |
+    | :-------- | :------ | :--------------------------------------- |
     | `ping` | `keep-alive` | 会话保持和检测                                 |
-### 4.1. 截图上报接口响应数据常量
+### 5.1. 截图上报接口响应数据常量
     | 参数      | 值    | 备注                                     |
-        | :-------- | :------ | :--------------------------------------- |
+    | :-------- | :------ | :--------------------------------------- |
 | `current_page` | `login` `register` `human_machine` `none` | 当前页面类型，例如：登录，注册，人机验证页面等                                 |
 | `application_name` | `Facebook` | 当前应用名称，例如：Facebook 或 Twitter                                 |
 | `login_step` | `click_login` `click_next` `click_code` `submit` `none` | 当前登录步骤，例如：点击登录按钮，点击下一步，点击获取验证码，提交登录等                               |
@@ -553,3 +575,9 @@ SDK 发现截图上报响应数据里是人机验证的话，则需要调用该�
 | `register` | `{"register_type":"email/phone/none", "register_step":"click_next/submit/none"} ` | 注册类型，例如：使用邮箱注册账号，使用手机号注册账号，注册步骤，例如：输入账号信息后需要点击下一步或者提交注册                                 |
 | `human_machine` | `reCaptcha v2` `hCaptcha` `funCaptcha` `cloudflare` <br /> `textCaptcha` `normal captcha` `none` | 各种人机验证类型                                |
 | `country` | `china` `other` | 当前应用所属国家，中国或其他                                 |
+
+## 6. 流程图
+### 6.1 登录标准化识别流程
+![](./images/login.png)
+### 6.2 注册标准化识别流程
+![](./images/register.png)
