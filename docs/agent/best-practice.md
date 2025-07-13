@@ -1,0 +1,3 @@
+# AgentAuth Best Practice Scenarios
+
+More business scenarios and technical architecture diagrams will be added soon. Stay tuned...

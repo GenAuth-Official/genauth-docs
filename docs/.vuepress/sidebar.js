@@ -5090,6 +5090,40 @@ const zhCnNavBar = {
       path: "/reference/error-code",
     },
   ],
+  "/agent/": [
+    {
+      title: "AgentAuth 概述",
+      path: "/agent/agent-overview-zh",
+    },
+    {
+      title: "AgentAuth 业务场景最佳实践",
+      path: "/agent/best-practice-zh",
+    },
+    {
+      title: "AgentAuth SDK 接入",
+      path: "/agent/sdk-zh",
+    },
+    {
+      title: "AgentAuth API 接入",
+      path: "/agent/api-zh",
+    },
+    /*{
+      title: "AgentAuth Overview",
+      path: "/agent/agent-overview",
+    },
+    {
+      title: "AgentAuth best practices for business scenarios",
+      path: "/agent/best-practice",
+    },
+    {
+      title: "AgentAuth SDK",
+      path: "/agent/sdk",
+    },
+    {
+      title: "AgentAuth API",
+      path: "/agent/api",
+    },*/
+  ],
   "/reference-new/": [
     {
       title: "Single Page Web Application",
