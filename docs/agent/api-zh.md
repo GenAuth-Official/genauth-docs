@@ -1,6 +1,6 @@
 # AgentAuth Server API 文档
 
-本文档详细说明了 AgentAuth SDK 与 AgentAuth Server 端交互的 API 列表，包括业务事件、浏览器事件以及核心的 RESTful 接口。
+本文档详细说明了 GenAuth SDK 与 AgentAuth Server 端交互的 API 列表，包括业务事件、浏览器事件以及核心的 RESTful 接口。
 
 ## 1. 业务事件列表 (Server to SDK)
 
@@ -215,7 +215,7 @@ SDK 把当前截图上报到 Server，用于判断当前是否需要登录或者
         "message": "成功",
         "data": {
             "current_page": "login/register/human_machine/none",
-            "application_name": "Xiaohongshu",
+            "application_name": "Twitter",
             "login_step": "click_code/click_next/click_code/submit/none",
             "switch_page": "none/click_switch_phone/click_switch_email",
             "login_type": "phone+code/email+p/u+p/email+code/phone+code/email/phone/none",
@@ -278,7 +278,7 @@ SDK 把当前截图上报到 Server，发现需要登录，那么就需要调用
     ```json
     {
         "current_page": "login",
-        "application_name": "Xiaohongshu",
+        "application_name": "Twitter",
         "login_step": "click_code",
         "switch_page": "none",
         "login_type": "phone+code",
@@ -350,6 +350,13 @@ SDK 把当前截图上报到 Server，发现需要注册，那么就需要调用
     | `html`          | `varchar` | 当前页面可视html，只传递视觉能看到的html，需要客户端获取 |
     | `genAuthUserId` | `varchar` | 当前 IDaaS 用户ID            |
     | `tenantId`      | `varchar` | 租户连接池 ID       |
+    | `processEvent`  | `object`  | 当前流程事件，示例见下                    |
+* **`processEvent` 示例**:
+  ```json
+  {
+      "register": {"register_type": "email","register_step": "click_next"}
+  }
+  ```
 *   **响应内容**:
     ```json
     {
@@ -542,6 +549,7 @@ SDK 发现截图上报响应数据里是人机验证的话，则需要调用该�
 | `application_name` | `Facebook` | 当前应用名称，例如：Facebook 或 Twitter                                 |
 | `login_step` | `click_login` `click_next` `click_code` `submit` `none` | 当前登录步骤，例如：点击登录按钮，点击下一步，点击获取验证码，提交登录等                               |
 | `switch_page` | `click_switch_phone` `click_switch_email` `none` | 是否需要切换页面，例如：切换到手机号登录，切换到邮箱登录等                                 |
-| `login_type` | `u+p` `email+p` `email+code` `phone+code` `email` `phone` `none` | 登录类型，例如：用户名和密码登录，邮箱和密码登录，邮箱和验证码登录，手机号和验证码登录，邮箱登录，手机号登录等                                 |
-| `human_machine` | `reCaptcha v2` `hCaptcha` `funCaptcha` `cloudflare` `textCaptcha` `normal captcha` `none` | 各种人机验证类型                                |
+| `login_type` | `u+p` `email+p` `email+code`  <br /> `phone+code` `email` `phone` `none` | 登录类型，例如：用户名和密码登录，邮箱和密码登录，邮箱和验证码登录，手机号和验证码登录，邮箱登录，手机号登录等                                 |
+| `register` | `{"register_type":"email/phone/none", "register_step":"click_next/submit/none"} ` | 注册类型，例如：使用邮箱注册账号，使用手机号注册账号，注册步骤，例如：输入账号信息后需要点击下一步或者提交注册                                 |
+| `human_machine` | `reCaptcha v2` `hCaptcha` `funCaptcha` `cloudflare` <br /> `textCaptcha` `normal captcha` `none` | 各种人机验证类型                                |
 | `country` | `china` `other` | 当前应用所属国家，中国或其他                                 |
