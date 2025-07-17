@@ -157,6 +157,10 @@ module.exports = {
             // ],
           },
           {
+            text: "AgentAuth",
+            link: "/agent/",
+          },
+          {
             text: "Metadata",
             link: "/metadata/",
             hidden: true,
