@@ -5091,7 +5091,7 @@ const zhCnNavBar = {
     },
   ],
   "/agent/": [
-    {
+    /*{
       title: "AgentAuth 概述",
       path: "/agent/agent-overview-zh",
     },
@@ -5106,8 +5106,8 @@ const zhCnNavBar = {
     {
       title: "AgentAuth API 接入",
       path: "/agent/api-zh",
-    },
-    /*{
+    },*/
+    {
       title: "AgentAuth Overview",
       path: "/agent/agent-overview",
     },
@@ -5122,7 +5122,7 @@ const zhCnNavBar = {
     {
       title: "AgentAuth API",
       path: "/agent/api",
-    },*/
+    },
   ],
   "/reference-new/": [
     {

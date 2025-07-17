@@ -33,6 +33,7 @@ import GenAuth from "@genauth/agentauth";
 // 创建 GenAuth 实例
 const genAuth = new GenAuth({
   genAuthUserId: "your-user-id",
+  tenantId: "user-pools-id",
   cdpUrl: "ws://localhost:9222", // 可选，Chrome DevTools Protocol URL
 });
 
@@ -71,8 +72,10 @@ genAuth.onProgress(async (progressData) => {
 ```typescript
 interface GenAuthConfig {
   genAuthUserId: string; // 必需：用户 ID
+  tenantId: string; // 必需：租户 id，或连接池id
   genAuthServer?: string; // 可选：服务器地址，默认: http://39.104.83.45:13032
   cdpUrl?: string; // 可选：Chrome DevTools Protocol WebSocket URL
+  proxyPools?: ProxyConfig[]; // 可选：CDP实例的代理池
 }
 ```
 
@@ -92,7 +95,7 @@ const genAuth = new GenAuth(config);
 
 ### 核心方法
 
-#### `chat(message: string): Promise<string>`
+#### 1. `chat(message: string): Promise<string>`
 
 发送自然语言指令，SDK 会将其转换为浏览器操作。
 
@@ -110,7 +113,7 @@ const genAuth = new GenAuth(config);
 const response = await genAuth.chat('打开谷歌搜索"TypeScript 教程"');
 ```
 
-#### `onMessage(callback: (resData: ResData) => Promise<void>): void`
+#### 2.`onMessage(callback: (resData: ResData) => Promise<void>): void`
 
 设置消息回调，接收服务器推送的各种事件。
 
@@ -126,7 +129,7 @@ interface ResData {
 }
 ```
 
-#### `onProgress(callback: (progressData: ProgressData) => Promise<void>): void`
+#### 3.`onProgress(callback: (progressData: ProgressData) => Promise<void>): void`
 
 设置进度回调，监控任务执行状态。
 
@@ -144,7 +147,7 @@ interface ProgressData {
 }
 ```
 
-#### `destroy(): Promise<void>`
+#### 4.`destroy(): Promise<void>`
 
 清理资源，关闭连接。
 
@@ -180,6 +183,7 @@ SDK 支持以下浏览器操作类型：
 | `click`      | 点击元素 | "点击搜索按钮"            |
 | `insertText` | 输入文本 | "在搜索框输入 TypeScript" |
 | `wait`       | 等待     | "等待 3 秒"               |
+| `select`       | 选择     | "选择下拉框"               |
 
 ### 自动认证支持
 
@@ -188,6 +192,7 @@ SDK 具备智能识别登录和注册页面的能力：
 - 自动检测登录页面并调用相应接口
 - 自动检测注册页面并处理注册流程
 - 支持多种应用程序的认证模式
+- 反反爬虫、破解人机验证
 
 ## 🛠️ 环境准备
 
@@ -221,6 +226,7 @@ async function automateWebTask() {
   // 初始化 SDK
   const genAuth = new GenAuth({
     genAuthUserId: "demo-user-001",
+    tenantId: "demo-tenant-001",
     cdpUrl: "ws://localhost:9222",
   });
 
@@ -292,6 +298,7 @@ import GenAuth from "@genauth/agentauth";
 
 const genAuth = new GenAuth({
   genAuthUserId: "your-user-id",
+  tenantId: "your-tenant-id",
 });
 
 try {

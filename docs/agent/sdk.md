@@ -33,6 +33,7 @@ import GenAuth from "@genauth/agentauth";
 // Create GenAuth instance
 const genAuth = new GenAuth({
   genAuthUserId: "your-user-id",
+  tenantId: "user-pools-id",
   cdpUrl: "ws://localhost:9222", // Optional, Chrome DevTools Protocol URL
 });
 
@@ -71,8 +72,10 @@ genAuth.onProgress(async (progressData) => {
 ```typescript
 interface GenAuthConfig {
   genAuthUserId: string; // Required: User ID
+  tenantId: string; // Required: Tenant ID, or connection pool ID
   genAuthServer?: string; // Optional: Server address, default: http://39.104.83.45:13032
   cdpUrl?: string; // Optional: Chrome DevTools Protocol WebSocket URL
+  proxyPools?: ProxyConfig[]; // Optional: Proxy pools for CDP instances
 }
 ```
 
@@ -81,6 +84,7 @@ interface GenAuthConfig {
 ```typescript
 const config = {
   genAuthUserId: "user-123",
+  tenantId: "tenant-123",
   genAuthServer: "https://your-server.com",
   cdpUrl: "ws://localhost:9222",
 };
@@ -88,11 +92,11 @@ const config = {
 const genAuth = new GenAuth(config);
 ```
 
-## 📚 API Documentation
+## 📚 SDK Usage Guide
 
 ### Core Methods
 
-#### `chat(message: string): Promise<string>`
+#### 1. `chat(message: string): Promise<string>`
 
 Send a natural language instruction, the SDK will convert it into browser operations.
 
@@ -110,7 +114,7 @@ Send a natural language instruction, the SDK will convert it into browser operat
 const response = await genAuth.chat('Open Google and search for "TypeScript tutorial"');
 ```
 
-#### `onMessage(callback: (resData: ResData) => Promise<void>): void`
+#### 2. `onMessage(callback: (resData: ResData) => Promise<void>): void`
 
 Set message callback to receive various events pushed by the server.
 
@@ -126,7 +130,7 @@ interface ResData {
 }
 ```
 
-#### `onProgress(callback: (progressData: ProgressData) => Promise<void>): void`
+#### 3. `onProgress(callback: (progressData: ProgressData) => Promise<void>): void`
 
 Set progress callback to monitor task execution status.
 
@@ -144,7 +148,7 @@ interface ProgressData {
 }
 ```
 
-#### `destroy(): Promise<void>`
+#### 4. `destroy(): Promise<void>`
 
 Clean up resources and close the connection.
 
@@ -180,6 +184,7 @@ The SDK supports the following browser operation types:
 | `click`       | Click element    | "Click the search button"          |
 | `insertText`  | Input text       | "Enter TypeScript in the search box" |
 | `wait`        | Wait             | "Wait for 3 seconds"               |
+| `select`      | Select dropdown  | "Select from dropdown"             |
 
 ### Automatic Authentication Support
 
@@ -188,6 +193,7 @@ The SDK has intelligent recognition capabilities for login and registration page
 - Automatically detect login pages and call the corresponding interface
 - Automatically detect registration pages and handle the registration process
 - Support authentication modes for various applications
+- Anti-bot detection and CAPTCHA solving
 
 ## 🛠️ Environment Preparation
 
@@ -221,6 +227,7 @@ async function automateWebTask() {
   // Initialize SDK
   const genAuth = new GenAuth({
     genAuthUserId: "demo-user-001",
+    tenantId: "demo-tenant-001",
     cdpUrl: "ws://localhost:9222",
   });
 
@@ -248,7 +255,7 @@ async function automateWebTask() {
     }[progressData.status];
 
     console.log(
-      `${statusIcon} Task progress: ${progressData.progress}/$${
+      `${statusIcon} Task progress: ${progressData.progress}/${
         progressData.otherData?.length || 0
       }`
     );
@@ -292,6 +299,7 @@ import GenAuth from "@genauth/agentauth";
 
 const genAuth = new GenAuth({
   genAuthUserId: "your-user-id",
+  tenantId: "your-tenant-id",
 });
 
 try {
