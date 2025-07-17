@@ -1,138 +1,134 @@
-# 什么是 Agent 代理注册和认证？
+# What is Agent Proxy Registration and Authentication?
 
-GenAuth 推出的 Agent 代理认证第三方账号功能，旨在解决 AI 应用与用户交互过程中涉及第三方账号（如 Twitter、Instagram、Facebook 等服务平台）注册或登录的繁琐流程痛点。
+GenAuth’s Agent proxy authentication for third-party accounts is designed to address the pain points of cumbersome registration or login processes for third-party accounts (such as Twitter, Instagram, Facebook, etc.) during user interactions with AI applications.
 
-当你的 AI 应用需要代表用户执行需要认证状态的操作时（例如：帮助用户自动发帖、管理数据、整合信息等），GenAuth 可以安全地代理用户完成目标平台的身份验证流程，并将获取的登录状态令牌直接返回给你的应用，使你的 AI 能够继续代表用户执行后续操作。
+When your AI application needs to perform authenticated actions on behalf of users (for example: automatically posting, managing data, aggregating information, etc.), GenAuth can securely proxy the user to complete the target platform’s authentication process and directly return the obtained login token to your application, enabling your AI to continue performing subsequent operations on behalf of the user.
 
-这一切在用户授权的前提下进行，无需用户离开对话界面。
-
-
-
-# 什么场景适合使用 Agent 代理注册和认证？
-
-* **智能搜索**
-
-当你正在开发一款浏览器智能深度搜索产品时，在帮助用户使用深度搜索时，可能需要通过各大社交媒体上的信息和数据完成搜索、统计和汇总，很多平台需要登录账号方可获取内容。
-
-要求用户手动登录十分影响用户体验和搜索效率，用同一账号难以应对实际的客户请求量并引发第三方的风控问题。使用 GenAuth 为用户自动申请虚拟邮箱，注册并登录第三方平台获取内容。
+All of this is done with the user’s authorization, without requiring the user to leave the chat interface.
 
 
 
-* **MCN 机构批量孵化达人账号**
+# What Scenarios Are Suitable for Using Agent Proxy Registration and Authentication?
 
-当你需要开发一款辅助 MCN 机构日常工作的 AI 智能助手时，无法忽视的用户痛点就是每天重复且耗时的账号开通、管理工作，通常每月、每个运营人员就需要给 20+ 大人开通TikTok、Instagram 等多个平台账号。不但需要手动重复填写达人的资料、协调海外同事帮忙接收验证码等，还需要关注文化差异避免触犯平台规则。
+* **Intelligent Search**
 
-接入 GenAuth 即可自动化上述用户痛点，并托管账号免除后续管理账号、发布内容时多次登进登出的繁琐步骤，使你的 AI 应用成为辅助 MCN 机构提效的得力助手。
+When you are developing a browser-based intelligent deep search product, you may need to access information and data from various social media platforms to complete searches, statistics, and aggregation. Many platforms require account login to access content.
 
+Requiring users to log in manually greatly affects user experience and search efficiency. Using the same account cannot meet actual customer request volumes and may trigger third-party risk controls. With GenAuth, you can automatically apply for a virtual email, register, and log in to third-party platforms to obtain content.
 
+* **Batch Account Creation for MCN Agencies**
 
-* **营销号内容刷新热度和评论**
+When developing an AI assistant for MCN agencies’ daily work, a major pain point is the repetitive and time-consuming process of account creation and management. Each month, each operator may need to create accounts for 20+ influencers on platforms like TikTok and Instagram. This usually involves repeatedly filling in influencer information, coordinating with overseas colleagues to receive verification codes, and being mindful of cultural differences to avoid violating platform rules.
 
-如果你正在开发一款服务于营销号的运营人员或自媒体账号的主播，可以给其发布内容刷热度的运营类应用，用户需要解决有效账号评论、点赞刷热度的场景。整个流程涉及到申请手机号或邮箱、注册并完成多次人机核验、发布有效评论等，接入 GenAuth 的能力可以为用户自动完成多账号的注册登录流程，并为其托管。
+By integrating GenAuth, you can automate these pain points and host accounts, eliminating the need for repeated logins when managing or posting content, making your AI application a powerful tool for MCN agencies.
 
-为你的用户解决的最耗费时间的重复劳动，将精力更多放在更高优先级的业务上。
+* **Refreshing Popularity and Comments for Marketing Accounts**
 
+If you are developing an application for marketing account operators or streamers to boost content popularity, users need to solve scenarios such as posting valid comments and likes with multiple accounts. The process involves applying for phone numbers or emails, registering, passing multiple CAPTCHAs, and posting valid comments. Integrating GenAuth can automate multi-account registration and login, and host them for the user.
 
+This solves the most time-consuming repetitive tasks for your users, allowing them to focus on higher-priority business.
 
-* **购物平台比价**
+* **Price Comparison on Shopping Platforms**
 
-当你的目标用户是热衷于购物的人，一定经常需要货比三家或海外淘等等，他们需要前往各大电商平台进行手动比价、汇总、检测波动等，以保证成本能够最小化。
+For users who love shopping, price comparison across platforms is common. They need to manually compare, aggregate, and monitor price fluctuations on various e-commerce platforms to minimize costs.
 
-你开发的 AI 智能助手可以协助他们门完成比价的工作，接入 GenAuth 的能力后，即可在后台自动完成日亚/美亚/Shopify 等各大电商账号的注册、搜索并整合该款游戏机在不同平台商家的价格，最终产出性价比最高的购买方案。
-
-
-
-# Agent 代理注册和认证能解决什么问题？
-
-1. 帮助你的 AI 应用提升用户体验：​。用户仅需正常发出任务请求，任何需要注册/登录第三方平台的才能进行的任务都可以被无感解决——由 GenAuth 在后台安全地自动化处理。告别反复输入密码、验证码、跳转登录页的糟糕体验，为用户打造流畅无感的使用旅程。
-
-2. 简化复杂操作，为你的 AI 应用提高任务完成率，进而提升用户转化率​。简化甚至隐藏注册/登录第三方平台这一关键漏斗节点，可以让用户更专注于与 AI 的有价值对话内容，显著提高 AI 建议的采纳率和任务完成率。
-
-3. 为你的团队降低开发复杂性：​
-
-   * 免登录逻辑的开发：​ 开发者无需深入研究每个第三方平台的 OAuth、OIDC、登录表单模拟或图形验证码处理等复杂且易变的安全机制。
-
-   * 统一接口：​ GenAuth 提供标准化的 API 接口，开发者只需关注“在哪个平台、需要什么权限”，GenAuth 负责处理具体协议的差异性。
-
-   * 规避维护负担：​ 目标平台频繁更新登录流程或安全策略带来的兼容性问题，由 GenAuth 统一处理与更新，节省开发者大量维护成本。
-
-4. 在开发过程中，为你拓展 AI 应用能力边界，​ 使你的 AI 应用能够真正代理用户执行涉及第三方账号的关键操作，解锁更多实用场景。
+Your AI assistant can help them complete price comparisons. With GenAuth, it can automatically register accounts on Amazon JP/US, Shopify, etc., search and aggregate prices for a product across different merchants, and ultimately provide the most cost-effective purchase plan.
 
 
 
-# 如何接入和使用 Agent 代理注册和认证能力？
+# What Problems Can Agent Proxy Registration and Authentication Solve?
 
-## 1. 开发者：接入并配置 AI 应用
+1. **Enhance User Experience for Your AI Application:**  
+   Users only need to make normal task requests. Any task that requires registration/login to a third-party platform can be seamlessly handled by GenAuth in the background. Say goodbye to repeatedly entering passwords, verification codes, and jumping to login pages, and provide users with a smooth, seamless experience.
 
-建议添加研发写的接入方法等内容
+2. **Simplify Complex Operations and Improve Task Completion Rate:**  
+   By simplifying or even hiding the registration/login step for third-party platforms, users can focus more on valuable conversations with the AI, significantly increasing the adoption rate of AI suggestions and task completion rate.
+
+3. **Reduce Development Complexity for Your Team:**  
+   * **No Need to Develop Login Logic:** Developers do not need to study each third-party platform’s OAuth, OIDC, login form simulation, or CAPTCHA handling.
+
+   * **Unified Interface:** GenAuth provides standardized API interfaces. Developers only need to specify “which platform and what permissions are needed,” and GenAuth handles protocol differences.
+
+   * **Avoid Maintenance Burden:** GenAuth handles compatibility issues caused by frequent updates to target platforms’ login processes or security policies, saving developers significant maintenance costs.
+
+4. **Expand the Capabilities of Your AI Application:**  
+   Allow your AI application to truly act on behalf of users for key operations involving third-party accounts, unlocking more practical scenarios.
+
+
+
+# How to Integrate and Use Agent Proxy Registration and Authentication?
+
+## 1. Developer: Integrate and Configure the AI Application
+
+*It is recommended to add integration methods provided by R&D here.*
 
 
 
 ![](./images/image-2.png)
 
-* 开发者应在 GenAuth 创建 Agent 应用，并完善必要信息；
+* Developers should create an Agent application in GenAuth and complete the necessary information.
 
 
 
-## 2. 终端用户：对话中无感代理注册/认证第三方账号
+## 2. End User: Seamless Proxy Registration/Authentication of Third-Party Accounts in Chat
 
-* 在终端用户的 AI Chat 应用场景中，对话中涉及到第三方账号注册/登录的内容时，将自动调起 GenAuth 的能力进行对应操作；
+* In the AI Chat application scenario, when the conversation involves third-party account registration/login, GenAuth’s capability will be automatically invoked.
 
-* 执行过程中，提供任务进度的文字版（右侧）和沙盒环境页面版（输入框上方），均可选隐藏/展示：
+* During execution, both a text-based progress (on the right) and a sandboxed page version (above the input box) are provided, both of which can be optionally hidden or displayed:
 
 ![](./images/image.png)
 
 
 
-* 场景举例——当任务需要一次性注册同一平台的多个账号时，效果如下图：
+* Example scenario: When a task requires registering multiple accounts on the same platform at once, the effect is as shown below:
 
 ![](./images/image-1.png)
 
-* 我们将提供非常详细的步骤描述，如需可展示在您的 AI 应用任务进度描述中。例如：
+* We provide detailed step descriptions, which can be displayed in your AI application’s task progress description if needed. For example:
 
-  * 申请虚拟邮箱进度
+  * Progress of applying for a virtual email
 
-  * 填写注册信息详情和进度
+  * Details and progress of filling in registration information
 
-  * 完成人机验证进度
+  * Progress of completing CAPTCHA
 
-  * 完成注册账号进度
+  * Progress of account registration
 
-  * 完成登录账号进度
+  * Progress of account login
 
   * ...
 
-* 若在运行过程中出现错误，也可快速定位卡点；
+* If an error occurs during execution, the bottleneck can be quickly located.
 
 
 
-## 3. 终端用户：在个人中心管理已托管的第三方账密
+## 3. End User: Manage Hosted Third-Party Accounts in Personal Center
 
-* 终端用户可以在【个人中心】模块查看并管理已托管的第三方账密：
+* End users can view and manage hosted third-party accounts in the [Personal Center] module:
 
-  * 支持取消第三方账密的托管权限；
+  * Support for revoking hosting permissions for third-party accounts
 
-  * 支持手动添加新的账号托管，方便未来使用 AI 应用时快速执行相关操作；
+  * Support for manually adding new accounts for hosting, making it easier to quickly perform related operations in future AI application usage
 
 
 
-## 4. 开发者：查看/管理 AI 应用的用户数据
+## 4. Developer: View/Manage User Data of the AI Application
 
-* 开发者可以在控制台查看用户已托管的账号信息。我们提供了 3 种视图，满足不同的审查/使用需求：
+* Developers can view user-hosted account information in the console. We provide three views to meet different review/use needs:
 
-1. 应用视图：
+1. **Application View:**
 
 ![](./images/image-4.png)
 
 
 
-* 用户视图：
+* **User View:**
 
 ![](./images/image-3.png)
 
 
 
-* 默认视图：
+* **Default View:**
 
 ![](./images/image-5.png)
 
