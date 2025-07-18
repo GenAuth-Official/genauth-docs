@@ -30,14 +30,14 @@ jobs:
         uses: actions/setup-node@v4.0.3
         with:
           node-version: 16
-          cache: yarn
+          cache: npm
       - name: Build the Docker image and upload to oss
         run: |
           VERSION=$(cat version.txt)
           TAG=registry.cn-beijing.aliyuncs.com/authing-next/genauth-docs:${VERSION}
-          yarn config set registry https://registry.npmmirror.com
-          yarn
-          NODE_OPTIONS=--max-old-space-size=12000 yarn docs:build
+          npm config set registry https://registry.npmmirror.com
+          npm
+          NODE_OPTIONS=--max-old-space-size=12000 npm run docs:build
           docker build -t ${TAG} . --no-cache
           docker push ${TAG}
           # ossutil cp -r -f docs/.vuepress/dist oss://authing-cdn-cn-prod/authing-docs-v2/${VERSION}/
