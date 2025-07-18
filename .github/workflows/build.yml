@@ -30,13 +30,12 @@ jobs:
         uses: actions/setup-node@v4.0.3
         with:
           node-version: 16
-          cache: npm
       - name: Build the Docker image and upload to oss
         run: |
           VERSION=$(cat version.txt)
           TAG=registry.cn-beijing.aliyuncs.com/authing-next/genauth-docs:${VERSION}
           npm config set registry https://registry.npmmirror.com
-          npm
+          npm install
           NODE_OPTIONS=--max-old-space-size=12000 npm run docs:build
           docker build -t ${TAG} . --no-cache
           docker push ${TAG}
