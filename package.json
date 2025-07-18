@@ -35,5 +35,8 @@
     "vue-select": "^3.11.2",
     "vue-tabs-component": "^1.5.0",
     "vuepress-plugin-tabs": "^0.3.0"
+  },
+  "resolutions": {
+    "minimatch": "3.0.4"
   }
 }
