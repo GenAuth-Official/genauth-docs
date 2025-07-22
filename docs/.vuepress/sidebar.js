@@ -5090,38 +5090,38 @@ const zhCnNavBar = {
       path: "/reference/error-code",
     },
   ],
-  "/agent/": [
+  "/agent-auth/": [
     /*{
       title: "AgentAuth 概述",
-      path: "/agent/agent-overview-zh",
+      path: "/agent-auth/agent-overview-zh",
     },
     {
       title: "AgentAuth 业务场景最佳实践",
-      path: "/agent/best-practice-zh",
+      path: "/agent-auth/best-practice-zh",
     },
     {
       title: "AgentAuth SDK 接入",
-      path: "/agent/sdk-zh",
+      path: "/agent-auth/sdk-zh",
     },
     {
       title: "AgentAuth API 接入",
-      path: "/agent/api-zh",
+      path: "/agent-auth/api-zh",
     },*/
     {
       title: "AgentAuth Overview",
-      path: "/agent/agent-overview",
+      path: "/agent-auth/agent-overview",
     },
     {
       title: "AgentAuth best practices for business scenarios",
-      path: "/agent/best-practice",
+      path: "/agent-auth/best-practice",
     },
     {
       title: "AgentAuth SDK",
-      path: "/agent/sdk",
+      path: "/agent-auth/sdk",
     },
     {
       title: "AgentAuth API",
-      path: "/agent/api",
+      path: "/agent-auth/api",
     },
   ],
   "/reference-new/": [
