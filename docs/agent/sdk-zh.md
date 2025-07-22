@@ -39,7 +39,7 @@ const genAuth = new GenAuth({
 
 // 发送自然语言指令
 try {
-  const response = await genAuth.chat("请帮我打开百度首页");
+  const response = await genAuth.chat("我是一名营销活动运营人员，请帮我注册一个 Twitter 的账号");
   console.log("操作完成:", response);
 } catch (error) {
   console.error("操作失败:", error);
@@ -110,7 +110,7 @@ const genAuth = new GenAuth(config);
 **示例:**
 
 ```typescript
-const response = await genAuth.chat('打开谷歌搜索"TypeScript 教程"');
+const response = await genAuth.chat('我是某 MCN 机构的运营，每月需要为 20+ 达人开通 Instagram 平台的账号。 请帮我自动生成符合规范的账号信息，通过云端虚拟号码完成注册和验证');
 ```
 
 #### 2.`onMessage(callback: (resData: ResData) => Promise<void>): void`
@@ -179,9 +179,9 @@ SDK 支持以下浏览器操作类型：
 
 | 操作类型     | 描述     | 示例指令                  |
 | ------------ | -------- | ------------------------- |
-| `navigate`   | 页面导航 | "打开百度首页"            |
+| `navigate`   | 页面导航 | "打开 Twitter 首页"            |
 | `click`      | 点击元素 | "点击搜索按钮"            |
-| `insertText` | 输入文本 | "在搜索框输入 TypeScript" |
+| `insertText` | 输入文本 | "在搜索框输入搜索当前最流行的产品" |
 | `wait`       | 等待     | "等待 3 秒"               |
 | `select`       | 选择     | "选择下拉框"               |
 
@@ -268,10 +268,10 @@ async function automateWebTask() {
     console.log("🎯 开始自动化任务...");
 
     // 执行复杂的浏览器操作序列
-    let response = await genAuth.chat("打开百度首页");
+    let response = await genAuth.chat("帮我登录 Instagram");
     console.log("步骤1完成:", response);
 
-    response = await genAuth.chat('搜索"GenAuth SDK 文档"');
+    response = await genAuth.chat('搜索"目前最流行的产品"');
     console.log("步骤2完成:", response);
 
     response = await genAuth.chat("点击第一个搜索结果");

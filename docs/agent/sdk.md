@@ -39,7 +39,7 @@ const genAuth = new GenAuth({
 
 // Send natural language instruction
 try {
-  const response = await genAuth.chat("Please open the Baidu homepage for me");
+  const response = await genAuth.chat("I am a marketing campaign operator, please help me register an Twitter account");
   console.log("Operation completed:", response);
 } catch (error) {
   console.error("Operation failed:", error);
@@ -111,7 +111,7 @@ Send a natural language instruction, the SDK will convert it into browser operat
 **Example:**
 
 ```typescript
-const response = await genAuth.chat('Open Google and search for "TypeScript tutorial"');
+const response = await genAuth.chat('I am an operator of an MCN agency and need to open Instagram accounts for 20+ influencers every month. Please help me automatically generate account information that meets the standards and complete registration and verification through a cloud virtual number.');
 ```
 
 #### 2. `onMessage(callback: (resData: ResData) => Promise<void>): void`
@@ -180,9 +180,9 @@ The SDK supports the following browser operation types:
 
 | Operation Type | Description      | Example Instruction                |
 | ------------- | --------------- | ---------------------------------- |
-| `navigate`    | Page navigation  | "Open Baidu homepage"              |
+| `navigate`    | Page navigation  | "Open the Twitter homepage"              |
 | `click`       | Click element    | "Click the search button"          |
-| `insertText`  | Input text       | "Enter TypeScript in the search box" |
+| `insertText`  | Input text       | "Enter in the search box to search for the most popular products" |
 | `wait`        | Wait             | "Wait for 3 seconds"               |
 | `select`      | Select dropdown  | "Select from dropdown"             |
 
@@ -269,10 +269,10 @@ async function automateWebTask() {
     console.log("🎯 Starting automation task...");
 
     // Execute a sequence of complex browser operations
-    let response = await genAuth.chat("Open Baidu homepage");
+    let response = await genAuth.chat("Log me into Instagram");
     console.log("Step 1 completed:", response);
 
-    response = await genAuth.chat('Search for "GenAuth SDK documentation"');
+    response = await genAuth.chat('Search for "Currently Most Popular Products"');
     console.log("Step 2 completed:", response);
 
     response = await genAuth.chat("Click the first search result");
