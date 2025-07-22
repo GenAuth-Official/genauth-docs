@@ -64,7 +64,7 @@ Your AI assistant can help them complete price comparisons. With GenAuth, it can
 
 
 
-![](./images/image-2.png)
+![](./images/image-2.jpg)
 
 * Developers should create an Agent application in GenAuth and complete the necessary information.
 
@@ -76,13 +76,13 @@ Your AI assistant can help them complete price comparisons. With GenAuth, it can
 
 * During execution, both a text-based progress (on the right) and a sandboxed page version (above the input box) are provided, both of which can be optionally hidden or displayed:
 
-![](./images/image.png)
+![](./images/image.jpg)
 
 
 
 * Example scenario: When a task requires registering multiple accounts on the same platform at once, the effect is as shown below:
 
-![](./images/image-1.png)
+![](./images/image-1.jpg)
 
 * We provide detailed step descriptions, which can be displayed in your AI application’s task progress description if needed. For example:
 
@@ -118,19 +118,19 @@ Your AI assistant can help them complete price comparisons. With GenAuth, it can
 
 1. **Application View:**
 
-![](./images/image-4.png)
+![](./images/image-4.jpg)
 
 
 
 * **User View:**
 
-![](./images/image-3.png)
+![](./images/image-3.jpg)
 
 
 
 * **Default View:**
 
-![](./images/image-5.png)
+![](./images/image-5.jpg)
 
 
 

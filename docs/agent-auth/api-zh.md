@@ -6,18 +6,17 @@
 
 这些事件由 GenAuth Server 端主动发送给 SDK 端，SDK 端需要订阅并处理这些消息。
 
-| 事件名称         | 事件作用                                   | 备注                 |
-| :--------------- | :----------------------------------------- | :------------------- |
-| `message`        | 服务端响应的消息事件                       | 用于展示或解析数据使用 |
-| `browser_event`  | 需要执行浏览器浏览器事件                   | 执行 CDP 指令使用    |
-| `screenshot`     | 需要进行截图事件                           | 判断是否需要登录或注册使用 |
+| 事件名称         | 事件作用                                   | 备注            |
+| :--------------- | :----------------------------------------- |:--------------|
+| `message`        | 服务端响应的消息事件                       | 展示思考过程使用      |
+| `browser_event`  | 需要执行浏览器浏览器事件                   | 执行 CDP 指令使用   |
 
 **浏览器事件输出示例 (JSON)**
 
 ```json
 {
   "actions": [
-    {"method": "navigate", "value": "https://www.facebook.com"},
+    {"method": "navigate", "value": "https://www.instagram.com"},
     {"method": "wait", "selector": "#kw", "options": {"timeout": "5s"}},
     {"method": "insertText", "selector": "#kw", "value": "AI"},
     {"method": "click", "selector": "#su"}
@@ -37,6 +36,156 @@
 | `insertText` | 输入数据到某个元素                     |
 | `scroll`     | 鼠标滚动，上或下                       |
 
+## 3. 思考过程消息事件 (由 `message` 携带)
+
+SDK 调用 Server 的业务接口后，Server 会把整个思考过程通过 SSE 响应给客户端。
+
+*   **请求参数**: 无
+*   **响应参数**:
+    ```json
+    {
+        "taskId": "b9c2d2b7-eae0-4d37-a86e-b8606a74ffb4",
+        "action": "message",
+        "otherData": "",
+        "message": "正在生成思考过程"
+    }
+    ```
+### 3.1 开始分析当前页面
+
+*   **请求参数**: 无
+*   **响应参数**:
+    ```json
+    {
+        "taskId": "b9c2d2b7-eae0-4d37-a86e-b8606a74ffb4",
+        "action": "message",
+        "otherData": "",
+        "message": "开始分析当前页面，地址：https://www.instagram.com/accounts/emailsignup/"
+    }
+    ```
+
+### 3.2 结束分析当前页面
+
+*   **请求参数**: 无
+*   **响应参数**:
+    ```json
+    {
+        "taskId": "b9c2d2b7-eae0-4d37-a86e-b8606a74ffb4",
+        "action": "message",
+        "otherData": "{\"current_page\":\"register\",\"application_name\":\"Instagram\",\"login_step\":\"none\",\"switch_page\":\"none\",\"login_type\":\"none\",\"register\":{\"register_type\":\"email\",\"register_step\":\"submit\"},\"human_machine\":\"none\",\"country\":\"US\"}",
+        "message": "结束分析当前页面"
+    }
+    ```
+### 3.3 开始自动化注册或登录流程
+
+*   **请求参数**: 无
+*   **响应参数**:
+    ```json
+    {
+        "taskId": "b9c2d2b7-eae0-4d37-a86e-b8606a74ffb4",
+        "action": "message",
+        "otherData": "{\"current_page\":\"register\",\"application_name\":\"Instagram\",\"login_step\":\"none\",\"switch_page\":\"none\",\"login_type\":\"none\",\"register\":{\"register_type\":\"email\",\"register_step\":\"submit\"},\"human_machine\":\"none\",\"country\":\"US\"}",
+        "message": "开始自动化注册流程，整个过程可能需要几分钟的时间~"
+    }
+    ```
+### 3.4 租赁临时邮箱或手机号
+
+*   **请求参数**: 无
+*   **响应参数**:
+    ```json
+    {
+        "taskId": "b9c2d2b7-eae0-4d37-a86e-b8606a74ffb4",
+        "action": "message",
+        "otherData": "",
+        "message": "租赁邮箱中，请耐心等待~"
+    }
+    ```
+### 3.5 完成租赁
+
+*   **请求参数**: 无
+*   **响应参数**:
+    ```json
+    {
+        "taskId": "b9c2d2b7-eae0-4d37-a86e-b8606a74ffb4",
+        "action": "message",
+        "otherData": "",
+        "message": "已完成邮箱租赁，将继续为您操作剩下的步骤~"
+    }
+    ```
+### 3.6 填充邮箱或手机号
+
+*   **请求参数**: 无
+*   **响应参数**:
+    ```json
+    {
+        "taskId": "b9c2d2b7-eae0-4d37-a86e-b8606a74ffb4",
+        "action": "message",
+        "otherData": "",
+        "message": "邮箱注册成功，自动填充中：ejirtbuu157@outlook.com"
+    }
+    ```
+### 3.7 读取验证码
+
+*   **请求参数**: 无
+*   **响应参数**:
+    ```json
+    {
+        "taskId": "b9c2d2b7-eae0-4d37-a86e-b8606a74ffb4",
+        "action": "message",
+        "otherData": "",
+        "message": "读取邮箱验证码中"
+    }
+    ```
+### 3.8 等待读取验证码
+
+*   **请求参数**: 无
+*   **响应参数**:
+    ```json
+    {
+        "taskId": "b9c2d2b7-eae0-4d37-a86e-b8606a74ffb4",
+        "action": "message",
+        "otherData": "",
+        "message": "第1次读取邮箱验证码，间隔 5 秒，最长读取 15 分钟，邮箱账号:ejirtbuu157@outlook.com"
+    }
+    ```
+
+### 3.9 输入验证码
+
+*   **请求参数**: 无
+*   **响应参数**:
+    ```json
+    {
+        "taskId": "b9c2d2b7-eae0-4d37-a86e-b8606a74ffb4",
+        "action": "message",
+        "otherData": "",
+        "message": "执行输入邮箱验证码中"
+    }
+    ```
+### 3.10 人机验证分析
+
+*   **请求参数**: 无
+*   **响应参数**:
+    ```json
+    {
+        "taskId": "b9c2d2b7-eae0-4d37-a86e-b8606a74ffb4",
+        "action": "message",
+        "otherData": "",
+        "message": "正在分析当前人机验证类型"
+    }
+    ```
+### 3.11 人机验证破解
+
+*   **请求参数**: 无
+*   **响应参数**:
+    ```json
+    {
+        "taskId": "b9c2d2b7-eae0-4d37-a86e-b8606a74ffb4",
+        "action": "message",
+        "otherData": "",
+        "message": "正在破解当前 recaptcha 人机验证"
+    }
+    ```
+
+  
 ## 3. 核心 API 列表
 
 ### 3.1. 连接 SSE
@@ -86,24 +235,7 @@ SDK 连接 Server 成功后，Server 会返回当前连接信息，客户端需�
 
 ---
 
-### 3.4. 思考过程消息事件
-
-SDK 调用 Server 的业务接口后，Server 会把整个思考过程通过 SSE 响应给客户端。
-
-*   **请求参数**: 无
-*   **响应参数**:
-    ```json
-    {
-        "taskId": "b9c2d2b7-eae0-4d37-a86e-b8606a74ffb4",
-        "action": "message",
-        "params": "",
-        "message": "正在生成思考过程"
-    }
-    ```
-
----
-
-### 3.5. 转换自然语言到浏览器指令消息事件
+### 3.4. 转换自然语言到浏览器指令消息事件
 
 SDK 调用 Server 的发起任务接口后，Server 会把自然语言转浏览器指令过程通过 SSE 响应给客户端。
 
@@ -113,14 +245,14 @@ SDK 调用 Server 的发起任务接口后，Server 会把自然语言转浏览�
     {
         "taskId": "b9c2d2b7-eae0-4d37-a86e-b8606a74ffb4",
         "action": "message",
-        "params": "",
+        "otherData": "",
         "message": "转换自然语言到浏览器指令中"
     }
     ```
 
 ---
 
-### 3.6. 浏览器指令消息事件
+### 3.5. 浏览器指令消息事件
 
 SDK 调用 Server 的发起任务接口后，Server 会把浏览器指令过程通过 SSE 响应给客户端。
 
@@ -130,14 +262,14 @@ SDK 调用 Server 的发起任务接口后，Server 会把浏览器指令过程�
     {
         "taskId": "b9c2d2b7-eae0-4d37-a86e-b8606a74ffb4",
         "action": "browser_event",
-        "params": "{\"actions\":[{\"method\":\"navigate\",\"selector\":\"\",\"value\":\"https://twitter.com\",\"options\":null},{\"method\":\"wait\",\"selector\":\"input[data-testid='SearchBox_Search_Input']\",\"value\":\"\",\"options\":{\"timeout\":\"5s\"}},{\"method\":\"insertText\",\"selector\":\"input[data-testid='SearchBox_Search_Input']\",\"value\":\"马斯克最新新闻\",\"options\":null},{\"method\":\"click\",\"selector\":\"div[data-testid='tweet'] div[aria-label='回复']\",\"value\":\"\",\"options\":null},{\"method\":\"wait\",\"selector\":\"div[data-testid='tweetTextarea_0']\",\"value\":\"\",\"options\":{\"timeout\":\"5s\"}},{\"method\":\"insertText\",\"selector\":\"div[data-testid='tweetTextarea_0']\",\"value\":\"评论\",\"options\":null},{\"method\":\"click\",\"selector\":\"div[data-testid='tweetButton']\",\"value\":\"\",\"options\":null}]}",
+        "otherData": "{\"actions\":[{\"method\":\"navigate\",\"selector\":\"\",\"value\":\"https://www.instagram.com/accounts/signup/\",\"options\":null},{\"method\":\"wait\",\"selector\":\"input[name=\\\"username\\\"]\",\"value\":\"\",\"options\":{\"timeout\":\"134\"}},{\"method\":\"insertText\",\"selector\":\"input[name=\\\"username\\\"]\",\"value\":\"jackdu@outlook.com\",\"options\":null},{\"method\":\"wait\",\"selector\":\"input[name=\\\"password\\\"]\",\"value\":\"\",\"options\":{\"timeout\":\"167\"}},{\"method\":\"insertText\",\"selector\":\"input[name=\\\"password\\\"]\",\"value\":\"Passokkdm@!.\",\"options\":null},{\"method\":\"wait\",\"selector\":\"button[type=\\\"submit\\\"]\",\"value\":\"\",\"options\":{\"timeout\":\"112\"}},{\"method\":\"click\",\"selector\":\"button[type=\\\"submit\\\"]\",\"value\":\"\",\"options\":null}]}",
         "message": "已生成浏览器指令"
     }
     ```
 
 ---
 
-### 3.7. 开始任务接口
+### 3.6. 开始任务接口
 
 用于发起一个自动化任务。
 
@@ -152,10 +284,10 @@ SDK 调用 Server 的发起任务接口后，Server 会把浏览器指令过程�
     | `text`        | `varchar` | 用户原始 Query 数据       |
     | `genAuthUserId` | `varchar` | 当前登录的 GenAuth 用户 ID |
     | `type`        | `varchar` | `task`，发起任务         |
-    | `browserId`   | `varchar` | 浏览器上下文 ID           |
+
 *   **请求示例**:
     ```json
-    {"sessionId":"162a4e39-6fce-4761-977b-a67e57a32ed3","text":"打开Twitter，搜索马斯克最新新闻，并评论","type":"task","genAuthUserId":"xxxx"}
+    {"sessionId":"162a4e39-6fce-4761-977b-a67e57a32ed3","text":"I want to become an Instagram user. Please help me register an account on Instagram","type":"task","genAuthUserId":"jackdu"}
     ```
 *   **响应示例**:
     ```json
@@ -173,25 +305,7 @@ SDK 调用 Server 的发起任务接口后，Server 会把浏览器指令过程�
 
 ---
 
-### 3.8. 检查浏览器数据是否需要登录 (Server to SDK)
-
-Server 把浏览器指令响应给客户端后会下发截图指令，用于判断是否需要登录。
-
-*   **请求参数**: 无
-*   **请求方法**: `POST` (此处的请求方法与前文的“业务事件列表”中的描述可能不符，该事件由服务端推送，不应是SDK主动请求的POST)
-*   **响应参数**:
-    ```json
-    {
-        "taskId": "b9c2d2b7-eae0-4d37-a86e-b8606a74ffb4",
-        "action": "screenshot",
-        "params": "",
-        "message": "截取当前浏览器页面并上报"
-    }
-    ```
-
----
-
-### 3.9. 截图上报接口 (SDK to Server)
+### 3.7. 截图上报接口 (SDK to Server)
 
 SDK 把当前截图上报到 Server，用于判断当前是否需要登录或者注册，如果需要则响应登录或注册操作码，SDK 需调用对应接口。
 
@@ -228,7 +342,7 @@ SDK 把当前截图上报到 Server，用于判断当前是否需要登录或者
 
 ---
 
-### 3.10. 客户端获取应用地址接口 (SDK to Server)
+### 3.8. 客户端获取应用地址接口 (SDK to Server)
 
 SDK 发现当前页面需要登录，那么调用获取应用登录和注册接口，在登录和注册接口以及获取可视 HTML 时会用到该链接。
 
@@ -246,8 +360,8 @@ SDK 发现当前页面需要登录，那么调用获取应用登录和注册接�
         "apiCode": 10000,
         "message": "成功",
         "data": {
-            "registration_Url": "https://www.facebook.com/r.php",
-            "login_url": "https://www.facebook.com/login/",
+            "registration_Url": "https://www.instagram.com/r.php",
+            "login_url": "https://www.instagram.com/login/",
             "success": true
         }
     }
@@ -255,7 +369,7 @@ SDK 发现当前页面需要登录，那么调用获取应用登录和注册接�
 
 ---
 
-### 3.11. 客户端登录接口 (SDK to Server)
+### 3.9. 客户端登录接口 (SDK to Server)
 
 SDK 把当前截图上报到 Server，发现需要登录，那么就需要调用登录接口。
 
@@ -278,7 +392,7 @@ SDK 把当前截图上报到 Server，发现需要登录，那么就需要调用
     ```json
     {
         "current_page": "login",
-        "application_name": "Twitter",
+        "application_name": "Instagram",
         "login_step": "click_code",
         "switch_page": "none",
         "login_type": "phone+code",
@@ -303,7 +417,7 @@ SDK 把当前截图上报到 Server，发现需要登录，那么就需要调用
                 {
                     "method": "insertText",
                     "selector": "#username",
-                    "value": "zhangsan",
+                    "value": "ejirtbuu157@outlook.com",
                     "options": null
                 },
                 {
@@ -333,7 +447,7 @@ SDK 把当前截图上报到 Server，发现需要登录，那么就需要调用
 
 ---
 
-### 3.12. 客户端注册接口 (SDK to Server)
+### 3.10. 客户端注册接口 (SDK to Server)
 
 SDK 把当前截图上报到 Server，发现需要注册，那么就需要调用注册接口。
 
@@ -461,7 +575,7 @@ SDK 把当前截图上报到 Server，发现需要注册，那么就需要调用
 
 ---
 
-### 3.13. 破解人机验证接口 (SDK to Server)
+### 3.11. 破解人机验证接口 (SDK to Server)
 
 SDK 发现截图上报响应数据里是人机验证的话，则需要调用该接口。
 
@@ -564,17 +678,17 @@ SDK 发现截图上报响应数据里是人机验证的话，则需要调用该�
     | 参数      | 值    | 备注                                     |
     | :-------- | :------ | :--------------------------------------- |
     | `ping` | `keep-alive` | 会话保持和检测                                 |
-### 5.1. 截图上报接口响应数据常量
+### 5.2. 截图上报接口响应数据常量
     | 参数      | 值    | 备注                                     |
     | :-------- | :------ | :--------------------------------------- |
-| `current_page` | `login` `register` `human_machine` `none` | 当前页面类型，例如：登录，注册，人机验证页面等                                 |
-| `application_name` | `Facebook` | 当前应用名称，例如：Facebook 或 Twitter                                 |
-| `login_step` | `click_login` `click_next` `click_code` `submit` `none` | 当前登录步骤，例如：点击登录按钮，点击下一步，点击获取验证码，提交登录等                               |
-| `switch_page` | `click_switch_phone` `click_switch_email` `none` | 是否需要切换页面，例如：切换到手机号登录，切换到邮箱登录等                                 |
-| `login_type` | `u+p` `email+p` `email+code`  <br /> `phone+code` `email` `phone` `none` | 登录类型，例如：用户名和密码登录，邮箱和密码登录，邮箱和验证码登录，手机号和验证码登录，邮箱登录，手机号登录等                                 |
-| `register` | `{"register_type":"email/phone/none", "register_step":"click_next/submit/none"} ` | 注册类型，例如：使用邮箱注册账号，使用手机号注册账号，注册步骤，例如：输入账号信息后需要点击下一步或者提交注册                                 |
-| `human_machine` | `reCaptcha v2` `hCaptcha` `funCaptcha` `cloudflare` <br /> `textCaptcha` `normal captcha` `none` | 各种人机验证类型                                |
-| `country` | `china` `other` | 当前应用所属国家，中国或其他                                 |
+    | `current_page` | `login` `register` `human_machine` `none` | 当前页面类型，例如：登录，注册，人机验证页面等                                 |
+    | `application_name` | `Instagram` | 当前应用名称，例如：Instagram 或 Twitter 或其他                                |
+    | `login_step` | `click_login` `click_next` `click_code` `submit` `none` | 当前登录步骤，例如：点击登录按钮，点击下一步，点击获取验证码，提交登录等                               |
+    | `switch_page` | `click_switch_phone` `click_switch_email` `none` | 是否需要切换页面，例如：切换到手机号登录，切换到邮箱登录等                                 |
+    | `login_type` | `u+p` `email+p` `email+code`  <br /> `phone+code` `email` `phone` `none` | 登录类型，例如：用户名和密码登录，邮箱和密码登录，邮箱和验证码登录，手机号和验证码登录，邮箱登录，手机号登录等                                 |
+    | `register` | `{"register_type":"email/phone/none", "register_step":"click_next/submit/none"} ` | 注册类型，例如：使用邮箱注册账号，使用手机号注册账号，注册步骤，例如：输入账号信息后需要点击下一步或者提交注册                                 |
+    | `human_machine` | `reCaptcha` `hCaptcha` `funCaptcha` `cloudflare` <br /> `textCaptcha` `normal captcha` `none` | 各种人机验证类型                                |
+    | `country` | `china` `other` | 当前应用所属国家，中国或其他                                 |
 
 ## 6. 流程图
 ### 6.1 登录标准化识别流程

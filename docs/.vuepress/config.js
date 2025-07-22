@@ -158,7 +158,7 @@ module.exports = {
           },
           {
             text: "AgentAuth",
-            link: "/agent/",
+            link: "/agent-auth/",
           },
           {
             text: "Metadata",
