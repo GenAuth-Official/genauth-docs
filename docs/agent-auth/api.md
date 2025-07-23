@@ -186,9 +186,9 @@ After the SDK calls the Server's business interface, the Server sends the entire
     }
     ```
 
-## 3. Core API List
+## 4. Core API List
 
-### 3.1. Connect SSE
+### 4.1. Connect SSE
 
 Used for the SDK to connect to the Server and receive real-time events using the SSE protocol.
 
@@ -214,7 +214,7 @@ Used for the SDK to connect to the Server and receive real-time events using the
 
 ---
 
-### 3.2. Ping Packet
+### 4.2. Ping Packet
 
 The server periodically sends Ping packet events to the SDK to maintain and check the connection status. The client subscribes to this event.
 
@@ -223,7 +223,7 @@ The server periodically sends Ping packet events to the SDK to maintain and chec
 
 ---
 
-### 3.3. Connection Success Event
+### 4.3. Connection Success Event
 
 After the SDK successfully connects to the Server, the Server returns the current connection information. The client needs to subscribe to this event.
 
@@ -234,7 +234,7 @@ After the SDK successfully connects to the Server, the Server returns the curren
     ```
 ---
 
-### 3.4. Convert Natural Language to Browser Instruction Message Event
+### 4.4. Convert Natural Language to Browser Instruction Message Event
 
 After the SDK calls the Server's task initiation interface, the Server sends the process of converting natural language to browser instructions to the client via SSE.
 
@@ -251,7 +251,7 @@ After the SDK calls the Server's task initiation interface, the Server sends the
 
 ---
 
-### 3.5. Browser Instruction Message Event
+### 4.5. Browser Instruction Message Event
 
 After the SDK calls the Server's task initiation interface, the Server sends the browser instruction process to the client via SSE.
 
@@ -268,7 +268,7 @@ After the SDK calls the Server's task initiation interface, the Server sends the
 
 ---
 
-### 3.6. Start Task Interface
+### 4.6. Start Task Interface
 
 Used to initiate an automation task.
 
@@ -304,7 +304,7 @@ Used to initiate an automation task.
 
 ---
 
-### 3.7. Screenshot Reporting Interface (SDK to Server)
+### 4.7. Screenshot Reporting Interface (SDK to Server)
 
 The SDK uploads the current screenshot to the server to determine whether login or registration is required. If needed, the server responds with the corresponding operation code, and the SDK needs to call the corresponding interface.
 
@@ -341,7 +341,7 @@ The SDK uploads the current screenshot to the server to determine whether login 
 
 ---
 
-### 3.8. Client Get Application URL Interface (SDK to Server)
+### 4.8. Client Get Application URL Interface (SDK to Server)
 
 If the SDK finds that the current page requires login, it calls this interface to get the application login and registration URLs, which are used in the login, registration, and visual HTML retrieval interfaces.
 
@@ -368,7 +368,7 @@ If the SDK finds that the current page requires login, it calls this interface t
 
 ---
 
-### 3.9. Client Login Interface (SDK to Server)
+### 4.9. Client Login Interface (SDK to Server)
 
 If the SDK uploads a screenshot to the server and finds that login is required, it needs to call the login interface.
 
@@ -446,7 +446,7 @@ If the SDK uploads a screenshot to the server and finds that login is required, 
 
 ---
 
-### 3.10. Client Registration Interface (SDK to Server)
+### 4.10. Client Registration Interface (SDK to Server)
 
 If the SDK uploads a screenshot to the server and finds that registration is required, it needs to call the registration interface.
 
@@ -573,7 +573,7 @@ If the SDK uploads a screenshot to the server and finds that registration is req
 
 ---
 
-### 3.11. Break CAPTCHA Interface (SDK to Server)
+### 4.11. Break CAPTCHA Interface (SDK to Server)
 
 If the SDK finds that the screenshot upload response data indicates a CAPTCHA, it needs to call this interface.
 
@@ -649,32 +649,32 @@ If the SDK finds that the screenshot upload response data indicates a CAPTCHA, i
         }
     }
     ```
-## 4. Human machine verification
+## 5. Human machine verification
     During the process of completing automated login and registration, we will automatically handle the interaction for human-machine verification, freeing up your hands. Currently, we support the following types of human-machine verification。
-### 4.1 ReCaptcha
+### 5.1 ReCaptcha
     If your target website is using Google's reCaptcha V2 human-machine verification code, we will automatically crack it for you。
 ![](./images/recaptcha.png)
-### 4.2 HCaptcha
+### 5.2 HCaptcha
     If your target website uses HCaptcha human-machine verification code, we will automatically crack it for you。
 ![](./images/hcaptcha.png)
-### 4.2 FunCaptcha
+### 5.3 FunCaptcha
     If the target website you are using employs a game-type human-machine verification code, we will automatically crack it for you。
 ![](./images/funcaptcha.png)
-### 4.2 Cloudflare
+### 5.4 Cloudflare
     If your target website uses Cloudflare CAPTCHA, we will automatically crack it for you。
 ![](./images/cloudflare.png)
-### 4.2 Normal
+### 5.5 Normal
     If the target website you are using employs the basic Normal type of human-machine verification code, we will automatically crack it for you。
 ![](./images/normal.png)
-### 4.2 Text
+### 5.6 Text
     If the target website you are using employs a Text-type human-machine verification code, we will automatically crack it for you。
 
-## 5. Constant Data Description
-### 5.1. Ping Packet Response Data Constants
+## 6. Constant Data Description
+### 6.1. Ping Packet Response Data Constants
     | Parameter   | Value         | Remarks                                     |
     | :---------- | :------------ | :------------------------------------------ |
     | `ping`      | `keep-alive`  | Session keep-alive and detection            |
-### 5.2. Screenshot Reporting Interface Response Data Constants
+### 6.2. Screenshot Reporting Interface Response Data Constants
     | Parameter           | Value                                             | Remarks                                     |
     | :-----------------  | :------------------------------------------------ | :------------------------------------------ |
     | `current_page`      | `login` `register` `human_machine` `none`           | Current page type, e.g., login, register, CAPTCHA page, etc. |
@@ -684,8 +684,8 @@ If the SDK finds that the screenshot upload response data indicates a CAPTCHA, i
     | `login_type`        | `u+p` `email+p` `email+code` `phone+code` `email` `phone` `none` | Login type, e.g., username and password login, email and password login, email and code login, phone and code login, email login, phone login, etc. |
     | `human_machine`     | `reCaptcha` `hCaptcha` `funCaptcha` `cloudflare` `textCaptcha` `normal captcha` `none` | Various CAPTCHA types |
     | `country`           | `china` `other`                                     | Country of the current application, China or other |
-## 6. Flow chart
-### 6.1 Standardized login identification process
+## 7. Flow chart
+### 7.1 Standardized login identification process
 ![](./images/login.jpeg)
-### 6.2 Register standardized identification process
+### 7.2 Register standardized identification process
 ![](./images/register.jpeg)
