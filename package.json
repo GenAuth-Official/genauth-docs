@@ -37,6 +37,7 @@
     "vuepress-plugin-tabs": "^0.3.0"
   },
   "resolutions": {
-    "minimatch": "3.0.4"
+    "minimatch": "3.0.4",
+    "stylus": "github:stylus/stylus#0.54.8"
   }
 }
