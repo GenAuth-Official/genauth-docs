@@ -8351,10 +8351,9 @@ stylus-loader@^3.0.2:
     lodash.clonedeep "^4.5.0"
     when "~3.6.x"
 
-stylus@^0.54.8:
+stylus@^0.54.8, "stylus@github:stylus/stylus#0.54.8":
   version "0.54.8"
-  resolved "https://registry.npmmirror.com/stylus/-/stylus-0.54.8.tgz#3da3e65966bc567a7b044bfe0eece653e099d147"
-  integrity sha512-vr54Or4BZ7pJafo2mpf0ZcwA74rpuYCZbxrHBsH8kbcXOwSfvBFwsRfpGO5OD5fhG5HDCFW737PKaawI7OqEAg==
+  resolved "https://codeload.github.com/stylus/stylus/tar.gz/0087d4b977190fb83f075b8a5b0bd2a0bc3cf631"
   dependencies:
     css-parse "~2.0.0"
     debug "~3.1.0"
